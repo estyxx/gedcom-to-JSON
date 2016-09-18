@@ -1,0 +1,86 @@
+Can IGNORE anything between the first appearance of 0 and the second appearance of 0. This is irrelevant header information
+
+if line contains BIRT &&
+  nextline contains DATE {{{
+    text that follows DATE up to newline =
+      BirthDay
+    }}} &&
+  nexline contains PLAC {{{
+    text that follows PLAC = 
+      BirthPlace
+  }}}
+
+if line contains NAME {{{
+  text that follows NAME upto space character =
+    FirstName
+  }}} &&  {{{
+    text that follows space character up to next space character = 
+      Middle Name
+  }}} && {{{ 
+    text that follows space character &&
+      is contained within /forward slashes/ =
+        Last Name
+  }}} && {{{ 
+    any text that follows the space character =
+      title
+  }}} && need to capitalize first letters
+
+if line contains DEAT &&
+  nextline contains DATE {{{ 
+    text that follows DATE upto newline =
+      Death Date
+  }}} && if {{{ 
+    nextline contains PLAC {{{ 
+      text that follows PLAC upto newline =
+        Death Location
+    }}}
+  }}}
+
+if line contains SEX {{{ 
+  text that follows upto newline =
+    Gender
+}}}
+
+if firstChar of line === 0 {{{ 
+  everything upto but not including next firstChar === 0
+    = NewPerson
+}}} || if line contains INDI {{{
+  everything upto but not including next line containing INDI
+   = NewPerson
+}}}
+
+// how to determine connections...?
+  // @Fx@ but still confused about how they connect.
+  // nearing the bottom of the file is personal relations each entry begins with @Fx@
+  // relations are stated as:
+    // HUSB == husband
+    // WIFE == wife
+    // CHIL == child
+    // _FREL Natural == father relation is natural
+    // _MREL Natural == mother relation is natural
+      // if these are not stated it could mean that the parental relation is not natural. however there is no information to determine otherwise
+  // relations with the @Fx@ are stated by the preceding map and are determined by @Px@, which relates to their entry in the above document.
+    // i.e. 0 @P220@ INDI
+// BUT how does the @Fx@ connect with each person.
+  // more than one person will contain the same @Fx@ indicator. 
+  // may relate to @Px@ location. @Px@ = @Fx@ ???
+  // this will take some digging...this is becoming painful.
+
+
+if line contains MARR && 
+  nextline contains DATE {{{ 
+    following text upto newline
+      = Marriage Date
+  }}} && if nextline contains PLAC {{{
+    following text upto newline
+      = Marriage Location
+  }}}
+
+if the line contains `@Fx@ INDI` && 
+  the following line contains HUSB {{{
+    re-search the document for the following @Px@ and retrieve the name following the @Px@ for husband relation
+  }}} || if the line contains WIFE {{{ 
+    re-search the document for the following @Px@ and retrieve the name following the @Px@ for wife relation
+  }}} || if the line contains CHIL {{{ 
+    re-search the document for the following @Px@ and retrieve the name following the @Px@ for child relation
+  }}}  
