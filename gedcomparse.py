@@ -1,3 +1,5 @@
+#!/usr/local/bin/python
+
 import gedcom
     # don't forget to build / install gedcompy for parsing
 from datetime import datetime
@@ -21,9 +23,10 @@ def main():
     #  getDeathPlace(gedfile)
     #  getBirth(gedfile)
     #  getDeath(gedfile)
-    #  parseTime(gedfile)
+
+    parseTime(gedfile)
     #  monToNum(gedfile)
-    parseOutApprox(gedfile)
+    #  parseOutApprox(gedfile)
 
     
 ####################################################
@@ -33,54 +36,38 @@ def main():
 def parseTime(filename):
     """
     formats timestamps into ISO time
-    TODO
+
+    DATE FORMATTING KEY
+    %y = two digit year : 97 | 78 | 65
+    %Y = four digit year : 1997 | 1978 | 1842
+    %m = one/two digit month : 01 | 3 | 11
+    %b = (three letter) abbreviated month : Jan | feb | Dec
+    %B = full month name : January | February | march
+    %d = one/two digit day : 23 | 02 | 31
     """
 
-    newDate = []
-    for person in filename.individuals:
-        try:
-            if person.birth.date == None:
-                pass
-            else:
-                pass
-        except AttributeError:       
-            pass
-    for i in range(len(newDate)):
-        if(newDate[i] == None):
-            print "NO DATE RECORD"
+    birthDate, deathDate = parseOutApprox(filename)
+
+    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d %B %Y', '%d %b %Y', '%b %d, %Y', '%B %d, %Y', '%b %d %Y', '%B %Y', '%b %Y', '%Y']
+
+    for bd in birthDate:
+        if '\xe2\x80\x93' in bd:
+            date1 = int(bd[:4])
+            date2 = int(bd[-4:])
+            avgDate = (date1+date2)/2
+            print datetime.strptime(str(avgDate), '%Y')
         else:
-            print pytime.parse(newDate[i])
+            for i in dateFormat:
+                try:
+                    print datetime.strptime(bd, i)
+                except ValueError:
+                    pass
 
-
-def monToNum(filename):
-    """
-    Loop through records and replace months(as string), with months(as number)
-    TODO: loop through records and month lists to replace all months with numbers, leaving exceptions for records that do not contain months as strings.
-    """
-    bDate = []
-    for person in filename.individuals:
-        try:
-            bDate.append(person.birth.date)
-        except AttributeError:
-            pass
-    
-    for d in bDate:
-        try:
-            print datetime.strptime(d, '%m/%d/%Y')
-        except ValueError:
-            pass
-
-def arrangeDate(filename):
-    """
-    TODO
-    re-arrange dates to be formatted into ISO by PyTime
-    """
-    pass
 
 def parseOutApprox(filename):
     """
-    TODO
     remove 'abt', 'Abt', 'abt.', 'Abt.', 'Bet.', 'bet.', 'Bet', and 'bet' from dates.
+    also fix four letter month names or make any other modifications to dates
     """
     bDate = []
     dDate = []
@@ -93,7 +80,8 @@ def parseOutApprox(filename):
         except AttributeError:
             pass
    
-    approx = {'abt ': '', 'Abt ': '', 'abt. ': '', 'Abt. ': '', 'Bet. ': '', 'bet. ': '', 'Bet ': '', 'bet ': ''}
+    approx = {'abt ': '', 'Abt ': '', 'abt. ': '', 'Abt. ': '', 'Bet. ': '', 'bet. ': '', 'Bet ': '', 'bet ': '', 'Bef. ': '', 'bef. ': '', 'Bef ': '', 'bef ': '', 'Sept': 'sep'}
+
     for b in bDate:
         for i, j in approx.iteritems():
             b = b.replace(i,j)
@@ -103,10 +91,8 @@ def parseOutApprox(filename):
         for i, j in approx.iteritems():
             d = d.replace(i,j)
         newdDate.append(d)
-    
+
     return newbDate, newdDate
-    
-    # TODO: loop through file and loop through approx list to replace any approx string with empty
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 
