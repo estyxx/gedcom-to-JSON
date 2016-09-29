@@ -4,10 +4,6 @@ Parse JSON data out of a .gedcom file using gedcompy & python2.7
 >TODO:
   >>get family relations (currently only gets person data)
   
-  >>error handling for unknown data formats
-  
-  >>error handling for unknown approx strings
-
 ## Installation:
 ### Python
 <a href="http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/"> Mac Installation </a>

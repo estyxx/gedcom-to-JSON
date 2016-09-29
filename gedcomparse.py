@@ -24,7 +24,7 @@ def main():
     gedfile = gedcom.parse(args.input)
 
     ### file to write to 
-    #  jsonfile = args.output
+    jsonfile = args.output
    
     ### runs all functions and writes to file
     writeToJSONfile(gedfile)
@@ -41,13 +41,12 @@ def main():
     #  getDeathPlace(gedfile)
     #  getBirth(gedfile)
     #  getDeath(gedfile)
-    #  print parseTime(gedfile)
+    #  parseTime(gedfile)
     #  print parseOutApprox(gedfile)
     
-####################################################
-# TODO: documentation
-####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
+####################################################
+####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 
 """ ########## STATIC functions for testing purposes #########"""
@@ -62,8 +61,11 @@ def getAllInfo(filename):
         people.append(person)
 
     # loop through the the newly created list and print each record
-    for person in people:
-        print person
+    #  for person in people:
+        #  print person
+
+    # this is used for the length of the file as well
+    return people
 
 def getBirth(filename):
     """
@@ -204,8 +206,6 @@ def parseTime(filename):
     %d %b %Y = 28 Jun 1995
 
     \xe2\x80\x93 is a dash character
-
-    TODO: error handling for unknown date-types
     """
 
     birthDate = []
@@ -219,7 +219,7 @@ def parseTime(filename):
     if an error is thrown when running the file use the key from above and add the format to this list
     make sure that '%Y' is the last element of the list or everything breaks
     """
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%Y']
+    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
     for bd in bDate:
         if '\xe2\x80\x93' in bd:
@@ -232,6 +232,7 @@ def parseTime(filename):
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
             birthDate.append('"birthDate" : "null",\n"approxBirth" : "False"')
         else:
+            j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
@@ -241,7 +242,11 @@ def parseTime(filename):
                         birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : "False"')
                         break
                 except ValueError as e:
+                    j += 1
                     pass
+            if j > len(dateFormat) -1:
+                raise Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
+                
 
     for dd in dDate:
         if '\xe2\x80\x93' in dd:
@@ -254,6 +259,7 @@ def parseTime(filename):
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
             deathDate.append('"deathDate" : "null",\n"approxDeath" : "False"')
         else:
+            j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
@@ -263,7 +269,10 @@ def parseTime(filename):
                         deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : "False"')
                         break
                 except ValueError as e:
+                    j += 1
                     pass
+            if j > len(dateFormat) -1:
+                raise Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return birthDate, deathDate
 
@@ -292,29 +301,18 @@ def parseOutApprox(filename):
             dDate.append('00000')
 
     """
-    Approximation strings to be removed 
-    FORMAT: 'approx ' : ''
-        note the space after -approx-
-    -approx- will be replaced with an empty string
+    Approximation RegExp to be removed 
     """
-    approx = {'About ': '',
-            'about ': '', 
-            'ABT ': '', 
-            'abt ': '', 
-            'Abt ': '', 
-            'abt. ': '', 
-            'Abt. ': '', 
-            'Bet. ': '', 
-            'bet. ': '', 
-            'Bet ': '', 
-            'bet ': '', 
-            'BEF ': '', 
-            'Bef. ': '', 
-            'bef. ': '', 
-            'Bef ': '', 
-            'bef ': '', 
-            'Sept': 'sep'
-            }
+    abt = re.compile('abt\.? ', re.IGNORECASE) # matches 'abt', possibly followed by a '.'
+    bet = re.compile('bet\.? ', re.I) # matche 'bet', possibly followed by a '.'
+    bef = re.compile('bef\.? ', re.I) # matches 'bef', possibly followed by a '.'
+    sep = re.compile('sept', re.I) # matches 'sept'
+    be = re.compile('before ', re.I) # matches 'about'
+    a = re.compile('about ', re.I) # matches 'about'
+    e = re.compile('early ', re.I) # matches 'early'
+    s = re.compile('(?<=\d)s') # matches an 's' preceded by a number - 1800(s)
+    p = re.compile('\.(?= \d)') # matches a '.' followed by a space and a number - oct. 1995
+    q = re.compile('\?') # matches a '?'
 
     # Once the records are stored locally parse out the approximation strings
     # loop through the records and the object with the replacements to find any and all replacements
@@ -322,13 +320,31 @@ def parseOutApprox(filename):
     newdDate = []
 
     for b in bDate:
-        for i, j in approx.iteritems():
-            b = b.replace(i,j)
+        b = abt.sub('', b)
+        b = bet.sub('', b)
+        b = bef.sub('', b)
+        b = sep.sub('sep', b)
+        b = be.sub('', b)
+        b = a.sub('', b)
+        b = e.sub('', b)
+        b = s.sub('', b)
+        b = p.sub('', b)
+        b = q.sub('', b)
+
         newbDate.append(b)
     
     for d in dDate:
-        for i, j in approx.iteritems():
-            d = d.replace(i,j)
+        d = abt.sub('', d)
+        d = bet.sub('', d)
+        d = bef.sub('', d)
+        d = sep.sub('sep', d)
+        d = be.sub('', d)
+        d = a.sub('', d)
+        d = e.sub('', d)
+        d = s.sub('', d)
+        d = p.sub('', d)
+        d = q.sub('', d)
+
         newdDate.append(d)
 
     return newbDate, newdDate
