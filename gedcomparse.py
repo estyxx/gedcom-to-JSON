@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/python
 
 # import requirements for things to work
 import gedcom
@@ -11,9 +11,9 @@ import argparse
 
 # parse for arguments from the command line. input/output files or help.
 # Comment this out for testing purposes
-parser = argparse.ArgumentParser(description="Parse a *.gedcom file into *.json for use in FamilyGenie")
+parser = argparse.ArgumentParser(description="Parse a .gedcom file into .json for use in FamilyGenie")
 parser.add_argument('-i','--input', help='Input file name', required=True)
-#  parser.add_argument('-o','--output', help='Output file name', required=True)
+parser.add_argument('-o','--output', help='Output file name', required=True)
 args = parser.parse_args()
 
 def main():
