@@ -30,7 +30,7 @@ def main():
     #  writeToJSONfile(gedfile)
     
     ### test functions ###
-    #  makeJSONobject(gedfile)
+    makeJSONobject(gedfile)
 
     #  getAllInfo(gedfile)
     #  getName(gedfile)
@@ -41,7 +41,7 @@ def main():
     #  getDeathPlace(gedfile)
     #  getBirth(gedfile)
     #  getDeath(gedfile)
-    print parseTime(gedfile)
+    #  print parseTime(gedfile)
     #  print parseOutApprox(gedfile)
     
 ####################################################
