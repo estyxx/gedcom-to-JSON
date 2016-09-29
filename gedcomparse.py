@@ -27,10 +27,10 @@ def main():
     #  jsonfile = args.output
    
     ### runs all functions and writes to file
-    #  writeToJSONfile(gedfile)
+    writeToJSONfile(gedfile)
     
     ### test functions ###
-    makeJSONobject(gedfile)
+    #  makeJSONobject(gedfile)
 
     #  getAllInfo(gedfile)
     #  getName(gedfile)
