@@ -40,3 +40,4 @@ Usage: `python gedcomparse.py [-h] -i INPUT\_FILE -o OUTPUT\_FILE`
   `-i INPUT\_FILE, --input INPUT\_FILE`
   
   `-o OUTPUT\_FILE, --output OUTPUT\_FILE`
+# gedtest
