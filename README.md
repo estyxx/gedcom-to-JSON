@@ -54,6 +54,7 @@ var exec = require('child_process').exec;
 //run the process on post
 app.post('/uploads', upload, 
     function(req,res,next) {
+        // run the python parser on the gedcom file
         exec('python //run python
         path/to/gedcomparse.py //on this program
         path/to/gedcom-file.ged //using this file
