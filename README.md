@@ -55,21 +55,13 @@ var exec = require('child_process').exec;
 app.post('/uploads', upload, 
     function(req,res,next) {
         // run the python parser on the gedcom file
-        exec('python //run python
-        path/to/gedcomparse.py //on this program
-        path/to/gedcom-file.ged //using this file
-        path/to/new-json-file.json', //to this file
-        function(err) {
+        exec('python path/to/gedcomparse.py path/to/gedcom-file.ged path/to/new-json-file.json',
+function(err) {
             if(err) { 
                 console.log(err); 
             }
             // then to put the files into mongo ...
-            exec('mongoimport 
-                --db database 
-                --collection collection 
-                --type json 
-                --file path/to/json-file.json 
-                --jsonArray', 
+            exec('mongoimport --db database --collection collection --type json --file path/to/json-file.json --jsonArray', 
                 function(err) {
                     if(err) {
                         console.log(err);
