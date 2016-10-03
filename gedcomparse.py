@@ -31,10 +31,10 @@ def main():
     #  jsonfile = args.output
    
     ### runs all functions and writes to file
-    #  writeToJSONfile(gedfile)
+    writeToJSONfile(gedfile)
     
     ### test functions ###
-    makeJSONobject(gedfile)
+    #  makeJSONobject(gedfile)
 
     #  getAllInfo(gedfile)
     #  getName(gedfile)
@@ -384,8 +384,7 @@ def makeJSONobject(filename):
         else:
             json += '},\n'
     json += ']'
-    # for node print acts as a return
-    print json
+    return json
     
     """ printing for testing purposes """
     #  print "["
@@ -409,7 +408,7 @@ def writeToJSONfile(filename):
     write the created json object to the output file and save it
     """
     json = makeJSONobject(filename)
-    f = open(args.output, "w") # creat/open the output file
+    f = open(sys.argv[2], "w") # creat/open the output file
     f.write(json)
     f.close() # save
 
