@@ -24,7 +24,7 @@ app.post('/uploads', type, function(req, res, next) {
   process.stdout.on('data', function(data) {
     // console.log(data.toString());
     jsonInfo = JSON.parse(JSON.stringify(data.toString())); // parse the data into json
-    // console.log(jsonInfo);
+    console.log(jsonInfo);
     // people.insertMany(jsonInfo);
   });
 });

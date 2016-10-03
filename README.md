@@ -15,16 +15,22 @@ Parse JSON data out of a .gedcom file using gedcompy & python2.7
 ### GedcomParse
 ##### For Local use:
 Clone from this repository & move any .gedcom files into the GedComParse folder to be parsed into json.
+##### Requirements
+* python2.7
+* pip (package installer python)
+* pytime: `pip install pytime`
+* gedcompy: see below
 
 ### GedcomPy
-Clone from <a href="https://github.com/rory/gedcompy">`gedcompy`</a>
+DO NOT clone from the gedcompy git, I have made changes for this use of gedcompy
+
 navigate into the gedcompy folder and install:
 
   `cd gedcompy`
 
   `python setup.py build`
   
-  `python setup.py install`
+  `python setup.py install` - may have to use sudo
   
 ## Usage:
 * Move the gedcom file into the GedComParse folder for use.
@@ -40,4 +46,3 @@ Usage: `python gedcomparse.py [-h] -i INPUT\_FILE -o OUTPUT\_FILE`
   `-i INPUT\_FILE, --input INPUT\_FILE`
   
   `-o OUTPUT\_FILE, --output OUTPUT\_FILE`
-# gedtest
