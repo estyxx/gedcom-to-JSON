@@ -1,4 +1,10 @@
 #!/usr/bin/python
+# v. 0.3.5
+"""
+Strategy:
+    loop through each record in the source file and make a list for every field in the source file where each index of each list pertains to a singular person/record in the source file.
+    output JSON file by loop through all lists and return information formatted as JSON using string concatenation.
+"""
 
 # import requirements for things to work
 import gedcom
@@ -53,7 +59,7 @@ def main():
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 
-""" ########## STATIC functions for testing purposes #########"""
+""" ########## STATIC functions for testing purposes ######### """
 
 def getAllInfo(filename):
     """
@@ -109,7 +115,7 @@ def getBirthPlace(filename):
     get all of the birth place records from the GEDCOM file
 
     # loop through people from the input file, store their Birth Place records and return the list of records
-    # if there is no Birth Place record, the list will store the value as null
+    # if there is no Birth Place record (AttributeError), the list will store the value as null
     """
     birthPlace = []
     for person in filename.individuals:
@@ -180,6 +186,7 @@ def getName(filename):
     get the first and last name from the GEDCOM file
 
     # store the first and last names of each person in individual lists and return
+    # gedcom format does not have a middle name available
     """
     firstName = []
     lastName = []
@@ -209,9 +216,10 @@ def parseTime(filename):
     %m/%y/%d = 06/95/28
     %d %b %Y = 28 Jun 1995
 
-    \xe2\x80\x93 is a dash character
+    '\xe2\x80\x93' is a dash character (all 3 hex together represents a dash -- the full string)
     """
 
+    # initilaze birthDate/deathDate lists
     birthDate = []
     deathDate = []
 
@@ -227,19 +235,21 @@ def parseTime(filename):
 
     for bd in bDate:
         if '\xe2\x80\x93' in bd:
-            # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
+            # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
             avgDate = (date1+date2)/2
             birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBirth" : "True"')
         elif '00000' in bd:
-            # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
+            # if the date is stored as 00000 that means that it did not exist while parsing through to remove the approximation strings
             birthDate.append('"birthDate" : "null",\n"approxBirth" : "False"')
         else:
-            j = 0
+            j = 0 # counter for error handling
             for i in dateFormat:
+                # loop through the dateFarmats, try to parse the date - expect errors but if the counter goes beyond the length of dateFormat, then the date didn't match any known format strings.
                 try:
                     if i == '%Y':
+                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
                         birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : "True"')
                         break
                     else:
@@ -249,7 +259,9 @@ def parseTime(filename):
                     j += 1
                     pass
             if j > len(dateFormat) -1:
-                raise Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
+                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
+                birthDate.append('"birthDate" : "null",\n"approxBirth" : "False"')
+                print Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
                 
 
     for dd in dDate:
@@ -267,6 +279,7 @@ def parseTime(filename):
             for i in dateFormat:
                 try:
                     if i == '%Y':
+                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
                         deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : "True"')
                         break
                     else:
@@ -276,7 +289,9 @@ def parseTime(filename):
                     j += 1
                     pass
             if j > len(dateFormat) -1:
-                raise Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
+                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
+                deathDate.append('"deathDate" : "null",\n"approxDeath" : "False"')
+                print Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return birthDate, deathDate
 
@@ -320,28 +335,34 @@ def parseOutApprox(filename):
 
     # Once the records are stored locally parse out the approximation strings
     # loop through the records and the object with the replacements to find any and all replacements
+
+    # initialize new birthdate/deathdate list
     newbDate = []
     newdDate = []
 
+
+    # loop through birth dates
     for b in bDate:
         b = abt.sub('', b)
         b = bet.sub('', b)
         b = bef.sub('', b)
-        b = sep.sub('sep', b)
+        b = sep.sub('sep', b) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
         b = be.sub('', b)
         b = a.sub('', b)
         b = e.sub('', b)
         b = s.sub('', b)
         b = p.sub('', b)
         b = q.sub('', b)
-
+        
+        # append parsed birthdate to new birth date list
         newbDate.append(b)
-    
+
+    # loop through death dates
     for d in dDate:
         d = abt.sub('', d)
         d = bet.sub('', d)
         d = bef.sub('', d)
-        d = sep.sub('sep', d)
+        d = sep.sub('sep', d) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
         d = be.sub('', d)
         d = a.sub('', d)
         d = e.sub('', d)
@@ -349,6 +370,7 @@ def parseOutApprox(filename):
         d = p.sub('', d)
         d = q.sub('', d)
 
+        # append parsed deathdate to new death date list
         newdDate.append(d)
 
     return newbDate, newdDate
@@ -402,6 +424,7 @@ def makeJSONobject(filename):
         #  else:
             #  print "},"
     #  print "]"
+
 
 def writeToJSONfile(filename):
     """
