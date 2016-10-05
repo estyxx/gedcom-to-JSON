@@ -1,77 +1,15 @@
-# GedcomParse
-Parse JSON data out of a .gedcom file using gedcompy & python2.7
+gedcompy
+========
 
->TODO:
-  >>get family relations (currently only gets person data)
-  
-## Installation:
-### Python
-<a href="http://www.pyladies.com/blog/Get-Your-Mac-Ready-for-Python-Programming/"> Mac Installation </a> <br>
-<a href="http://www.howtogeek.com/197947/how-to-install-python-on-windows/"> Windows Installation </a> <br>
-<a href="http://docs.python-guide.org/en/latest/starting/install/linux/"> Linux Installation </a>
-### GedcomPy
-DO NOT clone from the gedcompy git, I have made changes for this use of the library
-
-###### Installation:
-
-navigate into the gedcompy folder and install:
-
-  `cd gedcompy` <br>
-  `python setup.py build` <br>
-  `python setup.py install` - may have to use sudo
-
-### GedcomParse
-##### For Local use:
-Clone from this repository & move any .ged files into the GedComParse folder to be parsed into json.
-##### Requirements
-* `python2.7` : see above
-* <a href='https://pypi.python.org/pypi/pip'>`pip`</a> (package installer python)
-* <a href='https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior'>`datetime`</a> 
-* `gedcompy` : see below
-
-##### Node Modules
-* `child-process` - running python from node
-* <a href='https://github.com/expressjs/multer'>`multer`</a> - for uploading files
-* `body-parser`
-* `express`
-* `mongoose`
+<img src='https://travis-ci.org/rory/gedcompy.svg?branch=master' />
+<img src='https://coveralls.io/repos/rory/gedcompy/badge.png?branch=master' />
 
 
-  
-## Usage (from terminal):
-* Move the gedcom file into the GedComParse folder for use.
+Python library to parse and work with <a href='https://en.wikipedia.org/wiki/GEDCOM'>`GEDCOM`</a> (genealogy/family tree) files.
 
-Usage: `python gedcomparse.py [-h] INPUT_FILE.ged OUTPUT_FILE.json`
+It's goal is to support GEDCOM v5.5 (<a href='http://homepages.rootsweb.ancestry.com/~pmcbride/gedcom/55gctoc.htm'>`Specification Here`</a>).
 
-> Parse a .gedcom file into .json for use in FamilyGenie
-
-## Usage (from Node server):
-```javascript
-// multer options
-var upload = multer({ dest : 'uploads/' });
-// executable child process:
-var exec = require('child_process').exec;
-//run the process on post
-app.post('/uploads', upload, 
-    function(req,res,next) {
-        // run the python parser on the gedcom file
-        exec('python path/to/gedcomparse.py path/to/gedcom-file.ged path/to/new-json-file.json',
-function(err) {
-            if(err) { 
-                console.log(err); 
-            }
-            // then to put the files into mongo ...
-            exec('mongoimport --db database --collection collection --type json --file path/to/json-file.json --jsonArray', 
-                function(err) {
-                    if(err) {
-                        console.log(err);
-                    }
-            });
-        });
-    res.redirect('/');
-});
-
-```
+This is released under the GNU General Public Licence version 3 (or at your option, a later version). See the file `LICENCE` for more.
 
 ## gedcompy Usage:
 gedcompy parses out the records of each person and stores them as nested objects, accesible through dot notation.
@@ -138,33 +76,23 @@ To specify individual record types:
 ```
 The AttributeError is thrown when a record of that type does not exist, and by default will NOT pass onto the next record.
 
-To bypass this error use a try/except case to pass over records that don't exist
 
-```python
->>> for person in gedfile.individuals:
-...     try:
-...         print person.birth.place
-...     except AttributeError:
-...        print "There is no birth place record for this person"
-# There is no birth place record for this person
-# Brooklyn, New York City, New York, USA
-```
 ##### current available use cases
 ```
-person.birth              # birth info
+person.birth              # class - birth
 person.birth.place        # string
 person.birth.date         # string
-person.death              # death info
+person.death              # class - death
 person.death.place        # string
 person.death.date         # string
-person.name               # return first and last name as a tuple
-person.father             # father full info
-person.mother             # mother full info
-person.parents            # list both parents full info index[0] is father index[1] is mother
-person.aka                # list 'also known as' name
-person.gender             # string : 'M' or 'F'
-person.sex                # same as gender
-person.id                 # @P12@
+person.name               # tuple - firstname, lastname
+person.father             # class - father
+person.mother             # class - mother
+person.parents            # list - contaning father and mother class
+person.aka                # list - 'also known as' name
+person.gender             # string - 'M' or 'F'
+person.sex                # string - ''     ''
+person.id                 # string - @P12@
 person.is_female          # boolean
 person.is_male            # boolean
 person.note               # string
@@ -232,17 +160,53 @@ Use cases for partners:
 >>> for family in gedfile.families:
 ...     print family.partners[0].value
 # @P5@
+
+>>> for family in gedfile.families:
+...     print family.husband
+...     print family.wife
+# Husband(1, 'HUSB', '@P5@')
+# Wife(1, 'WIFE', '@P1@')
 ```
+
+Use cases for children
 
 ##### current available use cases
 
 ```
-family.id           # string '@F49@'
-family.tag          # string 'FAM'
-family.partners     # list 
+family.id                       # string '@F49@'
+family.tag                      # string 'FAM'
+family.partners                 # list 
+family.wife                     # class - wife
+family.husband                  # class - husband
+family.children                 # list
+family.children.father_relation # String 'Natural'
+family.children.mother_relation # string 'Natural'
 ```
 
-### dates
+### Error Handling
+By default, if a record doesn't exist an error will be raised and will not continue onto the rest of the records. This is on purpose, but can by bypassed by using try/except cases. The most common errors that are raised are IndexError and AttributeError
+
+```python
+>>> for person in gedfile.individuals:
+...     try:
+...         print person.birth.place
+...     except AttributeError:
+...        print "There is no birth place record for this person"
+# There is no birth place record for this person
+# Brooklyn, New York City, New York, USA
+```
+```python
+>>> for family in gedfile.families:
+...     try:
+...         print family.marriage
+...     except IndexError as e:
+...         print "no record: ", e
+# Marriage(1, 'MARR', [Element(2, 'DATE', '08 Aug 1854')])
+# no record: IndexError: list index out of range
+# Marriage(1, 'MARR', [Element(2, 'DATE', '1954')])
+```
+
+### Dates
 Dates are user input and can vary wildly in formatting. There are also approximate dates that cannot be formatted. 
 These approximate dates can be stripped out using `re` or just `str.replace()`
 
@@ -258,3 +222,10 @@ Using pythons <a href='https://docs.python.org/2/library/datetime.html'>`datetim
 ...             pass
 ```
 To discover more dates add a counter and increment as it passes through the dateFormat list. If the counter is higher than the length of the list -1 raise an exception printing the date that broke the program.
+
+
+Contributing
+------------
+
+Run all unitttests with `tox`.
+

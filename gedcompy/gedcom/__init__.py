@@ -570,6 +570,17 @@ class Family(Element):
         """
         return self.get_list("HUSB") + self.get_list("WIFE")
 
+    @ property
+    def marriage(self):
+        """
+        Return an object containing marriage records.
+        
+        :return: marriage object
+        :raises IndexError: If there is no record
+        """
+        marriage_record =  self.get_list("MARR")
+        return marriage_record[0]
+
 
 class Spouse(Element):
     """Generic base class for HUSB/WIFE."""

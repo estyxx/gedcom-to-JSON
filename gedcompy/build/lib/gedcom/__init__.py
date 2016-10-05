@@ -571,6 +571,25 @@ class Family(Element):
         return self.get_list("HUSB") + self.get_list("WIFE")
 
 
+    @property
+    def marriage(self):
+        """
+        Return a list of marriage records. all MARR child elements.
+
+        :rtype: list of Marriage information
+        """
+        return self.get_list("MARR")
+
+    @property
+    def husband(self):
+        return self.get_list("HUSB")
+
+    @property
+    def wife(self):
+        return self.get_list("WIFE")
+
+
+
 class Spouse(Element):
     """Generic base class for HUSB/WIFE."""
 

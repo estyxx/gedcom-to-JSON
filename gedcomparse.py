@@ -1,9 +1,12 @@
 #!/usr/bin/python
 # v. 0.3.5
+# gedcomParsePeople
 """
+Parse a gedcom file into JSON for a persons records 
 Strategy:
     loop through each record in the source file and make a list for every field in the source file where each index of each list pertains to a singular person/record in the source file.
     output JSON file by loop through all lists and return information formatted as JSON using string concatenation.
+
 """
 
 # import requirements for things to work
@@ -11,31 +14,21 @@ import gedcom
     # don't forget to build / install gedcompy for parsing
     ## in the gedcompy folder, run `python setup.py build && python setup.py install`
 from datetime import datetime
-from pytime import pytime
 import re
-import argparse
 import sys
 
-#  # parse for arguments from the command line. input/output files or help.
-#  # for command line use
-#  #  parser = argparse.ArgumentParser(description="Parse a .gedcom file into .json for use in FamilyGenie")
-#  #  parser.add_argument('-i','--input', help='Input file name', required=True)
-#  #  parser.add_argument('-o','--output', help='Output file name', required=True)
-#  #  args = parser.parse_args()
-
+# parse for arguments from the command line. input/output 
 # for use with node
-args = sys.argv[1]
+argIn = sys.argv[1]
+argOut = sys.argv[2]
 
 def main():
     """
     the main function (this one) is the only function that runs when the program is called to run
     """
     ### parse gedcom file for information
-    gedfile = gedcom.parse(args)
+    gedfile = gedcom.parse(argIn)
 
-    ### file to write to 
-    #  jsonfile = args.output
-   
     ### runs all functions and writes to file
     writeToJSONfile(gedfile)
     
@@ -56,6 +49,7 @@ def main():
     
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
+# TODO: build and run tests
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 
@@ -431,7 +425,7 @@ def writeToJSONfile(filename):
     write the created json object to the output file and save it
     """
     json = makeJSONobject(filename)
-    f = open(sys.argv[2], "w") # creat/open the output file
+    f = open(argOut, "w") # creat/open the output file
     f.write(json)
     f.close() # save
 
