@@ -10,7 +10,9 @@ Parse JSON data out of a .gedcom file using gedcompy & python2.7
 <a href="http://www.howtogeek.com/197947/how-to-install-python-on-windows/"> Windows Installation </a> <br>
 <a href="http://docs.python-guide.org/en/latest/starting/install/linux/"> Linux Installation </a>
 ### GedcomPy
-DO NOT clone from the gedcompy git, I have made changes for this use of the library
+
+clone from 
+<a href="https://github.com/KingEdwardI/gedcompy">`gedcompy`</a>, my repository
 
 ###### Installation:
 
@@ -75,10 +77,6 @@ function(err) {
 
 gedcompy
 ========
-
-<img src='https://travis-ci.org/rory/gedcompy.svg?branch=master' />
-<img src='https://coveralls.io/repos/rory/gedcompy/badge.png?branch=master' />
-
 
 Python library to parse and work with <a href='https://en.wikipedia.org/wiki/GEDCOM'>`GEDCOM`</a> (genealogy/family tree) files.
 
@@ -256,6 +254,31 @@ family.husband                  # class - husband
 family.children                 # list
 family.children.father_relation # String 'Natural'
 family.children.mother_relation # string 'Natural'
+```
+
+### Residence
+Residence records
+
+```python
+>>> for person in gedfile.individuals
+...			print person.residence
+# Residence(1, 'RESI', 'Marital Status: SingleRelation to Head of House: Son', [Element(2, 'DATE', '1910'), Element(2, 'PLAC', 'Lowell Ward 6, Middlesex, Massachusetts, USA'), Source(2, 'SOUR', '@S1002094821@', [Element(3, 'PAGE', 'Year: 1910; Census Place: Lowell Ward 6, Middlesex, Massachusetts; Roll: T624_600; Page: 33A; Enumeration District: 0864; FHL microfilm: 1374613'), Element(3, '_APID', '1,7884::108099427')])])
+>>> for person in gedfile.individuals
+...			print person.residence.date
+...			print person.residence.source
+# 1910
+# @S100243564@
+```
+
+##### current available use cases
+```
+residence.date
+residence.id
+residence.note
+residence.parent_id
+residence.place
+residence.source
+residence.value
 ```
 
 ### Error Handling
