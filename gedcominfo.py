@@ -12,31 +12,41 @@ argIn = sys.argv[1]
 # argOut = sys.argv[2]
 
 def main():
-    pass
     gedfile = gedcom.parse(argIn)
 
     # getPersonId(gedfile)
     # getNotes(gedfile)
-    getResidence(gedfile)
-    
+    # getResidence(gedfile)
+    getArrivalEvent(gedfile)
+    # getIndividualSource(gedfile)
+    # getDivorceEvent(gedfile)
+    # getBurialEvent(gedfile)
+    # makeJSONobject(gedfile)
+    # writeToJSONfile(gedfile)
 
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
-# TODO: everything
+# TODO:
+# getArrivalEvent
+# getIndividualSource
+# getDivorceEvent
+# getBurialEvent
+# makeJSONobject
+# writeToJSONfile
+# second argument
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 
 def getPersonId(filename):
-    """
-    get individual person ID 
-    """
+    """ get individual person ID """
     PiD = []
     for person in filename.individuals:
         PiD.append(person.id)
     return PiD
 
 def getResidence(filename):
+    """ get individual residence information """
     residenceDate = [] 
     residencePlace = []
     residenceSource = []
@@ -79,6 +89,18 @@ def getPage(filename):
     pass
 
 def getArrivalEvent(filename):
+    # TODO
+    pass
+
+def getBurialEvent(filename):
+    # TODO
+    pass
+
+def getDivorceEvent(filename):
+    # TODO
+    pass
+
+def getIndividualSource(filename):
     # TODO
     pass
 
