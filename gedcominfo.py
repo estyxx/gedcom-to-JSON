@@ -15,8 +15,9 @@ def main():
     pass
     gedfile = gedcom.parse(argIn)
 
-    #  getPersonId(gedfile)
-    getNotes(gedfile)
+    # getPersonId(gedfile)
+    # getNotes(gedfile)
+    getResidence(gedfile)
     
 
 
@@ -35,19 +36,45 @@ def getPersonId(filename):
         PiD.append(person.id)
     return PiD
 
-def getNotes(filename):
+def getResidence(filename):
+    residenceDate = [] 
+    residencePlace = []
+    residenceSource = []
+    residencePage = []
     for person in filename.individuals:
-        print person
+        try:
+            residenceDate.append(person.residence.date)
+        except IndexError:
+            pass
+    for person in filename.individuals:
+        try:
+            residencePlace.append(person.residence.place)
+        except IndexError:
+            pass
+    for person in filename.individuals:
+        try:
+            residenceSource.append(person.residence.source.value)
+        except IndexError:
+            pass
+    for person in filename.individuals:
+        try:
+            residencePage.append(person.residence.source.page)
+        except IndexError:
+            pass
+        
+    for i in residencePage:
+        print i
+        
+
+def getNotes(filename):
+    # TODO
+    pass
 
 def getSource(filename):
     # TODO
     pass
 
 def getPage(filename):
-    # TODO
-    pass
-
-def getResidence(filename):
     # TODO
     pass
 
