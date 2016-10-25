@@ -15,9 +15,9 @@ def main():
     gedfile = gedcom.parse(argIn)
 
     # getPersonId(gedfile)
-    # getNotes(gedfile)
+    # getIndiSource(gedfile)
     # getResidence(gedfile)
-    getArrivalEvent(gedfile)
+    # getArrivalEvent(gedfile)
     # getIndividualSource(gedfile)
     # getDivorceEvent(gedfile)
     # getBurialEvent(gedfile)
@@ -76,9 +76,22 @@ def getResidence(filename):
         print i
         
 
-def getNotes(filename):
-    # TODO
-    pass
+def getIndiSource(filename):
+    sourceId = []
+    sourceRef = []
+    for person in filename.individuals:
+        try:
+            sourceId.append(person.source.value)
+        except IndexError:
+            pass
+    for person in filename.individuals:
+        try:
+            sourceRef.append(person.source.data.reference)
+        except IndexError:
+            pass
+
+    for i in sourceRef:
+        print i
 
 def getSource(filename):
     # TODO
