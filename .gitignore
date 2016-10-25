@@ -1,12 +1,10 @@
 *.swp
 data
 used
-*.ged
 *.json
 node_modules
 data
 uplodnod
 uploads
-samples
 schemas
 ancestry
