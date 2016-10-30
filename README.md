@@ -11,8 +11,8 @@ Parse JSON data out of a .gedcom file using gedcompy & python2.7
 <a href="http://docs.python-guide.org/en/latest/starting/install/linux/"> Linux Installation </a>
 ### GedcomPy
 
-clone from 
-<a href="https://github.com/KingEdwardI/gedcompy">`gedcompy`</a>, my repository
+Download with this file, and follow the installation steps.
+I have made small but important changes to gedcompy, for specific use with this program.
 
 ###### Installation:
 

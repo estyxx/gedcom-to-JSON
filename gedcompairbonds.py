@@ -13,17 +13,18 @@ import re
 from datetime import datetime
 
 argIn = sys.argv[1]
+# argOut = sys.argv[2]
 
 def main():
 
     gedfile = gedcom.parse(argIn)
-    writeToJSONfile(gedfile)
+    # writeToJSONfile(gedfile)
 
     #  getPartners(gedfile)
     #  getMarriageDate(gedfile)
     #  parseOutApprox(gedfile)
     #  parseTime(gedfile)
-    #  print makeJSONobject(gedfile)
+    print makeJSONobject(gedfile)
     #  print makeLength(gedfile)
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
@@ -47,11 +48,11 @@ def getPartners(filename):
     for marriage in filename.families:
         try:
             husband.append('"personOne_id" : "' + marriage.husband.value + '",\n')
-        except IndexError:
+        except AttributeError:
             husband.append('"personOne_id" : "null",\n')
         try:
             wife.append('"personTwo_id" : "' + marriage.wife.value + '",\n')
-        except IndexError:
+        except AttributeError:
             wife.append('"personTwo_id" : "null",\n')
     return husband, wife 
 
@@ -132,7 +133,7 @@ def parseOutApprox(filename):
     for family in filename.families:
         try:
             marriageDate.append(family.marriage.date)
-        except IndexError:
+        except AttributeError:
             marriageDate.append('00000')
 
     """
