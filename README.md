@@ -11,10 +11,11 @@ Parse JSON data out of a .gedcom file using gedcompy & python2.7
 <a href="http://docs.python-guide.org/en/latest/starting/install/linux/"> Linux Installation </a>
 ### GedcomPy
 
-Download with this file, and follow the installation steps.
-I have made small but important changes to gedcompy, for specific use with this program.
+Download with this repository, and follow the installation steps.
 
-###### Installation:
+###### I have made small but important changes to gedcompy, for specific use with this program.
+
+##### Installation:
 
 navigate into the gedcompy folder and install:
 
@@ -108,7 +109,7 @@ The file as a whole is a generator object.
 # Individual(0, 'INDI', '@P2@', [Element(1, 'NAME', 'Jane /Doe/'), Element(1, 'SEX', 'M'), Birth(1, 'BIRT', [Element(2, 'DATE', '06 nov 1946'), Element(2, 'PLAC', 'Brooklyn, New York City, New York, USA')]), Element(1, 'FAMS', '@F1@')])
 ```
 
-### Individuals
+## Individuals ['INDI']
 Cannot access individuals as a whole:
 
 ```python
@@ -177,7 +178,7 @@ person.tag                # string tagname : 'INDI', 'FAM', etc
 
 #### Advanced usage
 
-Get the name of a person and parents of that person:
+##### Person + Parents
 
 ```python
 >>> for person in gedfile.individuals:
@@ -195,8 +196,24 @@ Get the name of a person and parents of that person:
 # ('John', 'Doe') ('Jack', 'Doe') ('Jane', 'Doe')
 # ('Jenny', 'Doe') ('Jack', 'Doe') ('Jane', 'Doe')
 ```
+##### get\_by\_id()
+ex. only get people with event records.
 
-### Families
+```python
+>>> personId = []
+>>> for person in gedfile.individuals:
+...     for event in person.happening:
+...         try:
+...             personId.append(event.parent.id)
+...         except AttributeError:
+...             pass # because we don't care about people that don't have event records
+>>> for pid in personId:
+...     print person.get_by_id(pid)
+# prints an individual's records. 
+```
+
+
+## Families ['FAMC']/['FAMS']
 
 Family records are accessed the same way as individuals
 
@@ -255,8 +272,36 @@ family.children                 # list
 family.children.father_relation # String 'Natural'
 family.children.mother_relation # string 'Natural'
 ```
+## Sources
 
-### Residence
+This gets into more deeply nested elements.
+Sources can also be nested within an individuals element as well as recorded for the individual themself. 
+
+```python
+>>> for person in gedfile.individuals:
+... 		print person.source
+#  Source(1, 'SOUR', '@S-357352754@', [Page(2, 'PAGE', 'Ancestry Family Tree'), Data(2, 'DATA', [Reference(3, 'TEXT', 'http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12345678&pid=21')])])
+>>>for person in gedfile.individuals:
+... 		print person.source.page
+... 		print person.source.data
+... 		print person.source.data.text
+# Ancestry Family Tree
+# Data(2, 'DATA', [Reference(3, 'TEXT', 'http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12345678&pid=21')])
+# http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12345678&pid=21
+```
+
+##### current available use cases
+```
+source.value
+source.page
+source.data
+source.data.text
+```
+
+
+## Events
+
+### Residence ['RESI']
 Residence records
 
 ```python
@@ -279,6 +324,66 @@ residence.parent_id
 residence.place
 residence.source
 residence.value
+```
+
+### Happenings ['EVEN']
+happenings are an extension of the Events class, and include the Source class
+
+```python
+>>> for person in gedfile.individuals:
+...     print person.happening
+# Happening(1, 'EVEN', [Type(2, 'TYPE', 'Arrival'), Date(2, 'DATE', '1901'), Source(2, 'SOUR', '@S10020312532@', [Page(3, 'PAGE', 'Year: 1910; Census Place: Lowell Ward 6, Middlesex, Massachusetts; Roll: T624_600; Page: 33A; Enumeration District: 0864; FHL microfilm: 13764365'), Element(3, '_APID', '1,7884::108024632')])])
+>>> for person in gedfile.individuals:
+...     print person.happening.type
+# Arrival
+```
+
+##### current available use cases
+```
+happening.type      # 'Arrival'
+happening.date      # '1901'
+happening.place     # 'Lowell Ward 6, Middlesex, Massachusetts'
+happening.source    # Source class
+```
+
+### Burials ['BURI']
+Burials are an extension of the Events class, and include the Source class.
+
+```python
+>>> for person in gedfile.individuals:
+...     print person.burial
+# Burial(1, 'BURI', [Place(2, 'PLAC', "St John's Episcopal Church, Baltimore County, Maryland, USA"), Source(2, 'SOUR', '@S1002127058@', [Element(3, '_APID', '1,60525::5944170')])])
+>>> for person in gedfile.individuals:
+...     print person.burial.place
+# St John's Episcopal Church, Baltimore County, Maryland, USA
+```
+
+##### current available use cases
+
+```
+burial.place
+burial.date
+burial.source
+```
+
+### Divorce ['DIV']
+Divorces are an extension of the Events class, and include the Source class
+
+```python
+>>> for person in gedfile.individuals:
+...     print person.divorce
+# Divorce(1, 'DIV', [Date(2, 'DATE', 'About 1 Mar 1974'), Place(2, 'PLAC', 'Virginia, USA'), Source(2, 'SOUR', '@S-357317725@', [Note(3, 'NOTE', 'http://trees.ancestry.com/rd?f=sse&db=general-ti=0&indiv=try&gss=pt'), Data(3, 'DATA', [Text(4, 'TEXT', 'divorce date:  About 1 Mar 1974 divorce place:  Virginia, USA birth date:  01 Oct 1941 birth place:  Suffolk, Independent Cities, Virginia, USA Name: Jenny Ann Todd Holladay Todd  marriage date:  1 No', [Element(5, 'CONC', 'v 1962')])]), Element(3, '_APID', '1,9280::1916432')])])
+>>> for person in gedfile.individuals:
+...     print divorce.date
+# About 1 Mar 1974
+```
+
+##### current available use cases
+
+```
+divorce.place
+divorce.date
+divorce.source
 ```
 
 ### Error Handling
@@ -320,10 +425,3 @@ Using pythons <a href='https://docs.python.org/2/library/datetime.html'>`datetim
 ...             pass
 ```
 To discover more dates add a counter and increment as it passes through the dateFormat list. If the counter is higher than the length of the list -1 raise an exception printing the date that broke the program.
-
-
-Contributing
-------------
-
-Run all unitttests with `tox`.
-

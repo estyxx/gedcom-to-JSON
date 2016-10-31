@@ -29,10 +29,7 @@ def main():
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
 # TODO:
-# docs
 # tests
-# json formatting for booleans and null.
-# make json object may need its for loops wrapped in try/catch for IndexError using personId as the length
 # TODO: handle multiple source information, this may still produce logic errors which will result in incorrect source information for individuals
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
@@ -253,6 +250,7 @@ def parseOutApprox(filename):
     # Once the records are stored locally parse out the approximation strings
     # loop through the records and the object with the replacements to find any and all replacements
 
+
     # loop through dates
 
     """ RESIDENCE DATE """
@@ -364,6 +362,12 @@ def getIndiSource(filename):
     return personSourceId, sourceId, sourceRef, sourcePage
 
 def getResidenceDate(filename):
+    """
+    get the dates of residnce to be parsed into ISO format.
+
+    :returns: residence dates as strings in a list
+    :rtype: list
+    """
     personId = []
     residenceDate = []
 
@@ -441,6 +445,12 @@ def getResidence(filename):
     return personResidenceId, residenceInfo, residencePlace, residenceSource, residencePage
 
 def getEventDate(filename):
+    """
+    get event dates to be parsed into ISO time 
+
+    :returns: event dates as strings in a list
+    :rtype: list
+    """
     eventDate = []
     personId = []
 
@@ -527,6 +537,12 @@ def getEvent(filename):
     return personEventId, eventType, eventPlace, eventInfo, eventSourceId, eventSourcePage
 
 def getBurialDate(filename):
+    """
+    get burial dates to be parsed into ISO time
+
+    :returns: burial dates as strings in a list
+    :rtype: list
+    """
     burialDate = []
     for person in filename.individuals:
         if person.burial == None:
@@ -579,6 +595,12 @@ def getBurialEvent(filename):
     return personBurialId, burialPlace, burialSourceId
 
 def getDivorceDate(filename):
+    """
+    get divorce dates to be parsed into ISO time
+
+    :returns: divorce dates as strings in a list
+    :rtype: list
+    """
     divorceDate = []
     for person in filename.individuals:
         try:
@@ -757,8 +779,6 @@ def writeToJSONfile(filename):
     f = open(argOut, "w") # create file
     f.writelines([indiSource,resiSource,evenSource,buriSource,divSource])
     f.close() # save file
-
-    pass
 
 if __name__ == "__main__":
     main()
