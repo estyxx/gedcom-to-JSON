@@ -95,29 +95,29 @@ def parseTime(filename):
             date1 = int(rd[:4])
             date2 = int(rd[-4:])
             avgDate = (date1+date2)/2
-            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxResidence" : true')
+            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxResidence" : true,')
         elif years.match(rd):
-            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxResidence" : true')
+            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxResidence" : true,')
         elif '00000' in rd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            residenceDate.append('"residenceDate" : null,\n"approxResidence" : false')
+            residenceDate.append('"residenceDate" : null,\n"approxResidence" : false,')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : true')
+                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : true,')
                         break
                     else:
-                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : false')
+                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : false,')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                residenceDate.append('"residenceDate" : null,\n"approxResidence" : false')
+                residenceDate.append('"residenceDate" : null,\n"approxResidence" : false,')
                 print Exception(rd, "residenceDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
 
     """ BURIAL DATE """
@@ -127,29 +127,29 @@ def parseTime(filename):
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
             avgDate = (date1+date2)/2
-            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBurial" : true')
+            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBurial" : true,')
         elif years.match(bd):
-            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(bd[:4]), '%Y')) + '",\n"approxBurial" : true')
+            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(bd[:4]), '%Y')) + '",\n"approxBurial" : true,')
         elif '00000' in bd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            burialDate.append('"burialDate" : null,\n"approxBurial" : false')
+            burialDate.append('"burialDate" : null,\n"approxBurial" : false,')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : true')
+                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : true,')
                         break
                     else:
-                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : false')
+                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : false,')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                burialDate.append('"burialDate" : null,\n"approxResidence" : false')
+                burialDate.append('"burialDate" : null,\n"approxResidence" : false,')
                 print Exception(bd, "burialDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
 
     """ DIVORCE DATE """
@@ -159,29 +159,29 @@ def parseTime(filename):
             date1 = int(dd[:4])
             date2 = int(dd[-4:])
             avgDate = (date1+date2)/2
-            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDivorce" : true')
+            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDivorce" : true,')
         elif years.match(dd):
-            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(dd[:4]), '%Y')) + '",\n"approxDivorce" : true')
+            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(dd[:4]), '%Y')) + '",\n"approxDivorce" : true,')
         elif '00000' in dd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            divorceDate.append('"divorceDate" : null,\n"approxDivorce" : false')
+            divorceDate.append('"divorceDate" : null,\n"approxDivorce" : false,')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : true')
+                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : true,')
                         break
                     else:
-                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : false')
+                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : false,')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                divorceDate.append('"divorceDate" : null,\n"approxResidence" : false')
+                divorceDate.append('"divorceDate" : null,\n"approxResidence" : false,')
                 print Exception(dd, "divorceDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
 
     """ EVENT DATE """
@@ -191,29 +191,29 @@ def parseTime(filename):
             date1 = int(ed[:4])
             date2 = int(ed[-4:])
             avgDate = (date1+date2)/2
-            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxEvent" : true')
+            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxEvent" : true,')
         elif years.match(ed):
-            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(ed[:4]), '%Y')) + '",\n"approxEvent" : true')
+            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(ed[:4]), '%Y')) + '",\n"approxEvent" : true,')
         elif '00000' in ed:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            eventDate.append('"eventDate" : null,\n"approxEvent" : false')
+            eventDate.append('"eventDate" : null,\n"approxEvent" : false,')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : true')
+                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : true,')
                         break
                     else:
-                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : false')
+                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : false,')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                eventDate.append('"eventDate" : null,\n"approxResidence" : false')
+                eventDate.append('"eventDate" : null,\n"approxResidence" : false,')
                 print Exception(ed, "eventDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
 
     return residenceDate, burialDate, divorceDate, eventDate
@@ -397,6 +397,7 @@ def getResidence(filename):
     # declare lists for the different types of information to be returned
     personId = []
     personResidenceId = []
+    residenceInfo = []
     residencePlace = []
     residenceSource = []
     residencePage = []
@@ -418,6 +419,10 @@ def getResidence(filename):
         for residence in person.get_by_id(pid).residence:
             personResidenceId.append('"personId" : "' + pid + '",')
             try:
+                residenceInfo.append('"residenceInfo" : "' + residence.value + '",')
+            except AttributeError:
+                residenceInfo.append('"residenceInfo" : null')
+            try:
                 residencePlace.append('"residencePlace" : "' + residence.place + '",')
             except AttributeError:
                 residencePlace.append('"residencePlace" : null,')
@@ -433,7 +438,7 @@ def getResidence(filename):
                 except AttributeError:
                     residencePage.append('"residencePage" : null')
 
-    return personResidenceId, residencePlace, residenceSource, residencePage
+    return personResidenceId, residenceInfo, residencePlace, residenceSource, residencePage
 
 def getEventDate(filename):
     eventDate = []
@@ -654,7 +659,7 @@ def makeJSONobject(filename):
     personSourceId, sourceId, sourceRef, sourcePage = getIndiSource(filename)
     personLength = len(personSourceId)
     # Residence info
-    residenceId, residencePlace, residenceSource, residencePage = getResidence(filename)
+    residenceId, residenceInfo, residencePlace, residenceSource, residencePage = getResidence(filename)
     resiLength = len(residenceId)
     # Misc Events info
     personEventId, eventType, eventPlace, eventInfo, eventSourceId, eventSourcePage = getEvent(filename)
@@ -681,13 +686,14 @@ def makeJSONobject(filename):
             personSource += '}\n'
         else:
             personSource += '},\n'
-    personSource += ']'
+    personSource += '],'
 
     residence = ''
     residence += '[\n'
     for i in range(resiLength):
         residence += '{\n'
         residence += residenceId[i] + '\n'
+        residence += residenceInfo[i] + '\n'
         residence += residenceDate[i] + '\n'
         residence += residencePlace[i] + '\n'
         residence += residenceSource[i] + '\n'
@@ -696,7 +702,7 @@ def makeJSONobject(filename):
             residence += '}\n'
         else:
             residence += '},\n'
-    residence += ']'
+    residence += '],'
 
     event = ''
     event += '[\n'
@@ -713,7 +719,7 @@ def makeJSONobject(filename):
             event += '}\n'
         else:
             event += '},\n'
-    event += ']'
+    event += '],'
     
     burial = ''
     burial += '[\n'
@@ -726,7 +732,7 @@ def makeJSONobject(filename):
             burial += '}\n'
         else:
             burial += '},\n'
-    burial += ']'
+    burial += '],'
 
     divorce = ''
     divorce += '[\n'
