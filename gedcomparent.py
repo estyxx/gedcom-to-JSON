@@ -13,17 +13,18 @@ import re
 from datetime import datetime
 
 argIn = sys.argv[1]
-#  argOut = sys.argv[2]
+argOut = sys.argv[2]
 
 def main():
 
     gedfile = gedcom.parse(argIn)
-    
-    #  print makeJSONobject(gedfile)
+    writeToJSONfile(gedfile)
+
     #  getFatherRelation(gedfile)
     #  getMotherRelation(gedfile)
     #  parseTime(gedfile)
-    print makeJSONobject(gedfile)
+    #  makeLength(gedfile)
+    #  makeJSONobject(gedfile)
     
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
@@ -40,6 +41,8 @@ def getFatherRelation(filename):
     get father relations from the gedcom file and parse them into JSON
 
     # loop through people from the input file, store their father records and return the list
+    :returns: father relation
+    :rtype: list
     """
     fRel = []
     startDate = parseTime(filename)
@@ -63,6 +66,8 @@ def getMotherRelation(filename):
     get mother relations from the input gedcom file and parse them into JSON
 
     # loop through people from the input file, store their mother records and return the list
+    :returns: mother relations
+    :rtype: list
     """
     mRel = []
 
@@ -199,7 +204,7 @@ def parseOutApprox(filename):
 
     return newStartDate
 
-def getAllInfo(filename):
+def makeLength(filename):
     """
     get all info unformatted
     """
@@ -212,11 +217,17 @@ def getAllInfo(filename):
     #  for person in people:
         #  print person
 
-    # this is used for the length of the file as well
+    # this is used for the length of the file
     return people
 
 def makeJSONobject(filename):
-    length = getAllInfo(filename)
+    """
+    create and format the json string
+
+    :returns: json formatted string based on the previous functions
+    :rtype: string
+    """
+    length = makeLength(filename)
     length = len(length)
     fRel = getFatherRelation(filename)
     mRel = getMotherRelation(filename)
@@ -240,6 +251,13 @@ def makeJSONobject(filename):
             json += '},\n'
     json +=']'
     return json
+
+def writeToJSONfile(filename):
+    json = makeJSONobject(filename)
+    f = open(argOut, "w")
+    f.write(json)
+    f.close()
+
         
 if __name__ == "__main__":
     main()

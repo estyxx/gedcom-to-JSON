@@ -18,14 +18,14 @@ argIn = sys.argv[1]
 def main():
 
     gedfile = gedcom.parse(argIn)
-    # writeToJSONfile(gedfile)
+    writeToJSONfile(gedfile)
 
     #  getPartners(gedfile)
     #  getMarriageDate(gedfile)
     #  parseOutApprox(gedfile)
     #  parseTime(gedfile)
-    print makeJSONobject(gedfile)
     #  print makeLength(gedfile)
+    #  makeJSONobject(gedfile)
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
@@ -42,6 +42,12 @@ def getMarriageDate(filename):
            print "no marriage"
    
 def getPartners(filename):
+    """
+    get the pid's of people in a marriage
+
+    :returns: lists of husband and wife records
+    :rtype: list
+    """
 
     husband = []
     wife = []
