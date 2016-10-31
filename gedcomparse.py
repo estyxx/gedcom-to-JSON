@@ -109,14 +109,14 @@ def getBirthPlace(filename):
     get all of the birth place records from the GEDCOM file
 
     # loop through people from the input file, store their Birth Place records and return the list of records
-    # if there is no Birth Place record (AttributeError), the list will store the value as null
+    # if there is no Birth Place record (AttributeError), the list will store the value asnull
     """
     birthPlace = []
     for person in filename.individuals:
         try:
             birthPlace.append('"birthPlace" : "' + person.birth.place + '"')
         except AttributeError:
-            birthPlace.append('"birthPlace" : "null"')
+            birthPlace.append('"birthPlace" : null')
     return birthPlace
 
 def getBirthDate(filename):
@@ -130,7 +130,7 @@ def getBirthDate(filename):
         try:
             birthDate.append('"birthDate" : "' + person.birth.date + '"')
         except AttributeError:
-            birthDate.append('"birthDate" : "null"')
+            birthDate.append('"birthDate" : null')
     return birthDate
 
 def getDeathPlace(filename):
@@ -144,7 +144,7 @@ def getDeathPlace(filename):
         try:
             deathPlace.append('"deathPlace" : "' + person.death.place + '"')
         except AttributeError:
-            deathPlace.append('"deathPlace" : "null"')
+            deathPlace.append('"deathPlace" : null')
     return deathPlace
 
 def getDeathDate(filename):
@@ -158,7 +158,7 @@ def getDeathDate(filename):
         try:
             deathDate.append('"deathDate" : "' + person.death.date + '"')
         except AttributeError:
-            deathDate.append('"deathDate" : "null"')
+            deathDate.append('"deathDate" : null')
     return deathDate
 
 def getSexAtBirth(filename):
@@ -172,7 +172,7 @@ def getSexAtBirth(filename):
         try:
             sexAtBirth.append('"sexAtBirth" : "' + person.sex + '"')
         except AttributeError:
-            sexAtBirth.append('"sexAtBirth" : "null"')
+            sexAtBirth.append('"sexAtBirth" : null')
     return sexAtBirth
 
 def getName(filename):
@@ -233,10 +233,10 @@ def parseTime(filename):
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
             avgDate = (date1+date2)/2
-            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBirth" : "True"')
+            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBirth" : true')
         elif '00000' in bd:
             # if the date is stored as 00000 that means that it did not exist while parsing through to remove the approximation strings
-            birthDate.append('"birthDate" : "null",\n"approxBirth" : "False"')
+            birthDate.append('"birthDate" : null,\n"approxBirth" : false')
         else:
             j = 0 # counter for error handling
             for i in dateFormat:
@@ -244,17 +244,17 @@ def parseTime(filename):
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : "True"')
+                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : true')
                         break
                     else:
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : "False"')
+                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : false')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                birthDate.append('"birthDate" : "null",\n"approxBirth" : "False"')
+                birthDate.append('"birthDate" : null,\n"approxBirth" : false')
                 print Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
                 
 
@@ -264,27 +264,27 @@ def parseTime(filename):
             date1 = int(dd[:4])
             date2 = int(dd[-4:])
             avgDate = (date1+date2)/2
-            deathDate.append('"deathDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDeath" : "True"')
+            deathDate.append('"deathDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDeath" : true')
         elif '00000' in dd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            deathDate.append('"deathDate" : "null",\n"approxDeath" : "False"')
+            deathDate.append('"deathDate" : null,\n"approxDeath" : false')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : "True"')
+                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : true')
                         break
                     else:
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : "False"')
+                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : false')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                deathDate.append('"deathDate" : "null",\n"approxDeath" : "False"')
+                deathDate.append('"deathDate" : null,\n"approxDeath" : false')
                 print Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return birthDate, deathDate

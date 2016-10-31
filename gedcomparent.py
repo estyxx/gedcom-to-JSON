@@ -52,9 +52,9 @@ def getFatherRelation(filename):
                     '"subType" : "Biological",\n')
         except AttributeError:
             fRel.append('"child_id" : "' + person.id + \
-                    '",\n"parent_id" : "null",\n'\
+                    '",\n"parent_id" : null,\n'\
                     '"relationshipType" : "Father",\n' + \
-                    '"subType" : "null",\n')
+                    '"subType" : null,\n')
 
     return fRel
 
@@ -76,9 +76,9 @@ def getMotherRelation(filename):
             print e, person
         except AttributeError:
             mRel.append('"child_id" : "' + person.id + \
-                    '",\n"parent_id" : "null",\n'\
+                    '",\n"parent_id" : null,\n'\
                     '"relationshipType" : "Mother",\n' + \
-                    '"subType" : "null",\n')
+                    '"subType" : null,\n')
 
     return mRel
 
@@ -120,27 +120,27 @@ def parseTime(filename):
             date1 = int(sd[:4])
             date2 = int(sd[-4:])
             avgDate = (date1+date2)/2
-            newStartDate.append('"startDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "True",\n')
+            newStartDate.append('"startDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : true,\n')
         elif '00000' in sd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            newStartDate.append('"startDate" : "null",\n"approxDate" : "False",\n')
+            newStartDate.append('"startDate" : null,\n"approxDate" : false,\n')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        newStartDate.append('"startDate" : "' + str(datetime.strptime(sd, i)) + '",\n"approxDate" : "True",\n')
+                        newStartDate.append('"startDate" : "' + str(datetime.strptime(sd, i)) + '",\n"approxDate" : true,\n')
                         break
                     else:
-                        newStartDate.append('"startDate" : "' + str(datetime.strptime(sd, i)) + '",\n"approxDate" : "False",\n')
+                        newStartDate.append('"startDate" : "' + str(datetime.strptime(sd, i)) + '",\n"approxDate" : false,\n')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                newStartDate.append('"startDate" : "null",\n"approxDate" : "False"')
+                newStartDate.append('"startDate" : null,\n"approxDate" : false')
                 print Exception(sd, "startDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return newStartDate
@@ -221,7 +221,7 @@ def makeJSONobject(filename):
     fRel = getFatherRelation(filename)
     mRel = getMotherRelation(filename)
     startDate = parseTime(filename)
-    endDate = '"endDate" : "null"\n'
+    endDate = '"endDate" : null\n'
     
     json = ''
     json += '[ \n'

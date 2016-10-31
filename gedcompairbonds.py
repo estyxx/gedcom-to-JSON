@@ -49,11 +49,11 @@ def getPartners(filename):
         try:
             husband.append('"personOne_id" : "' + marriage.husband.value + '",\n')
         except AttributeError:
-            husband.append('"personOne_id" : "null",\n')
+            husband.append('"personOne_id" : null,\n')
         try:
             wife.append('"personTwo_id" : "' + marriage.wife.value + '",\n')
         except AttributeError:
-            wife.append('"personTwo_id" : "null",\n')
+            wife.append('"personTwo_id" : null,\n')
     return husband, wife 
 
 def parseTime(filename):
@@ -94,27 +94,27 @@ def parseTime(filename):
             date1 = int(md[:4])
             date2 = int(md[-4:])
             avgDate = (date1+date2)/2
-            marriageDate.append('"startDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "True"')
+            marriageDate.append('"startDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : true')
         elif '00000' in md:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            marriageDate.append('"startDate" : "null",\n"approxDate" : "False",\n')
+            marriageDate.append('"startDate" : null,\n"approxDate" : false,\n')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        marriageDate.append('"startDate" : "' + str(datetime.strptime(md, i)) + '",\n"approxDate" : "True"')
+                        marriageDate.append('"startDate" : "' + str(datetime.strptime(md, i)) + '",\n"approxDate" : true')
                         break
                     else:
-                        marriageDate.append('"startDate" : "' + str(datetime.strptime(md, i)) + '",\n"approxDate" : "False"')
+                        marriageDate.append('"startDate" : "' + str(datetime.strptime(md, i)) + '",\n"approxDate" : false')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                marriageDate.append('"startDate" : "null",\n"approxDate" : "False"')
+                marriageDate.append('"startDate" : null,\n"approxDate" : false')
                 print Exception(md, "startDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return marriageDate
@@ -185,8 +185,8 @@ def makeJSONobject(filename):
     length = len(length)
     husband, wife = getPartners(filename)
     startDate = parseTime(filename)
-    subType = '"subType" : "null",\n'
-    endDate = '"endDate" : "null"\n'
+    subType = '"subType" : null,\n'
+    endDate = '"endDate" : null\n'
     relType = '"relationshipType" : "Marriage",\n'
 
     json = ''
