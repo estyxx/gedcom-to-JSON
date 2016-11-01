@@ -194,6 +194,21 @@ def getName(filename):
         lastName.append('"lName" : "' + lastname + '"')
     return firstName, lastName
 
+def getPersonId(filename):
+    """
+    get the person id, as given by the gedcom file
+
+    :returns: list of person Ids ex. @P2@
+    :rtype: list
+    """
+    personId = []
+    for person in filename.individuals:
+        try:
+            personId.append('"personId" : "' + person.id + '"')
+        except AttributeError:
+            personId.append('"personId" : "null"')
+    return personId
+
 def parseTime(filename):
     """
     formats timestamps into ISO time
@@ -382,6 +397,7 @@ def makeJSONobject(filename):
     birthDate, deathDate = parseTime(filename)
     birthPlace = getBirthPlace(filename)
     deathPlace = getDeathPlace(filename)
+    personId = getPersonId(filename)
 
     length = len(length)
     json = ''
@@ -394,7 +410,8 @@ def makeJSONobject(filename):
         json += birthDate[i] + ',\n'
         json += birthPlace[i] + ',\n'
         json += deathDate [i] + ',\n'
-        json += deathPlace[i] + '\n'
+        json += deathPlace[i] + ',\n'
+        json += personId[i] + '\n'
         if i == (length - 1):
             json += '}\n'
         else:

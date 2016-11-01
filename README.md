@@ -39,16 +39,110 @@ Clone from this repository & move any .ged files into the GedComParse folder to 
 * `express`
 * `mongoose`
 
+### gedcomparse.py
+Parses out information for individual people in a gedcom file, into json. 
+
+Attributes:
+
+* First Name
+* Last Name
+* Sex
+* Birth Date (and if the date is approximated)
+* Birth Place
+* Death Date (and if the date is approximated)
+* Death Place
+* Person Id
+
+
+### gedcomparent.py
+Parses out information for child / parent relationships. There are different records for each relationship, so each individual may have a separate record for each of their parent relationships. 
+
+Attributes:
+
+* Child Id
+* Parent Id
+* Relationship Type (father / mother)
+* Sub Type (biological)
+* Start Date (defaults to birthday of the child, and if that date is approximate)
+* End Date
+
+### gedcompairbonds.py
+Parses out information for pair bond relationships. Any given person may have multiple relationships. Any given person may have a relationship where the second partner is not known.
+
+Attributes:
+
+* Person One Id
+* Person Two Id
+* Relationship Type
+* Start Date (and if it's approximated)
+* Sub Type
+* End Date
+
+### gedcominfo.py
+Parses out any extraneous information about a person. Events, Source information, Residence information, etc.
+
+Source Attributes: **
+
+* Person Id
+* Person Source Id
+* Source Reference
+* Source Page
+
+Residence Attributes:
+
+* Person Id
+* Residence Information
+* Residence Start Date (and if it's approximated)
+* Residence Place
+* Residence Source + Source Information **
+
+Various Events Attributes:
+
+* Person Id
+* Event Type
+* Event Date (and if it's approximated)
+* Event Place
+* Event Info
+* Event Source + Source Information **
+
+Burial Attributes:
+
+* Person Id
+* Burial Date (and if it's approximated)
+* Burial Place
+* Burial Source**
+
+Divorce Attributes:
+
+* Person Id
+* Divorce Date (and if it's approximated)
+* Divorce Place
+* Divorce Source + Source Information **
+
+><span style="color:black"> if the given file does not hold any particular record, `null` will be the value given</span>
+
+###### ** Source information at this point is not reliable, and much of it could be incorrect.
 
   
 ## Usage (from terminal):
 * Move the gedcom file into the GedComParse folder for use.
 
-Usage: `python gedcomparse.py [-h] INPUT_FILE.ged OUTPUT_FILE.json`
+Usage: 
+
+`$ python gedcomparse.py INPUT_FILE.ged OUTPUT_FILE.json`
+`$ python gedcomparent.py INPUT_FILE.ged OUTPUT_FILE.json`
+`$ python gedcompairbonds.py INPUT_FILE.ged OUTPUT_FILE.json`
+`$ python gedcominfo.py INPUT_FILE.ged OUTPUT_FILE.json`
 
 > Parse a .gedcom file into .json for use in FamilyGenie
 
 ## Usage (from Node server):
+Multer (npm package) handles the uploads and places them in a folder.
+
+exec (child_process, npm package) handles the execution of the python program in the terminal, from the node server without any additional work.
+
+post to the 'uploads' folder (or wherever you like), and the `exec` function will run it through the parser, placing the result in another folder. 
+
 ```javascript
 // multer options
 var upload = multer({ dest : 'uploads/' });
@@ -59,7 +153,7 @@ app.post('/uploads', upload,
     function(req,res,next) {
         // run the python parser on the gedcom file
         exec('python path/to/gedcomparse.py path/to/gedcom-file.ged path/to/new-json-file.json',
-function(err) {
+        function(err) {
             if(err) { 
                 console.log(err); 
             }
