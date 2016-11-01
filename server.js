@@ -27,6 +27,31 @@ app.post('/uploads', type, function(req, res, next) {
     else {
       console.log('gedcom saved and parsed to json with python');
     }
+  exec('python ./gedcomparent.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+    }
+  exec('python ./gedcompairbonds.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+    }
+  exec('python ./gedcominfo.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+    }
+
     exec('mongoimport --db test --collection gedcom_import --type json --file jsonfiles/' + req.file.filename + '.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
       if(err) {
         console.log('mongo import failed', err);
@@ -34,16 +59,6 @@ app.post('/uploads', type, function(req, res, next) {
       else {
         console.log('json file imported to mongo');
       }
-      /*
-       * exec('rm uploads/' + req.file.filename, function(err) { // removes the uploaded gedcom file, can also 'rm jsonfiles/*'
-       *   if(err) {
-       *     console.log('remove files failed', err);
-       *   }
-       *   else {
-       *     console.log('files in uploads folder purged');
-       *   }
-       */
-      // });
     });
   });
 

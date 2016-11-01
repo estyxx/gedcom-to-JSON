@@ -339,22 +339,22 @@ def getIndiSource(filename):
                 try:
                     personSourceId.append('"personId" : "' + source.parent.id + '",')
                 except AttributeError:
-                    personSourceId.append('"personId" : null,')
+                    pass
 
                 try:
                     sourceId.append('"personSourceId" : "' + source.value + '",')
                 except AttributeError:
-                    sourceId.append('"personSourceId" : null,')
+                    pass
 
                 try:
                     sourcePage.append('"personSourcePage" : "' + source.page + '"')
                 except AttributeError:
-                    sourcePage.append('"personSourcePage" : null')
+                    pass
 
                 try:
                     sourceRef.append('"personSourceRef" : "' + source.data + '"')
                 except AttributeError:
-                    sourceRef.append('"personSourceRef" : null')
+                    pass
         except AttributeError:
             # pass if no source information exists whatsoever for a person, we don't care if it doesn't exist
             pass
@@ -424,7 +424,7 @@ def getResidence(filename):
             personResidenceId.append('"personId" : "' + pid + '",')
             try:
                 residenceInfo.append('"residenceInfo" : "' + residence.value + '",')
-            except AttributeError:
+            except TypeError:
                 residenceInfo.append('"residenceInfo" : null')
             try:
                 residencePlace.append('"residencePlace" : "' + residence.place + '",')

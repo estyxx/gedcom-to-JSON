@@ -13,7 +13,7 @@ import re
 from datetime import datetime
 
 argIn = sys.argv[1]
-# argOut = sys.argv[2]
+argOut = sys.argv[2]
 
 def main():
 
