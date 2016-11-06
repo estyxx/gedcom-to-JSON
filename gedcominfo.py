@@ -83,11 +83,13 @@ def parseTime(filename):
     """
     dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
-    years = re.compile('^\d{4} \d{4} \d{4} .+')
+    
+    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
+    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
      
     """ RESIDENCE DATE """
     for rd in rDate:
-        if '\xe2\x80\x93' in rd or '-' in rd or ', ' in rd:
+        if '\xe2\x80\x93' in rd or '-' in rd or commayrs.match(rd):
             # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
             date1 = int(rd[:4])
             date2 = int(rd[-4:])
@@ -347,14 +349,15 @@ def getIndiSource(filename):
                     pass
 
                 try:
-                    sourcePage.append('"personSourcePage" : "' + source.page + '"')
+                    sourceRef.append('"personSourceRef" : "' + source.data + '",')
                 except AttributeError:
                     pass
 
                 try:
-                    sourceRef.append('"personSourceRef" : "' + source.data + '"')
+                    sourcePage.append('"personSourcePage" : "' + source.page + '"')
                 except AttributeError:
                     pass
+
         except AttributeError:
             # pass if no source information exists whatsoever for a person, we don't care if it doesn't exist
             pass
@@ -425,7 +428,7 @@ def getResidence(filename):
             try:
                 residenceInfo.append('"residenceInfo" : "' + residence.value + '",')
             except TypeError:
-                residenceInfo.append('"residenceInfo" : null')
+                residenceInfo.append('"residenceInfo" : null,')
             try:
                 residencePlace.append('"residencePlace" : "' + residence.place + '",')
             except AttributeError:
@@ -456,7 +459,7 @@ def getEventDate(filename):
 
     # loop through all individuals and stores those who have this type of information
     for person in filename.individuals:
-        for event in person.happening:
+        for event in person.event:
             try:
                 personId.append(event.parent.id)
             except AttributeError:
@@ -464,7 +467,7 @@ def getEventDate(filename):
                 pass
 
     for pid in personId:
-        for event in person.get_by_id(pid).happening:
+        for event in person.get_by_id(pid).event:
             try:
                 eventDate.append(event.date)
             except AttributeError:
@@ -492,7 +495,7 @@ def getEvent(filename):
 
     # loop through all individuals and stores those who have this type of information
     for person in filename.individuals:
-        for event in person.happening:
+        for event in person.event:
             try:
                 personId.append(event.parent.id)
             except AttributeError:
@@ -503,7 +506,7 @@ def getEvent(filename):
     for pid in personId:
 
         # `get_by_id` is built into gedcompy 
-        for event in person.get_by_id(pid).happening:
+        for event in person.get_by_id(pid).event:
 
             personEventId.append('"personId" : "' + pid + '",')
 
@@ -520,14 +523,14 @@ def getEvent(filename):
             try:
                 eventInfo.append('"eventInfo" : "' + event.value + '",')
             except TypeError:
-                eventInfo.append('"eventInfo" : null')
+                eventInfo.append('"eventInfo" : null,')
 
             for source in event.source:
 
                 try:
                     eventSourceId.append('"eventSourceId" : "' + source.value + '",')
                 except AttributeError:
-                    eventSourceId.append('"eventSourceId" : null')
+                    eventSourceId.append('"eventSourceId" : null,')
 
                 try:
                     eventSourcePage.append('"eventSourcePage" : "' + source.page + '"')
@@ -568,6 +571,7 @@ def getBurialEvent(filename):
     personBurialId = []
     burialPlace = []
     burialSourceId = []
+    burialEventType = []
 
     # loop through all individuals in a file
     for person in filename.individuals:
@@ -577,22 +581,25 @@ def getBurialEvent(filename):
 
         else:
             try:
-                personBurialId.append('"personBurialId" : "' + person.burial.parent.id + '",')
+                personBurialId.append('"personId" : "' + person.burial.parent.id + '",')
             except AttributeError:
-                personBurialId.append('"personBurialId" : null')
+                personBurialId.append('"personId" : null,')
 
             try:
-                burialPlace.append('"burialPlace" : "' + person.burial.place + '",')
+                burialPlace.append('"eventPlace" : "' + person.burial.place + '",')
             except AttributeError:
-                burialPlace.append('"burialPlace" : null')
+                burialPlace.append('"eventPlace" : null,')
+            
 
             for source in person.burial.source:
                 try:
-                    burialSourceId.append('"burialSource" : "' + source.value + '"')
+                    burialSourceId.append('"eventSource" : "' + source.value + '",')
                 except AttributeError:
-                    burialSourceId.append('"burialSource" : null')
+                    burialSourceId.append('"eventSource" : null')
 
-    return personBurialId, burialPlace, burialSourceId
+            burialEventType.append('"eventType" : "Burial"')
+
+    return personBurialId, burialPlace, burialSourceId, burialEventType
 
 def getDivorceDate(filename):
     """
@@ -687,7 +694,7 @@ def makeJSONobject(filename):
     personEventId, eventType, eventPlace, eventInfo, eventSourceId, eventSourcePage = getEvent(filename)
     eventLength = len(personEventId)
     # Burial info
-    personBurialId, burialPlace, burialSourceId = getBurialEvent(filename)
+    personBurialId, burialPlace, burialSourceId, burialEventType = getBurialEvent(filename)
     burialLength = len(personBurialId)
     # Divorce info
     personDivorceId, divorcePlace, divorceSource, divorceSourceNote, divorceSourceData = getDivorceEvent(filename)
@@ -704,14 +711,9 @@ def makeJSONobject(filename):
         personSource += sourceId[i] + '\n'
         personSource += sourceRef[i] + '\n'
         personSource += sourcePage[i] + '\n'
-        if i == (personLength - 1):
-            personSource += '}\n'
-        else:
-            personSource += '},\n'
-    personSource += '],'
+        personSource += '},\n'
 
     residence = ''
-    residence += '[\n'
     for i in range(resiLength):
         residence += '{\n'
         residence += residenceId[i] + '\n'
@@ -720,14 +722,9 @@ def makeJSONobject(filename):
         residence += residencePlace[i] + '\n'
         residence += residenceSource[i] + '\n'
         residence += residencePage[i] + '\n'
-        if i == (resiLength - 1):
-            residence += '}\n'
-        else:
-            residence += '},\n'
-    residence += '],'
+        residence += '},\n'
 
     event = ''
-    event += '[\n'
     for i in range(eventLength):
         event += '{\n'
         event += personEventId[i] + '\n' 
@@ -737,28 +734,24 @@ def makeJSONobject(filename):
         event += eventInfo[i] + '\n'
         event += eventSourceId[i] + '\n'
         event += eventSourcePage[i] + '\n'
-        if i == (eventLength - 1):
-            event += '}\n'
-        else:
-            event += '},\n'
-    event += '],'
+        event += '},\n'
     
     burial = ''
-    burial += '[\n'
     for i in range(burialLength):
+        burial += '{\n'
         burial += personBurialId[i] + '\n'
         burial += burialDate[i] + '\n'
         burial += burialPlace[i] + '\n'
         burial += burialSourceId[i] + '\n'
-        if i == (burialLength - 1):
+        burial += burialEventType[i] + '\n'
+        if (divorceLength == 0) and (i == (burialLength -1)):
             burial += '}\n'
         else:
             burial += '},\n'
-    burial += '],'
 
     divorce = ''
-    divorce += '[\n'
     for i in range (divorceLength):
+        divorce += '{\n'
         divorce += personDivorceId[i] + '\n'
         divorce += divorceDate[i] + '\n'
         divorce += divorcePlace[i] + '\n'

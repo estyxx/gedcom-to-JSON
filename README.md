@@ -2,7 +2,7 @@
 Parse JSON data out of a .gedcom file using gedcompy & python2.7
 
 >TODO:
-  >>get family relations (currently only gets person data)
+  >>approx for year/month
   
 ## Installation:
 ### Python
@@ -87,6 +87,14 @@ Source Attributes: **
 * Person Source Id
 * Source Reference
 * Source Page
+
+Event Attributes:
+
+* Person Id
+* Event Type
+* Event Date
+* Event Place
+* Event Info
 
 Residence Attributes:
 

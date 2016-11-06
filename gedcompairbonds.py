@@ -94,8 +94,11 @@ def parseTime(filename):
     """
     dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
+    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
+    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
+
     for md in mDate:
-        if '\xe2\x80\x93' in md:
+        if '\xe2\x80\x93' in md or '-' in rd or commayrs.match(rd):
             # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
             date1 = int(md[:4])
             date2 = int(md[-4:])

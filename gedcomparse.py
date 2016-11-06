@@ -242,64 +242,73 @@ def parseTime(filename):
     """
     dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
+    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
+    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
+ 
     for bd in bDate:
-        if '\xe2\x80\x93' in bd:
+        if '\xe2\x80\x93' in bd or '-' in bd or commayrs.match(bd) :
             # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
             avgDate = (date1+date2)/2
-            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBirth" : true')
+            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "year"')
         elif '00000' in bd:
             # if the date is stored as 00000 that means that it did not exist while parsing through to remove the approximation strings
-            birthDate.append('"birthDate" : null,\n"approxBirth" : false')
+            birthDate.append('"birthDate" : null,\n"approxDate" : "exact"')
+        elif years.match(bd):
+            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxDate" : true,')
         else:
             j = 0 # counter for error handling
-            for i in dateFormat:
+            for df in dateFormat:
                 # loop through the dateFarmats, try to parse the date - expect errors but if the counter goes beyond the length of dateFormat, then the date didn't match any known format strings.
                 try:
-                    if i == '%Y':
+                    if df == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : true')
+                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "year"')
                         break
+                    elif ( (df == '%B %Y') or (df == '%b %Y') or (df == '%m/%Y') ):
+                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "month"')
                     else:
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBirth" : false')
+                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "exact"')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                birthDate.append('"birthDate" : null,\n"approxBirth" : false')
+                birthDate.append('"birthDate" : null,\n"approxDate" : "exact"')
                 print Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
                 
 
     for dd in dDate:
-        if '\xe2\x80\x93' in dd:
+        if '\xe2\x80\x93' in dd or '-' in dd or commayrs.match(dd):
             # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
             date1 = int(dd[:4])
             date2 = int(dd[-4:])
             avgDate = (date1+date2)/2
-            deathDate.append('"deathDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDeath" : true')
+            deathDate.append('"deathDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "year"')
         elif '00000' in dd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            deathDate.append('"deathDate" : null,\n"approxDeath" : false')
+            deathDate.append('"deathDate" : null,\n"approxDate" : "exact"')
         else:
             j = 0
             for i in dateFormat:
                 try:
                     if i == '%Y':
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : true')
+                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDate" : "year"')
                         break
+                    elif ( (df == '%B %Y') or (df == '%b %Y') or (df == '%m %Y') ):
+                        birthDate.append('"deathDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxBirth" : "month"')
                     else:
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDeath" : false')
+                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDate" : "exact"')
                         break
                 except ValueError as e:
                     j += 1
                     pass
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                deathDate.append('"deathDate" : null,\n"approxDeath" : false')
+                deathDate.append('"deathDate" : null,\n"approxDate" : "exact"')
                 print Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
 
     return birthDate, deathDate

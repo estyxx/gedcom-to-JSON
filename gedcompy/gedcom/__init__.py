@@ -256,7 +256,7 @@ class Element(object):
         """
         children = [c for c in self.child_elements if c.tag == key]
         if len(children) == 0:
-            pass
+            raise IndexError(key)
         elif len(children) == 1:
             return children[0]
         elif len(children) > 1:
@@ -600,20 +600,20 @@ class Individual(Element):
         return residence
 
     @property
-    def happening(self):
+    def event(self):
         """
         get any event about an individual
 
         :returns: events
-        :rtype: list of :py:class: `Happening` for his individual
+        :rtype: list of :py:class: `Event` for his individual
         :raises: AttributeError: if there is no record
         """
-        happening = []
+        event = []
         if (type(self['EVEN']) == list):
             return self['EVEN']
         else:
-            happening.append(self['EVEN'])
-        return happening
+            event.append(self['EVEN'])
+        return event 
 
     @property
     def burial(self):
@@ -796,6 +796,7 @@ class Child(Children):
 
     pass
 
+@register_tag("EVEN")
 class Event(Element):
     """Generic base class for events, like :py:class:`Birth` (BIRT) etc."""
 
@@ -836,10 +837,6 @@ class Event(Element):
             source.append(self['SOUR'])
         return source
 
-@register_tag("EVEN")
-class Happening(Event):
-    """Represents an Event, other than birth, etc. (EVEN)"""
-
     @property
     def type(self):
         """
@@ -867,7 +864,7 @@ class Happening(Event):
 
 
 @register_tag("TYPE")
-class Type(Happening):
+class Type(Event):
     """Represents a type of event"""
     pass
 
@@ -876,13 +873,11 @@ class Residence(Event):
     """Represents an individuals residence"""
     pass
 
-
 @register_tag("BIRT")
 class Birth(Event):
     """Represents a birth (BIRT)."""
 
     pass
-
 
 @register_tag("DEAT")
 class Death(Event):
@@ -896,7 +891,6 @@ class Burial(Event):
 
     pass
 
-
 @register_tag("MARR")
 class Marriage(Event):
     """Represents a marriage (MARR)."""
@@ -906,6 +900,120 @@ class Marriage(Event):
 @register_tag("DIV")
 class Divorce(Event):
     """Represents a divorce (DIV)"""
+
+    pass
+
+@register_tag("DATE")
+class Date(Event):
+    """Represents a pointer to a date value"""
+
+    pass
+
+@register_tag("PLAC")
+class Place(Event):
+    """Represents a pointer to a place entry"""
+
+    pass
+
+@register_tag("BAPL")
+class Baptism_LDS(Event):
+    """Represents a baptism of the LDS Churc"""
+
+    pass
+
+@register_tag("BAPM")
+class Baptism(Event):
+    """Represents a non-LDS baptism"""
+
+    pass
+
+@register_tag("BARM")
+class Bar_Mitzvah(Event):
+    """Represents a Bar Mitzvah"""
+
+    pass
+
+@register_tag("BASM")
+class Bas_Mitzvah(Event):
+    """Represents a Bas Mitzvah"""
+
+    pass
+
+@register_tag("BLES")
+class Blessing(Event):
+    """Represents a blessing"""
+
+    pass
+
+@register_tag("CHR")
+class Christening(Event):
+    """Represents a Christening"""
+
+    pass
+
+@register_tag("CHRA")
+class Adult_Christening(Event):
+    """Represents an adult Christening"""
+
+    pass
+
+@register_tag("CONF")
+class Confirmation(Event):
+    """Represents a Christening"""
+
+    pass
+
+@register_tag("CONL")
+class LDS_Confirmation(Event):
+    """Represents a Christening of the LDS Churc"""
+
+    pass
+
+@register_tag("CREM")
+class Cremation(Event):
+    """Represents a Cremation"""
+
+    pass
+
+@register_tag("EMIG")
+class Emigration(Event):
+    """Represents an Emigration"""
+
+    pass
+
+@register_tag("ENDL")
+class Endowment(Event):
+    """Represents an Endowment"""
+
+    pass
+
+@register_tag("ENGA")
+class Engagement(Event):
+    """Represents an Engagement"""
+
+    pass
+
+@register_tag("GRAD")
+class Graduation(Event):
+    """Represents a Graduation"""
+
+    pass
+
+@register_tag("IMMI")
+class Immigration(Event):
+    """Represents an Immigration"""
+
+    pass
+
+@register_tag("NATU")
+class Naturalization(Event):
+    """Represents a naturalization"""
+
+    pass
+
+@register_tag("WILL")
+class Will(Event):
+    """Represents a Will - treated as an event"""
 
     pass
 
@@ -957,18 +1065,6 @@ class Text(Data):
 @register_tag("PAGE")
 class Page(Source):
     """Represents source information"""
-
-    pass
-
-@register_tag("DATE")
-class Date(Event):
-    """Represents a pointer to a date value"""
-
-    pass
-
-@register_tag("PLAC")
-class Place(Event):
-    """Represents a pointer to a place entry"""
 
     pass
 

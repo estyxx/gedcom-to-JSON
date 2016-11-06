@@ -5,7 +5,7 @@ var exec = require('child_process').exec;
 var mongoose = require('mongoose');
 
 // upload things
-var upload = multer({ dest: 'uploads/' });
+var upload = multer({ dest: '../uploads/' });
 var type = upload.single('sampleFile'); // sampleFile must match name of input on frontend
 
 var app = express();
@@ -19,48 +19,76 @@ var db = mongoose.connection;
 // get the info from the upload button
 app.post('/uploads', type, function(req, res, next) {
 
-  exec('python ./gedcomparse.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
+  exec('python ./gedcomparse.py ../uploads/' + req.file.filename + ' ../jsonfiles/' + req.file.filename + 'indi.json',  // run the python program on the info
     function(err) {
     if(err) {
       console.log('python parse failed', err);
     }
     else {
       console.log('gedcom saved and parsed to json with python');
+      exec('mongoimport --db test --collection gedcom_indi --type json --file ../jsonfiles/' + req.file.filename + 'indi.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
+        if(err) {
+          console.log('mongo import failed', err);
+        }
+        else {
+          console.log('json file imported to mongo');
+        }
+      });
     }
-  exec('python ./gedcomparent.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
-    function(err) {
-    if(err) {
-      console.log('python parse failed', err);
-    }
-    else {
-      console.log('gedcom saved and parsed to json with python');
-    }
-  exec('python ./gedcompairbonds.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
-    function(err) {
-    if(err) {
-      console.log('python parse failed', err);
-    }
-    else {
-      console.log('gedcom saved and parsed to json with python');
-    }
-  exec('python ./gedcominfo.py uploads/' + req.file.filename + ' jsonfiles/' + req.file.filename + '.json',  // run the python program on the info
-    function(err) {
-    if(err) {
-      console.log('python parse failed', err);
-    }
-    else {
-      console.log('gedcom saved and parsed to json with python');
-    }
-
-    exec('mongoimport --db test --collection gedcom_import --type json --file jsonfiles/' + req.file.filename + '.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
-      if(err) {
-        console.log('mongo import failed', err);
-      }
-      else {
-        console.log('json file imported to mongo');
-      }
-    });
   });
+  exec('python ./gedcomparent.py ../uploads/' + req.file.filename + ' ../jsonfiles/' + req.file.filename + 'parent.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+      exec('mongoimport --db test --collection gedcom_parent --type json --file ../jsonfiles/' + req.file.filename + 'parent.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
+        if(err) {
+          console.log('mongo import failed', err);
+        }
+        else {
+          console.log('json file imported to mongo');
+        }
+      });
+    }
+  });
+  exec('python ./gedcompairbonds.py ../uploads/' + req.file.filename + ' ../jsonfiles/' + req.file.filename + 'pairbond.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+      exec('mongoimport --db test --collection gedcom_pairbond --type json --file ../jsonfiles/' + req.file.filename + 'pairbond.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
+        if(err) {
+          console.log('mongo import failed', err);
+        }
+        else {
+          console.log('json file imported to mongo');
+        }
+      });
+    }
+  });
+  exec('python ./gedcominfo.py ../uploads/' + req.file.filename + ' ../jsonfiles/' + req.file.filename + 'event.json',  // run the python program on the info
+    function(err) {
+    if(err) {
+      console.log('python parse failed', err);
+    }
+    else {
+      console.log('gedcom saved and parsed to json with python');
+      exec('mongoimport --db test --collection gedcom_event --type json --file ../jsonfiles/' + req.file.filename + 'event.json --jsonArray', function(err) { // imports the file that was just uploaded into mongoDB
+        if(err) {
+          console.log('mongo import failed', err);
+        }
+        else {
+          console.log('json file imported to mongo');
+        }
+      });
+    }
+  });
+
+
 
   res.redirect('/');
 });
