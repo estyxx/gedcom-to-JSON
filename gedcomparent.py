@@ -13,7 +13,7 @@ import re
 from datetime import datetime
 
 argIn = sys.argv[1]
-#  argOut = sys.argv[2]
+argOut = sys.argv[2]
 
 def main():
 
@@ -23,7 +23,8 @@ def main():
     #  getMotherRelation(gedfile)
     #  parseTime(gedfile)
     #  makeLength(gedfile)
-    print makeJSONobject(gedfile)
+    #  makeJSONobject(gedfile)
+    writeToJSONfile(gedfile)
     
 
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
@@ -186,6 +187,12 @@ def parseOutApprox(filename):
     # initialize new start list
     newStartDate = []
 
+
+    # loop through dates
+    for sd in startDate:
+        sd = abt.sub('', sd)
+        sd = bet.sub('', sd)
+        sd = bef.sub('', sd)
         sd = sep.sub('sep', sd) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
         sd = be.sub('', sd)
         sd = a.sub('', sd)
@@ -246,6 +253,15 @@ def makeJSONobject(filename):
     json +=']'
     return json
         
+
+def writeToJSONfile(filename):
+    """
+    write the created json object to the output file and save it
+    """
+    json = makeJSONobject(filename)
+    f = open(argOut, "w") # create/open the output file
+    f.write(json)
+    f.close() # save
 
 if __name__ == "__main__":
     main()
