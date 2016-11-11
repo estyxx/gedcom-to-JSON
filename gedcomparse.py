@@ -14,13 +14,17 @@ import gedcom
     # don't forget to build / install gedcompy for parsing
     ## in the gedcompy folder, run `python setup.py build && python setup.py install`
 from datetime import datetime
+import time
 import re
-import sys
+import sys, os
 
 # parse for arguments from the command line. input/output 
 # for use with node
 argIn = sys.argv[1]
 argOut = sys.argv[2]
+
+# file to log errors that may need attention
+logfile = open("log/indi.log", "a")
 
 def main():
     """
@@ -32,28 +36,11 @@ def main():
     ### runs all functions and writes to file
     writeToJSONfile(gedfile)
     
-    ### test functions ###
-    #  makeJSONobject(gedfile)
-
-    #  getAllInfo(gedfile)
-    #  getName(gedfile)
-    #  getSexAtBirth(gedfile)
-    #  getBirthPlace(gedfile)
-    #  getBirthDate(gedfile)
-    #  getDeathDate(gedfile)
-    #  getDeathPlace(gedfile)
-    #  getBirth(gedfile)
-    #  getDeath(gedfile)
-    #  parseTime(gedfile)
-    #  print parseOutApprox(gedfile)
-    
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
 # TODO: build and run tests
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
-
-""" ########## STATIC functions for testing purposes ######### """
 
 def getAllInfo(filename):
     """
@@ -71,36 +58,6 @@ def getAllInfo(filename):
     # this is used for the length of the file as well
     return people
 
-def getBirth(filename):
-    """
-    get all birth records and print them to console
-    """
-    birth = []
-    # loop through each person in the file and add the birth record to a list and return
-    for person in filename.individuals:
-        birth.append(person.birth)
-    
-    # loop through the newly created list and print the new records
-    for person in birth:
-        print person
-
-def getDeath(filename):
-    """
-    get all death records and print them to console
-    """
-    death = []
-    # loop through the gedfile and add the death records to a list
-    for person in filename.individuals:
-        try:
-            death.append(person.death.date)
-        except AttributeError:
-            death.append('No Death Record')
-    
-    # loop through the new list and print each record
-    for person in death:
-        print person
-
-""" ########## BUILDER functions for JSON files ######### """
 
 # note: AttributeError in this case means that there is no record of that type for that person
 
@@ -244,9 +201,10 @@ def parseTime(filename):
 
     years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
     commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
+    dashyrs = re.compile('^\d{4}-\d{4}') # for years separated by a dash 1998-1999
  
     for bd in bDate:
-        if '\xe2\x80\x93' in bd or '-' in bd or commayrs.match(bd) :
+        if '\xe2\x80\x93' in bd or dashyrs.match(bd) or commayrs.match(bd) :
             # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
@@ -277,11 +235,14 @@ def parseTime(filename):
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 birthDate.append('"birthDate" : null,\n"approxDate" : "exact"')
-                print Exception(bd, "birthDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
-                
+                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                exc = Exception("Error for BirthDate: '" + bd + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                logfile.write(exc[0] + " in " + fname + "\n")
 
     for dd in dDate:
-        if '\xe2\x80\x93' in dd or '-' in dd or commayrs.match(dd):
+        if '\xe2\x80\x93' in dd or dashyrs.match(dd) or commayrs.match(dd):
             # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
             date1 = int(dd[:4])
             date2 = int(dd[-4:])
@@ -309,7 +270,11 @@ def parseTime(filename):
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 deathDate.append('"deathDate" : null,\n"approxDate" : "exact"')
-                print Exception(dd, "deathDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
+                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                exc = Exception("Error for BirthDate: '" + bd + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                logfile.write(exc[0] + " in " + fname + "\n")
 
     return birthDate, deathDate
 
@@ -454,6 +419,7 @@ def writeToJSONfile(filename):
     f = open(argOut, "w") # creat/open the output file
     f.write(json)
     f.close() # save
+    logfile.close()
 
 # run the main function
 if __name__ == "__main__":
