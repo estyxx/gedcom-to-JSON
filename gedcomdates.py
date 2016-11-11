@@ -1,9 +1,9 @@
 import gedcom
 from datetime import datetime
 import re
-import sys
+import sys, os
 
-def parseOutApprox(filename, event):
+def parseTime(filename, event):
     """
     Parse out approximations that are included in user input dates
     ex Abt. bet. About. etc
@@ -13,14 +13,23 @@ def parseOutApprox(filename, event):
     """
 
     dates = []
-    print "dates init"
 
     for person in filename.individuals:
         try:
-            dates.append(getattr(person, event).date)
+            attr = getattr(person, str(event))
+            if type(attr) == list:
+                for event in attr:
+                    try:
+                        dates.append(event.date)
+                    except AttributeError:
+                        dates.append('00000')
+            else:
+                try:
+                    dates.append(attr.date)
+                except AttributeError:
+                    dates.append('00000')
         except AttributeError:
-            dates.append('00000')
-    print "after dates append"
+            pass
 
     """
     Approximation RegExp to be removed 
@@ -37,7 +46,6 @@ def parseOutApprox(filename, event):
     q = re.compile('\?') # matches a '?'
 
     parsedDates = []
-    print "parsed Dates init"
 
     # loop through dates
     for date in dates:
@@ -54,12 +62,11 @@ def parseOutApprox(filename, event):
         
         # append parsed birthdate to new birth date list
         parsedDates.append(date)
-    print "after loop parsed dates"
 
-    return parseTime(parsedDates)
+    return formatTime(parsedDates)
 
 
-def parseTime(dates):
+def formatTime(dates):
     """
     formats timestamps into ISO time
 
@@ -87,9 +94,9 @@ def parseTime(dates):
     commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma 1998, 1999
     dashyrs = re.compile('^\d{4}-\d{4}') # for years separated by a dash # 1998-1999
  
-    print "after regex"
 
     for date in dates:
+        logfile = open("log/event.log", "a")
         if '\xe2\x80\x93' in date or dashyrs.match(date) or commayrs.match(date) :
             # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(date[:4])
@@ -121,8 +128,12 @@ def parseTime(dates):
             if j > len(dateFormat) -1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 ISOdates.append('"eventDate" : null,\n"approxDate" : "exact"')
-                print Exception(date, "eventDate - NEEDS MODIFICATION - check parseTime() and parseOutApprox()")
+                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                exc_type, exc_obj, exc_tb = sys.exc_info()
+                fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
+                exc = Exception("Error for eventDate: '" + date + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                logfile.write(exc[0] + " in " + fname + "\n")
+                logfile.close()
 
-    print "after date formatting"
 
     return ISOdates
