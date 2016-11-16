@@ -14,6 +14,7 @@ from datetime import datetime
 
 argIn = sys.argv[1]
 argOut = sys.argv[2]
+userId = sys.argv[3]
 
 def main():
 
@@ -233,7 +234,7 @@ def makeJSONobject(filename):
     fRel = getFatherRelation(filename)
     mRel = getMotherRelation(filename)
     startDate = parseTime(filename)
-    endDate = '"endDate" : null\n'
+    endDate = '"endDate" : null,\n'
     
     json = ''
     json += '[ \n'
@@ -246,6 +247,7 @@ def makeJSONobject(filename):
         json += mRel[i]
         json += startDate[i]
         json += endDate
+        json += '"user_id" : "' + userId + '"\n'
         if i == (length - 1):
             json += '}\n'
         else:

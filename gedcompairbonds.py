@@ -14,6 +14,7 @@ from datetime import datetime
 
 argIn = sys.argv[1]
 argOut = sys.argv[2]
+userId = sys.argv[3]
 
 def main():
 
@@ -195,8 +196,7 @@ def makeJSONobject(filename):
     length = len(length)
     husband, wife = getPartners(filename)
     startDate = parseTime(filename)
-    subType = '"subType" : null,\n'
-    endDate = '"endDate" : null\n'
+    endDate = '"endDate" : null,\n'
     relType = '"relationshipType" : "Marriage",\n'
 
     json = ''
@@ -207,8 +207,8 @@ def makeJSONobject(filename):
         json += wife[i]
         json += relType
         json += startDate[i]
-        json += subType
         json += endDate
+        json += '"user_id" : "' + userId + '"\n'
         if i == (length -1):
             json += '}\n'
         else:

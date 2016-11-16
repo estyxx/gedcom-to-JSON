@@ -387,7 +387,7 @@ def makeJSONobject(filename):
         json += deathDate [i] + ',\n'
         json += deathPlace[i] + ',\n'
         json += personId[i] + ',\n'
-        json += "'user_id' : '" + userId + "'\n"
+        json += '"user_id" : "' + userId + '"\n'
         if i == (length - 1):
             json += '}\n'
         else:
