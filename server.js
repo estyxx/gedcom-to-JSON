@@ -15,11 +15,16 @@ var PORT = 8000;
 mongoose.connect('mongodb://localhost');
 var db = mongoose.connection;
 // var people = require('./people.model')(mongoose); // change this to your people model
+app.use(function(req, res, next) {
+    console.log(req.url);
+    console.log("BODY", req.body)
+    next();
+});
 
 // get the info from the upload button
 app.post('/uploads', type, function(req, res, next) {
 
-  exec('python ./gedcomparse.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'indi.json',  // run the python program on the info
+  exec('python ./gedcomparse.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'indi.json test@test.com',  // run the python program on the info
     function(err) {
     if(err) {
       console.log('python_indi parse failed', err);
@@ -37,7 +42,7 @@ app.post('/uploads', type, function(req, res, next) {
     }
   });
   // parent parse / import
-  exec('python ./gedcomparent.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'parent.json',  // run the python program on the info
+  exec('python ./gedcomparent.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'parent.json test@test.com',  // run the python program on the info
     function(err) {
     if(err) {
       console.log('python_parent parse failed', err);
@@ -54,7 +59,7 @@ app.post('/uploads', type, function(req, res, next) {
       });
     }
   });
-  exec('python ./gedcompairbonds.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'pairbond.json',  // run the python program on the info
+  exec('python ./gedcompairbonds.py ./uploads/' + req.file.filename + ' ./jsonfiles/' + req.file.filename + 'pairbond.json test@test.com',  // run the python program on the info
     function(err) {
     if(err) {
       console.log('python_pairbond parse failed', err);
@@ -96,10 +101,6 @@ app.post('/uploads', type, function(req, res, next) {
   res.redirect('/');
 });
 
-app.use(function(req, res, next) {
-    console.log(req.url);
-    next();
-});
 
 app.use(express.static(__dirname));
 

@@ -243,6 +243,7 @@ def makeJSONobject(filename):
         json += fRel[i]
         json += startDate[i]
         json += endDate
+        json += '"user_id" : "' + userId + '"\n'
         json += '},\n{\n'
         json += mRel[i]
         json += startDate[i]
