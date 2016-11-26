@@ -5,6 +5,7 @@
 
 import gedcom
 from datetime import datetime
+from gedcomdates import *
 import re
 import sys
 
@@ -46,278 +47,6 @@ def getPersonId(filename):
     for person in filename.individuals:
         PiD.append(person.id)
     return PiD
-
-##### TIME FORMATTING #####
-def parseTime(filename):
-    """
-    formats timestamps into ISO time
-
-    DATE FORMATTING KEY
-    %y = two digit year : 97 | 78 | 65
-    %Y = four digit year : 1997 | 1978 | 1842
-    %m = one/two digit month : 01 | 3 | 11
-    %b = (three letter) abbreviated month : Jan | feb | Dec
-    %B = full month name : January | February | march
-    %d = one/two digit day : 23 | 02 | 31
-
-    %Y-%m-%d = 1995-06-28
-    %m/%y/%d = 06/95/28
-    %d %b %Y = 28 Jun 1995
-
-    '\xe2\x80\x93' is a dash character (all 3 hex together represents a dash -- the full string)
-    """
-
-    # initilaze lists
-    residenceDate = []
-    burialDate = []
-    divorceDate = []
-    eventDate = []
-
-    # get the dates after the approximation strings have been removed
-    rDate, bDate, dDate, eDate = parseOutApprox(filename)
-
-    """
-    dateFormat is used to loop through and check for what format the dates might be in
-    if an error is thrown when running the file use the key from above and add the format to this list
-    make sure that '%Y' is the last element of the list or everything breaks
-    """
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
-
-    
-    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
-    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
-     
-    """ RESIDENCE DATE """
-    for rd in rDate:
-        if '\xe2\x80\x93' in rd or '-' in rd or commayrs.match(rd):
-            # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
-            date1 = int(rd[:4])
-            date2 = int(rd[-4:])
-            avgDate = (date1+date2)/2
-            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxResidence" : true,')
-        elif years.match(rd):
-            residenceDate.append('"residenceDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxResidence" : true,')
-        elif '00000' in rd:
-            # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            residenceDate.append('"residenceDate" : null,\n"approxResidence" : false,')
-        else:
-            j = 0
-            for i in dateFormat:
-                try:
-                    if i == '%Y':
-                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : true,')
-                        break
-                    else:
-                        residenceDate.append('"residenceDate" : "' + str(datetime.strptime(rd, i)) + '",\n"approxResidence" : false,')
-                        break
-                except ValueError as e:
-                    j += 1
-                    pass
-            if j > len(dateFormat) -1:
-                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                residenceDate.append('"residenceDate" : null,\n"approxResidence" : false,')
-                print Exception(rd, "residenceDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
-
-    """ BURIAL DATE """
-    for bd in bDate:
-        if '\xe2\x80\x93' in bd or '-' in bd or ', ' in bd:
-            # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
-            date1 = int(bd[:4])
-            date2 = int(bd[-4:])
-            avgDate = (date1+date2)/2
-            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxBurial" : true,')
-        elif years.match(bd):
-            burialDate.append('"burialDate" : "' + str(datetime.strptime(str(bd[:4]), '%Y')) + '",\n"approxBurial" : true,')
-        elif '00000' in bd:
-            # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            burialDate.append('"burialDate" : null,\n"approxBurial" : false,')
-        else:
-            j = 0
-            for i in dateFormat:
-                try:
-                    if i == '%Y':
-                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : true,')
-                        break
-                    else:
-                        burialDate.append('"burialDate" : "' + str(datetime.strptime(bd, i)) + '",\n"approxBurial" : false,')
-                        break
-                except ValueError as e:
-                    j += 1
-                    pass
-            if j > len(dateFormat) -1:
-                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                burialDate.append('"burialDate" : null,\n"approxResidence" : false,')
-                print Exception(bd, "burialDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
-
-    """ DIVORCE DATE """
-    for dd in dDate:
-        if '\xe2\x80\x93' in dd or '-' in dd or ', ' in dd:
-            # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
-            date1 = int(dd[:4])
-            date2 = int(dd[-4:])
-            avgDate = (date1+date2)/2
-            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDivorce" : true,')
-        elif years.match(dd):
-            divorceDate.append('"divorceDate" : "' + str(datetime.strptime(str(dd[:4]), '%Y')) + '",\n"approxDivorce" : true,')
-        elif '00000' in dd:
-            # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            divorceDate.append('"divorceDate" : null,\n"approxDivorce" : false,')
-        else:
-            j = 0
-            for i in dateFormat:
-                try:
-                    if i == '%Y':
-                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : true,')
-                        break
-                    else:
-                        divorceDate.append('"divorceDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDivorce" : false,')
-                        break
-                except ValueError as e:
-                    j += 1
-                    pass
-            if j > len(dateFormat) -1:
-                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                divorceDate.append('"divorceDate" : null,\n"approxResidence" : false,')
-                print Exception(dd, "divorceDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
-
-    """ EVENT DATE """
-    for ed in eDate:
-        if '\xe2\x80\x93' in ed or '-' in ed or ', ' in ed:
-            # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
-            date1 = int(ed[:4])
-            date2 = int(ed[-4:])
-            avgDate = (date1+date2)/2
-            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxEvent" : true,')
-        elif years.match(ed):
-            eventDate.append('"eventDate" : "' + str(datetime.strptime(str(ed[:4]), '%Y')) + '",\n"approxEvent" : true,')
-        elif '00000' in ed:
-            # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
-            eventDate.append('"eventDate" : null,\n"approxEvent" : false,')
-        else:
-            j = 0
-            for i in dateFormat:
-                try:
-                    if i == '%Y':
-                        # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : true,')
-                        break
-                    else:
-                        eventDate.append('"eventDate" : "' + str(datetime.strptime(ed, i)) + '",\n"approxEvent" : false,')
-                        break
-                except ValueError as e:
-                    j += 1
-                    pass
-            if j > len(dateFormat) -1:
-                # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
-                eventDate.append('"eventDate" : null,\n"approxResidence" : false,')
-                print Exception(ed, "eventDate - NEEDS MODIFICATION - check parseTime() or parseOutApprox() LINE {}".format(sys.exc_info()[-1].tb_lineno))
-
-    return residenceDate, burialDate, divorceDate, eventDate
-
-def parseOutApprox(filename):
-    """
-    remove approximation strings from dates.
-    also fix four letter month names or make any other modifications to dates
-    TODO: throw an error if there is an unknown approx string
-    """
-
-    """ get dates from input files """
-    resiDate = getResidenceDate(filename)
-    buriDate = getBurialDate(filename)
-    divDate = getDivorceDate(filename)
-    eventDate = getEventDate(filename)
-
-    """ Declare lists """
-    newResiDate = []
-    newBuriDate = []
-    newDivDate = []
-    newEventDate = []
-
-
-    """ Approximation RegExp to be removed """
-    abt = re.compile('abt\.? ', re.IGNORECASE) # matches 'abt', possibly followed by a '.'
-    bet = re.compile('bet\.? ', re.I) # matche 'bet', possibly followed by a '.'
-    bef = re.compile('bef\.? ', re.I) # matches 'bef', possibly followed by a '.'
-    sep = re.compile('sept', re.I) # matches 'sept'
-    be = re.compile('before ', re.I) # matches 'about'
-    a = re.compile('about ', re.I) # matches 'about'
-    ea = re.compile('early ', re.I) # matches 'early'
-    s = re.compile('(?<=\d)s') # matches an 's' preceded by a number - 1800(s)
-    p = re.compile('\.(?= \d)') # matches a '.' followed by a space and a number - oct. 1995
-    q = re.compile('\?') # matches a '?'
-
-    # Once the records are stored locally parse out the approximation strings
-    # loop through the records and the object with the replacements to find any and all replacements
-
-
-    # loop through dates
-
-    """ RESIDENCE DATE """
-    for r in resiDate:
-        r = abt.sub('', r)
-        r = bet.sub('', r)
-        r = bef.sub('', r)
-        r = sep.sub('sep', r) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        r = be.sub('', r)
-        r = a.sub('', r)
-        r = ea.sub('', r)
-        r = s.sub('', r)
-        r = p.sub('', r)
-        r = q.sub('', r)
-
-        newResiDate.append(r)
-
-    """ BURIAL DATE """
-    for b in buriDate:
-        b = abt.sub('', b)
-        b = bet.sub('', b)
-        b = bef.sub('', b)
-        b = sep.sub('sep', b) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        b = be.sub('', b)
-        b = a.sub('', b)
-        b = ea.sub('', b)
-        b = s.sub('', b)
-        b = p.sub('', b)
-        b = q.sub('', b)
-
-        newBuriDate.append(b)
-
-    """ DIVORCE DATE """
-    for d in divDate:
-        d = abt.sub('', d)
-        d = bet.sub('', d)
-        d = bef.sub('', d)
-        d = sep.sub('sep', d) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        d = be.sub('', d)
-        d = a.sub('', d)
-        d = ea.sub('', d)
-        d = s.sub('', d)
-        d = p.sub('', d)
-        d = q.sub('', d)
-
-        newDivDate.append(d)
-
-    """ EVENT DATE """
-    for e in eventDate:
-        e = abt.sub('', e)
-        e = bet.sub('', e)
-        e = bef.sub('', e)
-        e = sep.sub('sep', e) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        e = be.sub('', e)
-        e = a.sub('', e)
-        e = ea.sub('', e)
-        e = s.sub('', e)
-        e = p.sub('', e)
-        e = q.sub('', e)
-
-        newEventDate.append(e)
-
-    return newResiDate, newBuriDate, newDivDate, newEventDate
-
-##### END TIME #####
 
 def getIndiSource(filename):
     """ 
@@ -364,35 +93,6 @@ def getIndiSource(filename):
 
     return personSourceId, sourceId, sourceRef, sourcePage
 
-def getResidenceDate(filename):
-    """
-    get the dates of residnce to be parsed into ISO format.
-
-    :returns: residence dates as strings in a list
-    :rtype: list
-    """
-    personId = []
-    residenceDate = []
-
-    # loop through all individuals and only store the people that have this type of information
-    for person in filename.individuals:
-        # get the peopele with residence records
-        for residence in person.residence:
-            try:
-                personId.append(residence.parent.id)
-            except AttributeError:
-                # pass because we don't care if an individual doesn't have this type of information
-                pass
-
-    for pid in personId:
-        for residence in person.get_by_id(pid).residence:
-            try:
-                residenceDate.append(residence.date)
-            except AttributeError:
-                residenceDate.append('00000')
-
-    return residenceDate
-    
 def getResidence(filename):
     """ 
     get individual residence information
@@ -446,34 +146,6 @@ def getResidence(filename):
                     residencePage.append('"residencePage" : null')
 
     return personResidenceId, residenceInfo, residencePlace, residenceSource, residencePage
-
-def getEventDate(filename):
-    """
-    get event dates to be parsed into ISO time 
-
-    :returns: event dates as strings in a list
-    :rtype: list
-    """
-    eventDate = []
-    personId = []
-
-    # loop through all individuals and stores those who have this type of information
-    for person in filename.individuals:
-        for event in person.event:
-            try:
-                personId.append(event.parent.id)
-            except AttributeError:
-                # pass because we don't care about the people who don't have this type of information
-                pass
-
-    for pid in personId:
-        for event in person.get_by_id(pid).event:
-            try:
-                eventDate.append(event.date)
-            except AttributeError:
-                eventDate.append('00000')
-                
-    return eventDate
 
 def getEvent(filename):
     """
@@ -539,25 +211,6 @@ def getEvent(filename):
 
     return personEventId, eventType, eventPlace, eventInfo, eventSourceId, eventSourcePage
 
-def getBurialDate(filename):
-    """
-    get burial dates to be parsed into ISO time
-
-    :returns: burial dates as strings in a list
-    :rtype: list
-    """
-    burialDate = []
-    for person in filename.individuals:
-        if person.burial == None:
-            pass
-        else:
-            try:
-                burialDate.append(person.burial.date)
-            except AttributeError:
-               burialDate.append('00000') 
-
-    return burialDate
-
 def getBurialEvent(filename):
     """
     get any burial event information for a person
@@ -600,26 +253,6 @@ def getBurialEvent(filename):
             burialEventType.append('"eventType" : "Burial"')
 
     return personBurialId, burialPlace, burialSourceId, burialEventType
-
-def getDivorceDate(filename):
-    """
-    get divorce dates to be parsed into ISO time
-
-    :returns: divorce dates as strings in a list
-    :rtype: list
-    """
-    divorceDate = []
-    for person in filename.individuals:
-        try:
-            for divorce in person.divorce:
-                try:
-                    divorceDate.append(divorce.date)
-                except AttributeError:
-                    divorceDate.append('00000')
-        except AttributeError:
-            pass
-
-    return divorceDate
 
 def getDivorceEvent(filename):
     """
@@ -700,7 +333,10 @@ def makeJSONobject(filename):
     personDivorceId, divorcePlace, divorceSource, divorceSourceNote, divorceSourceData = getDivorceEvent(filename)
     divorceLength = len(personDivorceId)
     # Date info
-    residenceDate, burialDate, divorceDate, eventDate = parseTime(filename)
+    residenceDate = parseTime(filename, 'residence')
+    burialDate = parseTime(filename, 'burial')
+    divorceDate = parseTime(filename, 'divorce')
+    eventDate = parseTime(filename, 'event')
     ### end access ###
 
     personSource = ''

@@ -28,9 +28,10 @@ navigate into the gedcompy folder and install:
 Clone from this repository & move any .ged files into the GedComParse folder to be parsed into json.
 ##### Requirements
 * `python2.7` : see above
-* <a href='https://pypi.python.org/pypi/pip'>`pip`</a> (package installer python)
-* <a href='https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior'>`datetime`</a> 
+* <a href='https://pypi.python.org/pypi/pip'>`pip`</a> (package installer python, included in python download)
+* <a href='https://docs.python.org/2/library/datetime.html#strftime-and-strptime-behavior'>`datetime`</a> (pip install datetime)
 * `gedcompy` : see below
+* `six` (pip install six)
 
 ##### Node Modules
 * `child-process` - running python from node

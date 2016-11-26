@@ -256,7 +256,7 @@ class Element(object):
         """
         children = [c for c in self.child_elements if c.tag == key]
         if len(children) == 0:
-            raise IndexError(key)
+            pass
         elif len(children) == 1:
             return children[0]
         elif len(children) > 1:
@@ -455,12 +455,18 @@ class Individual(Element):
     @property
     def birth(self):
         """Class representing the birth of this person."""
-        return self['BIRT']
+        if type(self['BIRT']) not list:
+            return self['BIRT']
+        else:
+            return self['BIRT'][0]
 
     @property
     def death(self):
         """Class representing the death of this person."""
-        return self['DEAT']
+        if type(self['DEAT']) not list:
+            return self['DEAT']
+        else: 
+            return self['DEAT'][0]
 
     @property
     def sex(self):
@@ -639,6 +645,8 @@ class Individual(Element):
             raise AttributeError, "No Divorce record for this person"
         else:
             return self.get_list("DIV")
+    
+    # need to add properties/return cases for events
 
 
 @register_tag("FAM")
