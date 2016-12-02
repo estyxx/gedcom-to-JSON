@@ -1,8 +1,6 @@
 # GedcomParse
 Parse JSON data out of a .gedcom file using gedcompy & python2.7
 
->TODO:
-  >>approx for year/month
   
 ## Installation:
 ### Python
@@ -39,6 +37,22 @@ Clone from this repository & move any .ged files into the GedComParse folder to 
 * `body-parser`
 * `express`
 * `mongoose`
+  
+## Usage (from terminal):
+* Move the gedcom file into the GedComParse folder for use.
+
+Usage: 
+
+`$ python gedcomparse.py INPUT_FILE.ged OUTPUT_FILE.json`
+
+`$ python gedcomparent.py INPUT_FILE.ged OUTPUT_FILE.json`
+
+`$ python gedcompairbonds.py INPUT_FILE.ged OUTPUT_FILE.json`
+
+`$ python gedcominfo.py INPUT_FILE.ged OUTPUT_FILE.json`
+
+> Parse a .gedcom file into .json for use in FamilyGenie
+
 
 ### gedcomparse.py
 Parses out information for individual people in a gedcom file, into json. 
@@ -131,19 +145,6 @@ Divorce Attributes:
 ><span style="color:black"> if the given file does not hold any particular record, `null` will be the value given</span>
 
 ###### ** Source information at this point is not reliable, and much of it could be incorrect.
-
-  
-## Usage (from terminal):
-* Move the gedcom file into the GedComParse folder for use.
-
-Usage: 
-
-`$ python gedcomparse.py INPUT_FILE.ged OUTPUT_FILE.json`
-`$ python gedcomparent.py INPUT_FILE.ged OUTPUT_FILE.json`
-`$ python gedcompairbonds.py INPUT_FILE.ged OUTPUT_FILE.json`
-`$ python gedcominfo.py INPUT_FILE.ged OUTPUT_FILE.json`
-
-> Parse a .gedcom file into .json for use in FamilyGenie
 
 ## Usage (from Node server):
 Multer (npm package) handles the uploads and places them in a folder.
@@ -407,6 +408,8 @@ source.data.text
 ### Residence ['RESI']
 Residence records
 
+###### Includes Source class.
+
 ```python
 >>> for person in gedfile.individuals
 ...			print person.residence
@@ -429,8 +432,11 @@ residence.source
 residence.value
 ```
 
-### Happenings ['EVEN']
-happenings are an extension of the Events class, and include the Source class
+### Events ['EVEN']
+
+Event Records
+
+######Includes the Source class.
 
 ```python
 >>> for person in gedfile.individuals:
@@ -450,7 +456,9 @@ happening.source    # Source class
 ```
 
 ### Burials ['BURI']
-Burials are an extension of the Events class, and include the Source class.
+Burials are an extension of the Events class
+
+###### Includes the Source class.
 
 ```python
 >>> for person in gedfile.individuals:
@@ -470,7 +478,9 @@ burial.source
 ```
 
 ### Divorce ['DIV']
-Divorces are an extension of the Events class, and include the Source class
+Divorces are an extension of the Events class
+
+###### Includes the Source class.
 
 ```python
 >>> for person in gedfile.individuals:

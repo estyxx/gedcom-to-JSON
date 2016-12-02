@@ -88,7 +88,7 @@ def formatTime(dates):
     ISOdates = []
     "ISO dates init"
 
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
+    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%Y, %b %d', '%Y %m %d' '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
     years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially 1997 1998 1999 ...
     commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma 1998, 1999

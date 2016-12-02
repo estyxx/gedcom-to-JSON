@@ -455,7 +455,7 @@ class Individual(Element):
     @property
     def birth(self):
         """Class representing the birth of this person."""
-        if type(self['BIRT']) not list:
+        if type(self['BIRT']) != list:
             return self['BIRT']
         else:
             return self['BIRT'][0]
@@ -463,7 +463,7 @@ class Individual(Element):
     @property
     def death(self):
         """Class representing the death of this person."""
-        if type(self['DEAT']) not list:
+        if type(self['DEAT']) != list:
             return self['DEAT']
         else: 
             return self['DEAT'][0]
