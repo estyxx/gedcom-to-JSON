@@ -32,7 +32,7 @@ def parseTime(filename, event):
             pass
 
     """
-    Approximation RegExp to be removed 
+    Approximation RegExp to be removed
     """
     abt = re.compile('abt\.? ', re.IGNORECASE) # matches 'abt', possibly followed by a '.'
     bet = re.compile('bet\.? ', re.I) # matche 'bet', possibly followed by a '.'
@@ -59,7 +59,7 @@ def parseTime(filename, event):
         date = s.sub('', date)
         date = p.sub('', date)
         date = q.sub('', date)
-        
+
         # append parsed birthdate to new birth date list
         parsedDates.append(date)
 
@@ -88,12 +88,12 @@ def formatTime(dates):
     ISOdates = []
     "ISO dates init"
 
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%Y, %b %d', '%Y %m %d' '%B %Y', '%b %Y', '%m/%Y', '%Y']
+    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%Y, %b %d', '%Y %m %d', '%B %Y', '%b %Y', '%m/%Y', '%Y']
 
     years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially 1997 1998 1999 ...
     commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma 1998, 1999
     dashyrs = re.compile('^\d{4}-\d{4}') # for years separated by a dash # 1998-1999
- 
+
 
     for date in dates:
         logfile = open("log/event.log", "a")
