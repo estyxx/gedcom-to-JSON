@@ -8,3 +8,5 @@ uplodnod
 uploads
 ancestry
 *.pyc
+test.gedcompares.py
+
