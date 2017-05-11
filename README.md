@@ -1,6 +1,8 @@
 # GedcomParse
 Parse JSON data out of a .gedcom file using gedcompy & python2.7
 
+TODO: clean up code
+:: implement dates globally
   
 ## Installation:
 ### Python

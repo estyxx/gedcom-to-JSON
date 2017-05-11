@@ -395,24 +395,6 @@ def makeJSONobject(filename):
     json += ']'
     return json
     
-    """ printing for testing purposes """
-    #  print "["
-    #  for i in range(length):
-        #  print "{"
-        #  print firstName[i]
-        #  print lastName[i]
-        #  print sexAtBirth[i]
-        #  print birthDate[i]
-        #  print birthPlace[i]
-        #  print deathDate[i]
-        #  print deathPlace[i]
-        #  if i == (length - 1):
-            #  print "}"
-        #  else:
-            #  print "},"
-    #  print "]"
-
-
 def writeToJSONfile(filename):
     """
     write the created json object to the output file and save it

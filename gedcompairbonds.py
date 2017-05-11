@@ -21,13 +21,6 @@ def main():
     gedfile = gedcom.parse(argIn)
     writeToJSONfile(gedfile)
 
-    #  getPartners(gedfile)
-    #  getMarriageDate(gedfile)
-    #  parseOutApprox(gedfile)
-    #  parseTime(gedfile)
-    #  print makeLength(gedfile)
-    #  makeJSONobject(gedfile)
-
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
 # TODO: docs
