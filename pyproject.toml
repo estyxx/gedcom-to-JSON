@@ -4,7 +4,7 @@ version = "0.2.9"
 description = "Parse and create GEDCOM (genealogy) files"
 license='GPLv3+'
 authors = ["Rory McCann <rory@technomancy.org>"]
-packages = ["gedcom"]
+packages = [ { include = "gedcom" } ]
 classifiers=[
     'Programming Language :: Python :: 3.7',
     'Programming Language :: Python :: 3.8',

@@ -9,11 +9,12 @@ import re
 
 import six
 
-from ._version import __version__
-
 line_format = re.compile(
     "^(?P<level>[0-9]+) ((?P<id>@[-a-zA-Z0-9]+@) )?(?P<tag>[_A-Z0-9]+)( (?P<value>.*))?$"
 )
+import pkg_resources
+
+VERSION = pkg_resources.get_distribution("gedcom-to-json").version
 
 
 class GedcomFile(object):
@@ -162,7 +163,7 @@ class GedcomFile(object):
             head_element = self.element("HEAD", level=0, value="")
             source = self.element("SOUR")
             source.add_child_element(self.element("NAME", value="gedcompy"))
-            source.add_child_element(self.element("VERS", value=__version__))
+            source.add_child_element(self.element("VERS", value=VERSION))
             head_element.add_child_element(source)
             head_element.add_child_element(self.element("CHAR", value="UNICODE"))
 
@@ -533,7 +534,7 @@ class Individual(Element):
 
         :rtype: str
         """
-        return self["SEX"].value
+        return self["SEX"] if "SEX" in self else None
 
     @property
     def gender(self):
@@ -544,7 +545,7 @@ class Individual(Element):
 
         :rtype: str
         """
-        return self["SEX"].value
+        return self["SEX"] if "SEX" in self else None
 
     @property
     def father(self):
@@ -609,8 +610,9 @@ class Individual(Element):
         if sex not in ["M", "F"]:
             raise TypeError("Currently only support M or F")
         try:
-            sex_node = self["SEX"]
-            sex_node.value = sex
+            self.sex
+            # sex_node.value = sex
+
         except IndexError:
             self.add_child_element(self.gedcom_file.element("SEX", value=sex))
 
@@ -647,7 +649,7 @@ class Individual(Element):
         :rtype: string
         :raises :AttributeError: if there is no note for that Individual
         """
-        return self["NOTE"].value
+        return self["NOTE"] if "NOTE" in self else None
 
     @property
     def residence(self):
