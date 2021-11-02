@@ -8,7 +8,7 @@ Contents
 
 .. toctree::
     :maxdepth: 2
-   
+
     reading-and-writing
     working-with-gedcom-files
     api
@@ -22,4 +22,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-

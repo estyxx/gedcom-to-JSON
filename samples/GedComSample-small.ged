@@ -7,26 +7,26 @@
 1 GEDC
 2 VERS 5.5
 2 FORM LINEAGE-LINKED
-0 @P1@ INDI 
-1 BIRT 
+0 @P1@ INDI
+1 BIRT
 2 DATE 03 dec 1970
 1 SEX M
 1 NAME Josh /Forman/
 1 FAMC @F1@
-0 @P2@ INDI 
+0 @P2@ INDI
 1 NAME Marc /Forman/
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 06 nov 1946
 2 PLAC Brooklyn, New York City, New York, USA
 1 FAMS @F1@
-0 @F1@ FAM 
+0 @F1@ FAM
 1 HUSB @P2@
 1 CHIL @P1@
 2 _FREL Natural
 0 TRLR
-0 @P3@ INDI 
-1 BIRT 
+0 @P3@ INDI
+1 BIRT
 2 DATE abt 1937
 2 PLAC Michigan
 2 SOUR @S1002071784@
@@ -35,14 +35,14 @@
 2 SOUR @S1002094656@
 3 PAGE Year: 1951; Arrival: New York, New York; Microfilm Serial: T715, 1897-1957; Microfilm Roll: Roll 8015; Line: 25; Page Number: 41
 3 _APID 1,7488::2147483647
-1 EVEN 
+1 EVEN
 2 TYPE Arrival
 2 DATE 2 Aug 1951
 2 PLAC New York, New York
 2 SOUR @S1002094656@
 3 PAGE Year: 1951; Arrival: New York, New York; Microfilm Serial: T715, 1897-1957; Microfilm Roll: Roll 8015; Line: 25; Page Number: 41
 3 _APID 1,7488::2147483647
-1 EVEN 
+1 EVEN
 2 TYPE Departure
 2 PLAC Cherbourg, France
 2 SOUR @S1002094656@
@@ -64,8 +64,8 @@
 1 SEX F
 1 FAMC @F16@
 1 FAMS @F2@
-0 @P4@ INDI 
-1 DEAT 
+0 @P4@ INDI
+1 DEAT
 2 DATE 29 May 1994
 2 PLAC Michigan, USA
 2 SOUR @S1002072458@
@@ -91,7 +91,7 @@
 3 _APID 1,2441::53787
 2 SOUR @S1002094649@
 3 _APID 1,1732::361592076
-1 BIRT 
+1 BIRT
 2 DATE 24 Aug 1930
 2 PLAC Tomah Monroe, Wisconsin
 2 SOUR @S1002072458@
@@ -109,15 +109,15 @@
 3 _APID 1,2441::53787
 2 SOUR @S1002094649@
 3 _APID 1,1732::361592076
-1 RESI 
+1 RESI
 2 PLAC Chicago, IL
 2 SOUR @S1002094649@
 3 _APID 1,1732::361592076
-1 _MILT 
+1 _MILT
 2 DATE 4 Nov 1947
 2 SOUR @S1002094647@
 3 _APID 1,2441::53787
-1 RESI 
+1 RESI
 2 DATE 1935
 2 PLAC Chicago, Cook, Illinois
 2 SOUR @S1002071784@
@@ -129,7 +129,7 @@
 2 SOUR @S1002071784@
 3 PAGE Year: 1940; Census Place: Chicago, Cook, Illinois; Roll: T627_994; Page: 7A; Enumeration District: 103-2269
 3 _APID 1,2442::147499201
-1 RESI 
+1 RESI
 2 DATE 15 Nov 1951
 2 PLAC Chicago, Illinois
 2 SOUR @S1002094641@
@@ -142,13 +142,13 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=102289496&pid=4
 1 FAMC @F15@
 1 FAMS @F2@
-0 @P5@ INDI 
-1 BIRT 
+0 @P5@ INDI
+1 BIRT
 2 DATE 01/13/1961
 2 PLAC Chicago, Cook, Illinois, USA
 2 SOUR @S1002094673@
 3 _APID 1,1788::296595888
-1 RESI 
+1 RESI
 2 DATE 1993
 2 PLAC Chicago, IL
 2 SOUR @S1002094673@

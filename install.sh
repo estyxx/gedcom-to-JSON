@@ -7,7 +7,7 @@ if [[ $OSTYPE == 'darwin'* ]]; then
     break
   else
     echo "Installing python"
-    brew install python python-pip 
+    brew install python python-pip
   fi
 
   if [[ ! type "$node" > /dev/null || if ! type "$npm" > /dev/null]]; then
@@ -41,5 +41,4 @@ python gedcompy/setup.py build
 python gedcompy/setup.py install
 echo "Installed gedcompy"
 
-echo 
-
+echo

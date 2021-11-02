@@ -2,23 +2,26 @@
 # v. 0.3.5
 # gedcomParsePeople
 """
-Parse a gedcom file into JSON for a persons records 
+Parse a gedcom file into JSON for a persons records
 Strategy:
     loop through each record in the source file and make a list for every field in the source file where each index of each list pertains to a singular person/record in the source file.
     output JSON file by loop through all lists and return information formatted as JSON using string concatenation.
 
 """
 
+import os
+import re
+import sys
+import time
+from datetime import datetime
+
 # import requirements for things to work
 import gedcom
-    # don't forget to build / install gedcompy for parsing
-    ## in the gedcompy folder, run `python setup.py build && python setup.py install`
-from datetime import datetime
-import time
-import re
-import sys, os
 
-# parse for arguments from the command line. input/output 
+# don't forget to build / install gedcompy for parsing
+## in the gedcompy folder, run `python setup.py build && python setup.py install`
+
+# parse for arguments from the command line. input/output
 # for use with node
 argIn = sys.argv[1]
 argOut = sys.argv[2]
@@ -26,6 +29,7 @@ userId = sys.argv[3]
 
 # file to log errors that may need attention
 logfile = open("log/indi.log", "a")
+
 
 def main():
     """
@@ -36,12 +40,14 @@ def main():
 
     ### runs all functions and writes to file
     writeToJSONfile(gedfile)
-    
+
+
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
 ####################################################
 # TODO: build and run tests
 ####################################################
 """''''''''''''''''''''''''''''''''''''''''''''''''''''''"""
+
 
 def getAllInfo(filename):
     """
@@ -52,15 +58,16 @@ def getAllInfo(filename):
     for person in filename.individuals:
         people.append(person)
 
-    # loop through the the newly created list and print each record
+    # loop through the the newly created list and print(each record)
     #  for person in people:
-        #  print person
+    #  print(person)
 
     # this is used for the length of the file as well
     return people
 
 
 # note: AttributeError in this case means that there is no record of that type for that person
+
 
 def getBirthPlace(filename):
     """
@@ -77,6 +84,7 @@ def getBirthPlace(filename):
             birthPlace.append('"birthPlace" : null')
     return birthPlace
 
+
 def getBirthDate(filename):
     """
     get all of the birth date records from the GEDCOM file
@@ -90,6 +98,7 @@ def getBirthDate(filename):
         except AttributeError:
             birthDate.append('"birthDate" : null')
     return birthDate
+
 
 def getDeathPlace(filename):
     """
@@ -105,6 +114,7 @@ def getDeathPlace(filename):
             deathPlace.append('"deathPlace" : null')
     return deathPlace
 
+
 def getDeathDate(filename):
     """
     get the death date from the GEDCOM file
@@ -118,6 +128,7 @@ def getDeathDate(filename):
         except AttributeError:
             deathDate.append('"deathDate" : null')
     return deathDate
+
 
 def getSexAtBirth(filename):
     """
@@ -133,6 +144,7 @@ def getSexAtBirth(filename):
             sexAtBirth.append('"sexAtBirth" : null')
     return sexAtBirth
 
+
 def getName(filename):
     """
     get the first and last name from the GEDCOM file
@@ -145,12 +157,13 @@ def getName(filename):
     for person in filename.individuals:
         firstname, lastname = person.name
         if lastname == None:
-            lastname = ''
+            lastname = ""
         if firstname == None:
-            firstname = ''
+            firstname = ""
         firstName.append('"fName" : "' + firstname + '"')
         lastName.append('"lName" : "' + lastname + '"')
     return firstName, lastName
+
 
 def getPersonId(filename):
     """
@@ -166,6 +179,7 @@ def getPersonId(filename):
         except AttributeError:
             personId.append('"personId" : "null"')
     return personId
+
 
 def parseTime(filename):
     """
@@ -198,86 +212,157 @@ def parseTime(filename):
     if an error is thrown when running the file use the key from above and add the format to this list
     make sure that '%Y' is the last element of the list or everything breaks
     """
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%B %Y', '%b %Y', '%m/%Y', '%Y']
+    dateFormat = [
+        "%m/%d/%Y",
+        "%m-%d-%Y",
+        "%d-%m-%Y",
+        "%d, %b %Y",
+        "%d %B %Y",
+        "%d %b %Y",
+        "%d %B, %Y",
+        "%b %d, %Y",
+        "%B %d, %Y",
+        "%B %d %Y",
+        "%b %d %Y",
+        "%B %Y",
+        "%b %Y",
+        "%m/%Y",
+        "%Y",
+    ]
 
-    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially
-    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma
-    dashyrs = re.compile('^\d{4}-\d{4}') # for years separated by a dash 1998-1999
- 
+    years = re.compile("^\d{4} \d{4} \d{4} .+")  # for more than 2 years sequentially
+    commayrs = re.compile("^\d{4}, \d{4}")  # for years separated by a comma
+    dashyrs = re.compile("^\d{4}-\d{4}")  # for years separated by a dash 1998-1999
+
     for bd in bDate:
-        if '\xe2\x80\x93' in bd or dashyrs.match(bd) or commayrs.match(bd) :
+        if "\xe2\x80\x93" in bd or dashyrs.match(bd) or commayrs.match(bd):
             # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(bd[:4])
             date2 = int(bd[-4:])
-            avgDate = (date1+date2)/2
-            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "year"')
-        elif '00000' in bd:
+            avgDate = (date1 + date2) / 2
+            birthDate.append(
+                '"birthDate" : "'
+                + str(datetime.strptime(str(avgDate), "%Y"))
+                + '",\n"approxDate" : "year"'
+            )
+        elif "00000" in bd:
             # if the date is stored as 00000 that means that it did not exist while parsing through to remove the approximation strings
             birthDate.append('"birthDate" : null,\n"approxDate" : "exact"')
         elif years.match(bd):
-            birthDate.append('"birthDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxDate" : true,')
+            birthDate.append(
+                '"birthDate" : "'
+                + str(datetime.strptime(str(rd[:4]), "%Y"))
+                + '",\n"approxDate" : true,'
+            )
         else:
-            j = 0 # counter for error handling
+            j = 0  # counter for error handling
             for df in dateFormat:
                 # loop through the dateFarmats, try to parse the date - expect errors but if the counter goes beyond the length of dateFormat, then the date didn't match any known format strings.
                 try:
-                    if df == '%Y':
+                    if df == "%Y":
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "year"')
+                        birthDate.append(
+                            '"birthDate" : "'
+                            + str(datetime.strptime(bd, df))
+                            + '",\n"approxDate" : "year"'
+                        )
                         break
-                    elif ( (df == '%B %Y') or (df == '%b %Y') or (df == '%m/%Y') ):
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "month"')
+                    elif (df == "%B %Y") or (df == "%b %Y") or (df == "%m/%Y"):
+                        birthDate.append(
+                            '"birthDate" : "'
+                            + str(datetime.strptime(bd, df))
+                            + '",\n"approxDate" : "month"'
+                        )
                     else:
-                        birthDate.append('"birthDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxDate" : "exact"')
+                        birthDate.append(
+                            '"birthDate" : "'
+                            + str(datetime.strptime(bd, df))
+                            + '",\n"approxDate" : "exact"'
+                        )
                         break
-                except ValueError as e:
+                except ValueError:
                     j += 1
-                    pass
-            if j > len(dateFormat) -1:
+            if j > len(dateFormat) - 1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 birthDate.append('"birthDate" : null,\n"approxDate" : "exact"')
-                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                logfile.write(
+                    "\n"
+                    + time.strftime("%Y-%m-%d")
+                    + " "
+                    + time.strftime("%H:%M:%S")
+                    + " :\n"
+                )
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                exc = Exception("Error for BirthDate: '" + bd + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                exc = Exception(
+                    "Error for BirthDate: '"
+                    + bd
+                    + "' line {}".format(sys.exc_info()[-1].tb_lineno)
+                )
                 logfile.write(exc[0] + " in " + fname + "\n")
 
     for dd in dDate:
-        if '\xe2\x80\x93' in dd or dashyrs.match(dd) or commayrs.match(dd):
+        if "\xe2\x80\x93" in dd or dashyrs.match(dd) or commayrs.match(dd):
             # if there is a dash char in the date string that means the date was input as between date1 & date2. get the avg of these dates and use that
             date1 = int(dd[:4])
             date2 = int(dd[-4:])
-            avgDate = (date1+date2)/2
-            deathDate.append('"deathDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "year"')
-        elif '00000' in dd:
+            avgDate = (date1 + date2) / 2
+            deathDate.append(
+                '"deathDate" : "'
+                + str(datetime.strptime(str(avgDate), "%Y"))
+                + '",\n"approxDate" : "year"'
+            )
+        elif "00000" in dd:
             # if the date is stored as 00000 that means that it was not present while parsing through to remove the approximation strings
             deathDate.append('"deathDate" : null,\n"approxDate" : "exact"')
         else:
             j = 0
             for i in dateFormat:
                 try:
-                    if i == '%Y':
+                    if i == "%Y":
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDate" : "year"')
+                        deathDate.append(
+                            '"deathDate" : "'
+                            + str(datetime.strptime(dd, i))
+                            + '",\n"approxDate" : "year"'
+                        )
                         break
-                    elif ( (df == '%B %Y') or (df == '%b %Y') or (df == '%m %Y') ):
-                        birthDate.append('"deathDate" : "' + str(datetime.strptime(bd, df)) + '",\n"approxBirth" : "month"')
+                    elif (df == "%B %Y") or (df == "%b %Y") or (df == "%m %Y"):
+                        birthDate.append(
+                            '"deathDate" : "'
+                            + str(datetime.strptime(bd, df))
+                            + '",\n"approxBirth" : "month"'
+                        )
                     else:
-                        deathDate.append('"deathDate" : "' + str(datetime.strptime(dd, i)) + '",\n"approxDate" : "exact"')
+                        deathDate.append(
+                            '"deathDate" : "'
+                            + str(datetime.strptime(dd, i))
+                            + '",\n"approxDate" : "exact"'
+                        )
                         break
-                except ValueError as e:
+                except ValueError:
                     j += 1
-                    pass
-            if j > len(dateFormat) -1:
+            if j > len(dateFormat) - 1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 deathDate.append('"deathDate" : null,\n"approxDate" : "exact"')
-                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                logfile.write(
+                    "\n"
+                    + time.strftime("%Y-%m-%d")
+                    + " "
+                    + time.strftime("%H:%M:%S")
+                    + " :\n"
+                )
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                exc = Exception("Error for BirthDate: '" + bd + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                exc = Exception(
+                    "Error for BirthDate: '"
+                    + bd
+                    + "' line {}".format(sys.exc_info()[-1].tb_lineno)
+                )
                 logfile.write(exc[0] + " in " + fname + "\n")
 
     return birthDate, deathDate
+
 
 def parseOutApprox(filename):
     """
@@ -295,27 +380,31 @@ def parseOutApprox(filename):
         try:
             bDate.append(person.birth.date)
         except AttributeError:
-            bDate.append('00000')
-   
+            bDate.append("00000")
+
     for person in filename.individuals:
         try:
             dDate.append(person.death.date)
         except AttributeError:
-            dDate.append('00000')
+            dDate.append("00000")
 
     """
-    Approximation RegExp to be removed 
+    Approximation RegExp to be removed
     """
-    abt = re.compile('abt\.? ', re.IGNORECASE) # matches 'abt', possibly followed by a '.'
-    bet = re.compile('bet\.? ', re.I) # matche 'bet', possibly followed by a '.'
-    bef = re.compile('bef\.? ', re.I) # matches 'bef', possibly followed by a '.'
-    sep = re.compile('sept', re.I) # matches 'sept'
-    be = re.compile('before ', re.I) # matches 'about'
-    a = re.compile('about ', re.I) # matches 'about'
-    e = re.compile('early ', re.I) # matches 'early'
-    s = re.compile('(?<=\d)s') # matches an 's' preceded by a number - 1800(s)
-    p = re.compile('\.(?= \d)') # matches a '.' followed by a space and a number - oct. 1995
-    q = re.compile('\?') # matches a '?'
+    abt = re.compile(
+        "abt\.? ", re.IGNORECASE
+    )  # matches 'abt', possibly followed by a '.'
+    bet = re.compile("bet\.? ", re.I)  # matche 'bet', possibly followed by a '.'
+    bef = re.compile("bef\.? ", re.I)  # matches 'bef', possibly followed by a '.'
+    sep = re.compile("sept", re.I)  # matches 'sept'
+    be = re.compile("before ", re.I)  # matches 'about'
+    a = re.compile("about ", re.I)  # matches 'about'
+    e = re.compile("early ", re.I)  # matches 'early'
+    s = re.compile("(?<=\d)s")  # matches an 's' preceded by a number - 1800(s)
+    p = re.compile(
+        "\.(?= \d)"
+    )  # matches a '.' followed by a space and a number - oct. 1995
+    q = re.compile("\?")  # matches a '?'
 
     # Once the records are stored locally parse out the approximation strings
     # loop through the records and the object with the replacements to find any and all replacements
@@ -324,46 +413,50 @@ def parseOutApprox(filename):
     newbDate = []
     newdDate = []
 
-
     # loop through birth dates
     for b in bDate:
-        b = abt.sub('', b)
-        b = bet.sub('', b)
-        b = bef.sub('', b)
-        b = sep.sub('sep', b) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        b = be.sub('', b)
-        b = a.sub('', b)
-        b = e.sub('', b)
-        b = s.sub('', b)
-        b = p.sub('', b)
-        b = q.sub('', b)
-        
+        b = abt.sub("", b)
+        b = bet.sub("", b)
+        b = bef.sub("", b)
+        b = sep.sub(
+            "sep", b
+        )  # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
+        b = be.sub("", b)
+        b = a.sub("", b)
+        b = e.sub("", b)
+        b = s.sub("", b)
+        b = p.sub("", b)
+        b = q.sub("", b)
+
         # append parsed birthdate to new birth date list
         newbDate.append(b)
 
     # loop through death dates
     for d in dDate:
-        d = abt.sub('', d)
-        d = bet.sub('', d)
-        d = bef.sub('', d)
-        d = sep.sub('sep', d) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        d = be.sub('', d)
-        d = a.sub('', d)
-        d = e.sub('', d)
-        d = s.sub('', d)
-        d = p.sub('', d)
-        d = q.sub('', d)
+        d = abt.sub("", d)
+        d = bet.sub("", d)
+        d = bef.sub("", d)
+        d = sep.sub(
+            "sep", d
+        )  # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
+        d = be.sub("", d)
+        d = a.sub("", d)
+        d = e.sub("", d)
+        d = s.sub("", d)
+        d = p.sub("", d)
+        d = q.sub("", d)
 
         # append parsed deathdate to new death date list
         newdDate.append(d)
 
     return newbDate, newdDate
 
+
 def makeJSONobject(filename):
     """
-    get information from the file, print and structure it in JSON
+    get information from the file, print(and structure it in JSON)
     run all of the previous functions to get the information - stored as lists
-    loop through the lists and save them locally and return to be written to a file 
+    loop through the lists and save them locally and return to be written to a file
     """
 
     length = getAllInfo(filename)
@@ -375,35 +468,37 @@ def makeJSONobject(filename):
     personId = getPersonId(filename)
 
     length = len(length)
-    json = ''
-    json += '[ \n'
+    json = ""
+    json += "[ \n"
     for i in range(length):
-        json += '{ \n'
-        json += firstName[i] + ',\n'
-        json += lastName[i] + ',\n'
-        json += sexAtBirth[i] + ',\n'
-        json += birthDate[i] + ',\n'
-        json += birthPlace[i] + ',\n'
-        json += deathDate [i] + ',\n'
-        json += deathPlace[i] + ',\n'
-        json += personId[i] + ',\n'
+        json += "{ \n"
+        json += firstName[i] + ",\n"
+        json += lastName[i] + ",\n"
+        json += sexAtBirth[i] + ",\n"
+        json += birthDate[i] + ",\n"
+        json += birthPlace[i] + ",\n"
+        json += deathDate[i] + ",\n"
+        json += deathPlace[i] + ",\n"
+        json += personId[i] + ",\n"
         json += '"user_id" : "' + userId + '"\n'
         if i == (length - 1):
-            json += '}\n'
+            json += "}\n"
         else:
-            json += '},\n'
-    json += ']'
+            json += "},\n"
+    json += "]"
     return json
-    
+
+
 def writeToJSONfile(filename):
     """
     write the created json object to the output file and save it
     """
     json = makeJSONobject(filename)
-    f = open(argOut, "w") # creat/open the output file
+    f = open(argOut, "w")  # creat/open the output file
     f.write(json)
-    f.close() # save
+    f.close()  # save
     logfile.close()
+
 
 # run the main function
 if __name__ == "__main__":

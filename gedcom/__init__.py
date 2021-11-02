@@ -3,14 +3,17 @@ Library for reading and writing GEDCOM files.
 
 https://en.wikipedia.org/wiki/GEDCOM
 """
-import re
 import numbers
 import os.path
+import re
+
 import six
 
 from ._version import __version__
 
-line_format = re.compile("^(?P<level>[0-9]+) ((?P<id>@[-a-zA-Z0-9]+@) )?(?P<tag>[_A-Z0-9]+)( (?P<value>.*))?$")
+line_format = re.compile(
+    "^(?P<level>[0-9]+) ((?P<id>@[-a-zA-Z0-9]+@) )?(?P<tag>[_A-Z0-9]+)( (?P<value>.*))?$"
+)
 
 
 class GedcomFile(object):
@@ -47,21 +50,27 @@ class GedcomFile(object):
         """
         if element.level is None:
             # Need to figure out an element
-            if not (isinstance(element, Individual) or isinstance(element, Family) or element.tag in ['INDI', 'FAM']):
+            if not (
+                isinstance(element, Individual)
+                or isinstance(element, Family)
+                or element.tag in ["INDI", "FAM"]
+            ):
                 raise TypeError()
             element.level = 0
             element.set_levels_downward()
 
             # create pointer
-            if isinstance(element, Individual) or element.tag == 'INDI':
-                prefix = 'I'
-            elif isinstance(element, Family) or element.tag == 'FAM':
-                prefix = 'F'
+            if isinstance(element, Individual) or element.tag == "INDI":
+                prefix = "I"
+            elif isinstance(element, Family) or element.tag == "FAM":
+                prefix = "F"
             else:
                 raise NotImplementedError()
 
             for step in range(1, 1000000):
-                potential_id = "@{prefix}{num}@".format(prefix=prefix, num=self.next_free_id)
+                potential_id = "@{prefix}{num}@".format(
+                    prefix=prefix, num=self.next_free_id
+                )
                 if potential_id in self.pointers:
                     # this number is taken, increase
                     self.next_free_id += 1
@@ -148,9 +157,9 @@ class GedcomFile(object):
 
         Call this method to ensure the file has these required elements.
         """
-        if len(self.root_elements) == 0 or self.root_elements[0].tag != 'HEAD':
+        if len(self.root_elements) == 0 or self.root_elements[0].tag != "HEAD":
             # add header
-            head_element = self.element('HEAD', level=0, value='')
+            head_element = self.element("HEAD", level=0, value="")
             source = self.element("SOUR")
             source.add_child_element(self.element("NAME", value="gedcompy"))
             source.add_child_element(self.element("VERS", value=__version__))
@@ -159,14 +168,16 @@ class GedcomFile(object):
 
             gedcom_format = self.element("GEDC")
             gedcom_format.add_child_element(self.element("VERS", value="5.5"))
-            gedcom_format.add_child_element(self.element("FORM", value="LINEAGE-LINKED"))
+            gedcom_format.add_child_element(
+                self.element("FORM", value="LINEAGE-LINKED")
+            )
             head_element.add_child_element(gedcom_format)
 
             head_element.set_levels_downward()
             self.root_elements.insert(0, head_element)
-        if len(self.root_elements) == 0 or self.root_elements[-1].tag != 'TRLR':
+        if len(self.root_elements) == 0 or self.root_elements[-1].tag != "TRLR":
             # add trailer
-            self.root_elements.append(self.element('TRLR', level=0, value=''))
+            self.root_elements.append(self.element("TRLR", level=0, value=""))
 
     def ensure_levels(self):
         """
@@ -210,7 +221,16 @@ class Element(object):
     Can be used as is, or subclassed for specific functionality.
     """
 
-    def __init__(self, level=None, tag=None, value=None, id=None, parent_id=None, parent=None, gedcom_file=None):
+    def __init__(
+        self,
+        level=None,
+        tag=None,
+        value=None,
+        id=None,
+        parent_id=None,
+        parent=None,
+        gedcom_file=None,
+    ):
         """
         Create an element.
 
@@ -223,9 +243,11 @@ class Element(object):
         """
         self.level = level
         if tag is not None:
-            if hasattr(self, 'default_tag'):
+            if hasattr(self, "default_tag"):
                 if tag != self.default_tag:
-                    raise ValueError("Tag {} differs from default {}".format(tag, self.default_tag))
+                    raise ValueError(
+                        "Tag {} differs from default {}".format(tag, self.default_tag)
+                    )
             self.tag = tag
         else:
             self.tag = self.default_tag
@@ -242,8 +264,15 @@ class Element(object):
     def __repr__(self):
         """Interal string represation of this object, for debugging purposes."""
         return "{classname}({level}, {tag!r}{id}{value}{children})".format(
-            classname=self.__class__.__name__, level=self.level, tag=self.tag, id=(", " + repr(self.id) if self.id else ""),
-            value=(", " + repr(self.value) if self.value else ""), children=(", " + repr(self.child_elements) if len(self.child_elements) > 0 else ""))
+            classname=self.__class__.__name__,
+            level=self.level,
+            tag=self.tag,
+            id=(", " + repr(self.id) if self.id else ""),
+            value=(", " + repr(self.value) if self.value else ""),
+            children=(
+                ", " + repr(self.child_elements) if len(self.child_elements) > 0 else ""
+            ),
+        )
 
     def __getitem__(self, key):
         """
@@ -321,8 +350,15 @@ class Element(object):
 
         :rtype: iterator over string
         """
-        line_format = re.compile("^(?P<level>[0-9]+) ((?P<id>@[a-zA-Z0-9]+@) )?(?P<tag>[A-Z]+)( (?P<value>.*))?$")
-        line = u"{level}{id} {tag}{value}".format(level=self.level, id=(" " + self.id if self.id else ""), tag=self.tag, value=(" " + self.value if self.value else ""))
+        re.compile(
+            "^(?P<level>[0-9]+) ((?P<id>@[a-zA-Z0-9]+@) )?(?P<tag>[A-Z]+)( (?P<value>.*))?$"
+        )
+        line = u"{level}{id} {tag}{value}".format(
+            level=self.level,
+            id=(" " + self.id if self.id else ""),
+            tag=self.tag,
+            value=(" " + self.value if self.value else ""),
+        )
         yield line
         for child in self.child_elements:
             for line in child.gedcom_lines():
@@ -335,10 +371,10 @@ class Element(object):
 
         Return None if there is no Note.
         """
-        if 'NOTE' not in self:
+        if "NOTE" not in self:
             return None
         else:
-            return self['NOTE'].full_text
+            return self["NOTE"].full_text
 
 
 tags_to_classes = {}
@@ -346,11 +382,13 @@ tags_to_classes = {}
 
 def register_tag(tag):
     """Internal class decorator to mark a python class as to be the handler for this tag."""
+
     def classdecorator(klass):
         global tags_to_classes
         tags_to_classes[tag] = klass
         klass.default_tag = tag
         return klass
+
     return classdecorator
 
 
@@ -362,18 +400,18 @@ class Individual(Element):
     def parents(self):
         """
         Return list of parents of this person.
-        Gedcom standard allows for a person to be the child of more than one family, whether the data makes sense or is accurate, we handle this by returning all `Individual` elements. 
+        Gedcom standard allows for a person to be the child of more than one family, whether the data makes sense or is accurate, we handle this by returning all `Individual` elements.
 
         NB: There may be 0, 1, 2, 3, ... elements in this list.
 
         :returns: List of Individual's
         """
-        if 'FAMC' in self:
+        if "FAMC" in self:
             famc = []
-            if type(self['FAMC']) != list:
-                famc.append(self['FAMC'])
+            if type(self["FAMC"]) != list:
+                famc.append(self["FAMC"])
             else:
-                famc = self['FAMC']
+                famc = self["FAMC"]
 
             parents = []
             for fam in famc:
@@ -397,16 +435,16 @@ class Individual(Element):
         Returns a tuple of (firstname, lastname). If firstname or lastname isn't in the file, then None is returned.
         :returns: (firstname, lastname)
         """
-        name_tag = self['NAME']
-        first = ''
-        last = ''
+        name_tag = self["NAME"]
+        first = ""
+        last = ""
 
         if isinstance(name_tag, list):
             # We have more than one name, get the preferred name
             # Don't assume it's the first
             for name in name_tag:
 
-                if 'TYPE' not in name:
+                if "TYPE" not in name:
                     preferred_name = name
                     break
 
@@ -414,13 +452,13 @@ class Individual(Element):
             # We've only one name
             preferred_name = name_tag
 
-        if preferred_name.value in ('', None):
+        if preferred_name.value in ("", None):
             try:
-                first = preferred_name['GIVN'].value
+                first = preferred_name["GIVN"].value
             except IndexError:
                 first = None
             try:
-                last = preferred_name['SURN'].value
+                last = preferred_name["SURN"].value
             except IndexError:
                 last = None
         else:
@@ -446,16 +484,16 @@ class Individual(Element):
     def aka(self):
         """Return a list of 'also known as' names."""
         aka_list = []
-        name_tag = self['NAME']
+        name_tag = self["NAME"]
 
         if isinstance(name_tag, list):
             # We have more than one name, get the aka names
             for name in name_tag:
 
-                if 'TYPE' in name and name['TYPE'].value.lower() == 'aka':
-                    if name.value in ('', None):
-                        first = name['GIVN'].value
-                        last = name['SURN'].value
+                if "TYPE" in name and name["TYPE"].value.lower() == "aka":
+                    if name.value in ("", None):
+                        first = name["GIVN"].value
+                        last = name["SURN"].value
                     else:
                         first, last, dud = name.value.split("/")
                         first = first.strip()
@@ -467,24 +505,24 @@ class Individual(Element):
     @property
     def birth(self):
         """Class representing the birth of this person."""
-        if self['BIRT'] == None:
-            raise AttributeError, "No birth record available for this person"
+        if self["BIRT"] == None:
+            raise AttributeError("No birth record available for this person")
         else:
-            if type(self['BIRT']) != list:
-                return self['BIRT']
+            if type(self["BIRT"]) != list:
+                return self["BIRT"]
             else:
-                return self['BIRT'][0]
+                return self["BIRT"][0]
 
     @property
     def death(self):
         """Class representing the death of this person."""
-        if self['DEAT'] == None:
-            raise AttributeError, "No death record available for this person"
+        if self["DEAT"] == None:
+            raise AttributeError("No death record available for this person")
         else:
-            if type(self['DEAT']) != list:
-                return self['DEAT']
+            if type(self["DEAT"]) != list:
+                return self["DEAT"]
             else:
-                return self['DEAT'][0]
+                return self["DEAT"][0]
 
     @property
     def sex(self):
@@ -495,7 +533,7 @@ class Individual(Element):
 
         :rtype: str
         """
-        return self['SEX'].value
+        return self["SEX"].value
 
     @property
     def gender(self):
@@ -506,7 +544,7 @@ class Individual(Element):
 
         :rtype: str
         """
-        return self['SEX'].value
+        return self["SEX"].value
 
     @property
     def father(self):
@@ -553,12 +591,12 @@ class Individual(Element):
     @property
     def is_female(self):
         """Return True iff this person is recorded as female."""
-        return self.sex.lower() == 'f'
+        return self.sex.lower() == "f"
 
     @property
     def is_male(self):
         """Return True iff this person is recorded as male."""
-        return self.sex.lower() == 'm'
+        return self.sex.lower() == "m"
 
     def set_sex(self, sex):
         """
@@ -568,10 +606,10 @@ class Individual(Element):
         :raises TypeError: if `sex` is invalid
         """
         sex = sex.upper()
-        if sex not in ['M', 'F']:
+        if sex not in ["M", "F"]:
             raise TypeError("Currently only support M or F")
         try:
-            sex_node = self['SEX']
+            sex_node = self["SEX"]
             sex_node.value = sex
         except IndexError:
             self.add_child_element(self.gedcom_file.element("SEX", value=sex))
@@ -580,9 +618,9 @@ class Individual(Element):
     def title(self):
         """Return the value of the Title (TITL) of this person, or None if no title."""
         try:
-            return self['TITL'].value
+            return self["TITL"].value
         except:
-            raise AttributeError, "No title record for this person"
+            raise AttributeError("No title record for this person")
 
     @property
     def source(self):
@@ -594,10 +632,10 @@ class Individual(Element):
         :raises :AttributeError: if there is no source info
         """
         source = []
-        if (type(self['SOUR']) == list):
-            return self['SOUR']
+        if type(self["SOUR"]) == list:
+            return self["SOUR"]
         else:
-            source.append(self['SOUR'])
+            source.append(self["SOUR"])
         return source
 
     @property
@@ -609,7 +647,7 @@ class Individual(Element):
         :rtype: string
         :raises :AttributeError: if there is no note for that Individual
         """
-        return self['NOTE'].value
+        return self["NOTE"].value
 
     @property
     def residence(self):
@@ -621,13 +659,13 @@ class Individual(Element):
         :raises :AttributeError: if there is no residence record
         """
         residence = []
-        if self['RESI'] == None:
-            raise AttributeError, "No Residence record for this person"
+        if self["RESI"] == None:
+            raise AttributeError("No Residence record for this person")
         else:
-            if (type(self['RESI']) == list):
-                return self['RESI']
+            if type(self["RESI"]) == list:
+                return self["RESI"]
             else:
-                residence.append(self['RESI'])
+                residence.append(self["RESI"])
             return residence
 
     @property
@@ -640,13 +678,13 @@ class Individual(Element):
         :raises: AttributeError: if there is no record
         """
         event = []
-        if self['EVEN'] == None:
-            raise AttributeError, "No event record for this perso"
+        if self["EVEN"] == None:
+            raise AttributeError("No event record for this perso")
         else:
-            if (type(self['EVEN']) == list):
-                return self['EVEN']
+            if type(self["EVEN"]) == list:
+                return self["EVEN"]
             else:
-                event.append(self['EVEN'])
+                event.append(self["EVEN"])
             return event
 
     @property
@@ -658,10 +696,10 @@ class Individual(Element):
         :rtype: :py:class: `Burial`
         :raises: IndexError: if there is no record for this individual
         """
-        if self['BURI'] == None:
-            raise AttributeError, "No burial record for this person"
+        if self["BURI"] == None:
+            raise AttributeError("No burial record for this person")
         else:
-            return self['BURI']
+            return self["BURI"]
 
     @property
     def divorce(self):
@@ -672,8 +710,8 @@ class Individual(Element):
         :rtype: py:class: `Divorce`
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("DIV")) == 0):
-            raise AttributeError, "No Divorce record for this person"
+        if len(self.get_list("DIV")) == 0:
+            raise AttributeError("No Divorce record for this person")
         else:
             return self.get_list("DIV")
 
@@ -688,8 +726,8 @@ class Individual(Element):
         :rtype: TBD
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("BAPL")) == 0):
-            raise AttributeError, "No LDS Baptism record for this person"
+        if len(self.get_list("BAPL")) == 0:
+            raise AttributeError("No LDS Baptism record for this person")
         else:
             return self.get_list("BAPL")[0]
 
@@ -703,8 +741,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("BAPM")) == 0):
-            raise AttributeError, "No baptism record for this person"
+        if len(self.get_list("BAPM")) == 0:
+            raise AttributeError("No baptism record for this person")
         else:
             return self.get_list("BAPM")[0]
 
@@ -718,8 +756,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("BARM")) == 0):
-            raise AttributeError, "No Bar Mitzvah record for this person"
+        if len(self.get_list("BARM")) == 0:
+            raise AttributeError("No Bar Mitzvah record for this person")
         else:
             return self.get_list("BARM")[0]
 
@@ -732,8 +770,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("BASM")) == 0):
-            raise AttributeError, "No Bas Mitzvah record for this person"
+        if len(self.get_list("BASM")) == 0:
+            raise AttributeError("No Bas Mitzvah record for this person")
         else:
             return self.get_list("BASM")[0]
 
@@ -746,8 +784,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("BLES")) == 0):
-            raise AttributeError, "No blessing record for this person"
+        if len(self.get_list("BLES")) == 0:
+            raise AttributeError("No blessing record for this person")
         else:
             return self.get_list("BLES")[0]
 
@@ -760,8 +798,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("CHR")) == 0):
-            raise AttributeError, "No Christening record for this person"
+        if len(self.get_list("CHR")) == 0:
+            raise AttributeError("No Christening record for this person")
         else:
             return self.get_list("CHR")[0]
 
@@ -774,8 +812,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("CHRA")) == 0):
-            raise AttributeError, "No Adult Christening record for this person"
+        if len(self.get_list("CHRA")) == 0:
+            raise AttributeError("No Adult Christening record for this person")
         else:
             return self.get_list("CHRA")[0]
 
@@ -788,8 +826,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("CONF")) == 0):
-            raise AttributeError, "No Confirmation record for this person"
+        if len(self.get_list("CONF")) == 0:
+            raise AttributeError("No Confirmation record for this person")
         else:
             return self.get_list("CONF")[0]
 
@@ -802,8 +840,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("CONL")) == 0):
-            raise AttributeError, "No LDS Confirmation record for this person"
+        if len(self.get_list("CONL")) == 0:
+            raise AttributeError("No LDS Confirmation record for this person")
         else:
             return self.get_list("CONL")[0]
 
@@ -816,8 +854,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("CREM")) == 0):
-            raise AttributeError, "No Cremation record for this person"
+        if len(self.get_list("CREM")) == 0:
+            raise AttributeError("No Cremation record for this person")
         else:
             return self.get_list("CREM")[0]
 
@@ -830,8 +868,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("EMIG")) == 0):
-            raise AttributeError, "No Emigration record for this person"
+        if len(self.get_list("EMIG")) == 0:
+            raise AttributeError("No Emigration record for this person")
         else:
             return self.get_list("EMIG")[0]
 
@@ -844,8 +882,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("ENDL")) == 0):
-            raise AttributeError, "No Endowment record for this person"
+        if len(self.get_list("ENDL")) == 0:
+            raise AttributeError("No Endowment record for this person")
         else:
             return self.get_list("ENDL")[0]
 
@@ -858,8 +896,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("ENGA")) == 0):
-            raise AttributeError, "No Engagement record for this person"
+        if len(self.get_list("ENGA")) == 0:
+            raise AttributeError("No Engagement record for this person")
         else:
             return self.get_list("ENGA")[0]
 
@@ -872,8 +910,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("GRAD")) == 0):
-            raise AttributeError, "No Graduation record for this person"
+        if len(self.get_list("GRAD")) == 0:
+            raise AttributeError("No Graduation record for this person")
         else:
             return self.get_list("GRAD")[0]
 
@@ -886,8 +924,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("IMMI")) == 0):
-            raise AttributeError, "No Immigration record for this person"
+        if len(self.get_list("IMMI")) == 0:
+            raise AttributeError("No Immigration record for this person")
         else:
             return self.get_list("IMMI")[0]
 
@@ -900,8 +938,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("NATU")) == 0):
-            raise AttributeError, "No Naturalization record for this person"
+        if len(self.get_list("NATU")) == 0:
+            raise AttributeError("No Naturalization record for this person")
         else:
             return self.get_list("NATU")[0]
 
@@ -914,8 +952,8 @@ class Individual(Element):
         :rtype: $
         :raises: AttributeError: if there is no record for this individual
         """
-        if (len(self.get_list("WILL")) == 0):
-            raise AttributeError, "No Will record for this person"
+        if len(self.get_list("WILL")) == 0:
+            raise AttributeError("No Will record for this person")
         else:
             return self.get_list("WILL")[0]
 
@@ -941,7 +979,7 @@ class Family(Element):
         :return: wife or none if there are no wife records
         :rtype: :py:class: `Wife`
         """
-        if (len(self.get_list("WIFE")) == 0):
+        if len(self.get_list("WIFE")) == 0:
             return None
         else:
             return self.get_list("WIFE")[0]
@@ -954,7 +992,7 @@ class Family(Element):
         :return: husband or None if there are no husband records
         :rtype: :py:class: `Husband`
         """
-        if (len(self.get_list("HUSB")) == 0):
+        if len(self.get_list("HUSB")) == 0:
             return None
         else:
             return self.get_list("HUSB")[0]
@@ -994,9 +1032,10 @@ class Spouse(Element):
         """
         return self.gedcom_file[self.value]
 
+
 @register_tag("FAMC")
 class Children(Element):
-    """ Generic base class for CHIL """
+    """Generic base class for CHIL"""
 
     def as_individual(self):
         """
@@ -1008,7 +1047,6 @@ class Children(Element):
         """
 
         return self.gedcom_file[self.value]
-
 
     @property
     def father_relation(self):
@@ -1025,7 +1063,6 @@ class Children(Element):
         else:
             raise NotImplementedError()
 
-
     @property
     def mother_relation(self):
         """
@@ -1036,7 +1073,7 @@ class Children(Element):
         :rtype: string
         """
         mother_relation = self.get_list("_MREL")
-        if mother_relation[0].value =="Natural":
+        if mother_relation[0].value == "Natural":
             return mother_relation[0].value
         else:
             raise NotImplementedError()
@@ -1046,34 +1083,26 @@ class Children(Element):
 class Husband(Spouse):
     """Represents pointer to a husband in a family."""
 
-    pass
-
 
 @register_tag("WIFE")
 class Wife(Spouse):
     """Represents pointer to a wife in a family."""
-
-    pass
 
 
 @register_tag("_FREL")
 class Father_Relation(Children):
     """Represents pointer to a father relation"""
 
-    pass
 
 @register_tag("_MREL")
 class Mother_Relation(Children):
     """Represents pointer to a father relation"""
-
-    pass
 
 
 @register_tag("CHIL")
 class Child(Children):
     """Represents pointer to a child in a family"""
 
-    pass
 
 @register_tag("EVEN")
 class Event(Element):
@@ -1088,7 +1117,7 @@ class Event(Element):
         :rtype: string
         :raises KeyError: if there is no DATE sub-element
         """
-        return self['DATE'].value
+        return self["DATE"].value
 
     @property
     def place(self):
@@ -1099,7 +1128,7 @@ class Event(Element):
         :rtype: string
         :raises KeyError: if there is no PLAC sub-element
         """
-        return self['PLAC'].value
+        return self["PLAC"].value
 
     @property
     def source(self):
@@ -1110,10 +1139,10 @@ class Event(Element):
         :rtype: string
         """
         source = []
-        if (type(self['SOUR']) == list):
-            return self['SOUR']
+        if type(self["SOUR"]) == list:
+            return self["SOUR"]
         else:
-            source.append(self['SOUR'])
+            source.append(self["SOUR"])
         return source
 
     @property
@@ -1124,7 +1153,7 @@ class Event(Element):
         :returns: event type
         :rtype: string
         """
-        return self['TYPE'].value
+        return self["TYPE"].value
 
     @property
     def source(self):
@@ -1135,166 +1164,142 @@ class Event(Element):
         :rtype: string
         """
         source = []
-        if (type(self['SOUR']) == list):
-            return self['SOUR']
+        if type(self["SOUR"]) == list:
+            return self["SOUR"]
         else:
-            source.append(self['SOUR'])
+            source.append(self["SOUR"])
         return source
 
 
 @register_tag("TYPE")
 class Type(Event):
     """Represents a type of event"""
-    pass
+
 
 @register_tag("RESI")
 class Residence(Event):
     """Represents an individuals residence"""
-    pass
+
 
 @register_tag("BIRT")
 class Birth(Event):
     """Represents a birth (BIRT)."""
 
-    pass
 
 @register_tag("DEAT")
 class Death(Event):
     """Represents a death (DEAT)."""
 
-    pass
 
 @register_tag("BURI")
 class Burial(Event):
     """Represents burial information (BURI)"""
 
-    pass
 
 @register_tag("MARR")
 class Marriage(Event):
     """Represents a marriage (MARR)."""
 
-    pass
 
 @register_tag("DIV")
 class Divorce(Event):
     """Represents a divorce (DIV)"""
 
-    pass
 
 @register_tag("DATE")
 class Date(Event):
     """Represents a pointer to a date value"""
 
-    pass
 
 @register_tag("PLAC")
 class Place(Event):
     """Represents a pointer to a place entry"""
 
-    pass
 
 @register_tag("BAPL")
 class Baptism_LDS(Event):
     """Represents a baptism of the LDS Church"""
 
-    pass
 
 @register_tag("BAPM")
 class Baptism(Event):
     """Represents a non-LDS baptism"""
 
-    pass
 
 @register_tag("BARM")
 class Bar_Mitzvah(Event):
     """Represents a Bar Mitzvah"""
 
-    pass
 
 @register_tag("BASM")
 class Bas_Mitzvah(Event):
     """Represents a Bas Mitzvah"""
 
-    pass
 
 @register_tag("BLES")
 class Blessing(Event):
     """Represents a blessing"""
 
-    pass
 
 @register_tag("CHR")
 class Christening(Event):
     """Represents a Christening"""
 
-    pass
 
 @register_tag("CHRA")
 class Adult_Christening(Event):
     """Represents an adult Christening"""
 
-    pass
 
 @register_tag("CONF")
 class Confirmation(Event):
     """Represents a Christening"""
 
-    pass
 
 @register_tag("CONL")
 class LDS_Confirmation(Event):
     """Represents a Christening of the LDS Churc"""
 
-    pass
 
 @register_tag("CREM")
 class Cremation(Event):
     """Represents a Cremation"""
 
-    pass
 
 @register_tag("EMIG")
 class Emigration(Event):
     """Represents an Emigration"""
 
-    pass
 
 @register_tag("ENDL")
 class Endowment(Event):
     """Represents an Endowment"""
 
-    pass
 
 @register_tag("ENGA")
 class Engagement(Event):
     """Represents an Engagement"""
 
-    pass
 
 @register_tag("GRAD")
 class Graduation(Event):
     """Represents a Graduation"""
 
-    pass
 
 @register_tag("IMMI")
 class Immigration(Event):
     """Represents an Immigration"""
 
-    pass
 
 @register_tag("NATU")
 class Naturalization(Event):
     """Represents a naturalization"""
 
-    pass
 
 @register_tag("WILL")
 class Will(Event):
     """Represents a Will - treated as an event"""
 
-    pass
 
 @register_tag("SOUR")
 class Source(Element):
@@ -1308,7 +1313,7 @@ class Source(Element):
         :returns: page info
         :rtype: string
         """
-        return self['PAGE'].value
+        return self["PAGE"].value
 
     @property
     def data(self):
@@ -1318,7 +1323,7 @@ class Source(Element):
         :returns: data element
         :rtype:pyclass:`Data`
         """
-        return self['DATA'].text
+        return self["DATA"].text
 
 
 @register_tag("DATA")
@@ -1333,31 +1338,27 @@ class Data(Source):
         :returns: source reference
         :rtype: string
         """
-        return self['TEXT'].value
+        return self["TEXT"].value
+
 
 @register_tag("TEXT")
 class Text(Data):
     """represents source reference"""
 
-    pass
 
 @register_tag("PAGE")
 class Page(Source):
     """Represents source information"""
 
-    pass
 
 @register_tag("SEX")
 class Sex(Individual):
     """Represents a pointer to a sex entry"""
 
-    pass
 
 @register_tag("NAME")
 class Name(Individual):
     """Represents a pointer to a name entry"""
-
-    pass
 
 
 @register_tag("NOTE")
@@ -1373,14 +1374,14 @@ class Note(Element):
         CONT/CONS child nodes that store the other lines. This method assembles
         these elements into one continuusous string.
         """
-        result = "" + self.value or ''
+        result = "" + self.value or ""
 
         for cons in self.child_elements:
-            if cons.tag == 'CONT':
+            if cons.tag == "CONT":
                 result += "\n"
-                result += cons.value or ''
-            elif cons.tag == 'CONC':
-                result += cons.value or ''
+                result += cons.value or ""
+            elif cons.tag == "CONC":
+                result += cons.value or ""
             else:
                 raise ValueError("Full text can only consist of CONS and CONT")
 
@@ -1404,7 +1405,7 @@ def line_to_element(**line_dict):
 
     :rtype: Element or subclass
     """
-    return class_for_tag(line_dict['tag'])(**line_dict)
+    return class_for_tag(line_dict["tag"])(**line_dict)
 
 
 def parse_filename(filename):
@@ -1414,7 +1415,7 @@ def parse_filename(filename):
     :param string filename: Filename to parse
     :returns: GedcomFile instance
     """
-    with open(filename, 'r') as fp:
+    with open(filename, "r") as fp:
         return __parse(fp.readlines())
 
 
@@ -1458,30 +1459,37 @@ def parse(obj):
 
 
 def __parse(lines_iter):
-    current_level = 0
     level_to_obj = {}
     gedcom_file = GedcomFile()
 
     for linenum, line in enumerate(lines_iter):
-        if linenum == 0 and repr(line).strip()[0] != '0':
-            line = '0 HEAD'
+        if linenum == 0 and repr(line).strip()[0] != "0":
+            line = "0 HEAD"
 
         line = line.strip()
-        if line == '':
+        if line == "":
             continue
         match = line_format.match(line)
         if not match:
             raise NotImplementedError(line)
 
-        level = int(match.groupdict()['level'])
+        level = int(match.groupdict()["level"])
 
         if level == 0:
             parent = None
         else:
-            level_to_obj = dict((l, obj) for l, obj in level_to_obj.items() if l < level)
+            level_to_obj = dict(
+                (l, obj) for l, obj in level_to_obj.items() if l < level
+            )
             parent = level_to_obj[level - 1]
 
-        element = line_to_element(level=level, parent=parent, tag=match.groupdict()['tag'], value=match.groupdict()['value'], id=match.groupdict()['id'])
+        element = line_to_element(
+            level=level,
+            parent=parent,
+            tag=match.groupdict()["tag"],
+            value=match.groupdict()["value"],
+            id=match.groupdict()["id"],
+        )
         level_to_obj[level] = element
         element.gedcom_file = gedcom_file
         gedcom_file.add_element(element)

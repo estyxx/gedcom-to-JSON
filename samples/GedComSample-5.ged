@@ -7,60 +7,60 @@
 1 GEDC
 2 VERS 5.5
 2 FORM LINEAGE-LINKED
-0 @P1@ INDI 
-1 BIRT 
+0 @P1@ INDI
+1 BIRT
 2 DATE 17 Mar 1946
-2 PLAC Ft. Wayne, Allen, Indiana, 
+2 PLAC Ft. Wayne, Allen, Indiana,
 1 SEX F
 1 NAME Phyllis /Huffman/
 1 FAMC @F1@
 1 FAMS @F42@
-0 @P2@ INDI 
+0 @P2@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 28 July 1987
 2 PLAC Fairfax County, Virginia, USA
 1 NAME Amy Elizabeth /Herman/
 1 FAMC @F42@
-0 @P3@ INDI 
+0 @P3@ INDI
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 8 April 1985
 2 PLAC Alexandria, Independent Cities, Virginia, USA
 1 NAME Joseph Benjamin /Herman/
 1 FAMC @F42@
-0 @P4@ INDI 
+0 @P4@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 27 Mar 1983
 2 PLAC Alexandria, Independent Cities, Virginia, USA
 1 NAME Rebecca Ann /Herman/
 1 FAMC @F42@
-0 @P5@ INDI 
+0 @P5@ INDI
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 5 May 1951
 2 PLAC Santa Monica, Los Angeles, California, USA
 1 NAME Michael /Herman/
 1 FAMS @F42@
-0 @P6@ INDI 
-1 BIRT 
+0 @P6@ INDI
+1 BIRT
 2 DATE 02 Oct 1922
 2 PLAC Richview, IL, USA
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Normal, McLean, Illinois; Roll: 536; Page: 36A; Enumeration District: 56; Image: 373.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=47646655&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1923 Birth place:  Illinois Residence date:  1930 Residence place:  Normal, McLean, Illinois
 3 _APID 1,6224::47646655
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Normal, McLean, Illinois
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Normal, McLean, Illinois; Roll: 536; Page: 36A; Enumeration District: 56; Image: 373.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=47646655&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1923 Birth place:  Illinois Residence date:  1930 Residence place:  Normal, McLean, Illinois
 3 _APID 1,6224::47646655
@@ -68,7 +68,7 @@
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Normal, McLean, Illinois; Roll: 536; Page: 36A; Enumeration District: 56; Image: 373.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=47646655&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1923 Birth place:  Illinois Residence date:  1930 Residence place:  Normal, McLean, Illinois
 3 _APID 1,6224::47646655
@@ -79,19 +79,19 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=6
 1 FAMC @F3@
 1 FAMS @F1@
-0 @P7@ INDI 
-1 MARR 
+0 @P7@ INDI
+1 MARR
 2 DATE 4 Apr 1942
-1 DEAT 
+1 DEAT
 2 DATE 13 Aug 2008
 2 PLAC Arlington, VA, USA
 1 NAME Philip /Huffman/
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 05 Feb 1912
 2 PLAC Pleasant Lake, Steuben, IN, USA
 1 NAME Philip Ray /Huffman/
-1 BIRT 
+1 BIRT
 2 DATE 1912
 2 PLAC Pleasant Lake, Steuben, IN, USA
 1 SOUR @S-2097947318@
@@ -100,19 +100,19 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=7
 1 FAMC @F2@
 1 FAMS @F1@
-0 @P8@ INDI 
+0 @P8@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 25 May 1947
 2 PLAC Ft. Wayne, Ind
 1 NAME Martha /Huffman/
 1 FAMC @F1@
-0 @P9@ INDI 
-1 DEAT 
+0 @P9@ INDI
+1 DEAT
 2 DATE 1947
 2 PLAC Steuben, Indiana, United States
 1 NAME Bertha /Deller/
-1 BIRT 
+1 BIRT
 2 DATE 1880
 2 PLAC Indiana, United States
 1 SEX F
@@ -126,44 +126,44 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=9
 1 FAMC @F33@
 1 FAMS @F2@
-0 @P10@ INDI 
-1 BIRT 
+0 @P10@ INDI
+1 BIRT
 2 DATE 13 Feb 1878
 2 PLAC Steuben, Steuben, Indiana, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645256&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1877 Birth place:  Indiana Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645256
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689915&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Nov 1877 Birth place:  Indiana Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689915
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 14A; Enumeration District: 139; Image: 788.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915903&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1879 Birth place:  Indiana Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915903
 2 SOUR @S-2097947822@
 3 PAGE Roll: WW2_2281790; Local board: Allen , Indiana.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=wwiidraft&h=811029&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  13 Feb 1878 Birth place:  Indiana Residence date:   Residence place:  Allen, Indiana
 3 _APID 1,1002::811029
-1 RESI 
+1 RESI
 2 PLAC Allen, Indiana
 2 SOUR @S-2097947822@
 3 PAGE Roll: WW2_2281790; Local board: Allen , Indiana.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=wwiidraft&h=811029&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  13 Feb 1878 Birth place:  Indiana Residence date:   Residence place:  Allen, Indiana
 3 _APID 1,1002::811029
@@ -171,62 +171,62 @@
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645256&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1877 Birth place:  Indiana Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645256
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689915&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Nov 1877 Birth place:  Indiana Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689915
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 14A; Enumeration District: 139; Image: 788.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915903&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1879 Birth place:  Indiana Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915903
 2 SOUR @S-2097947822@
 3 PAGE Roll: WW2_2281790; Local board: Allen , Indiana.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=wwiidraft&h=811029&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  13 Feb 1878 Birth place:  Indiana Residence date:   Residence place:  Allen, Indiana
 3 _APID 1,1002::811029
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Steuben, Steuben, Indiana
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 14A; Enumeration District: 139; Image: 788.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915903&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1879 Birth place:  Indiana Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915903
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Ashley & Hudson Town, Steuben, Indiana
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689915&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Nov 1877 Birth place:  Indiana Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689915
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Steuben, Steuben, Indiana, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645256&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1877 Birth place:  Indiana Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645256
-1 DEAT 
+1 DEAT
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
 1 SEX M
 1 SOUR @S-2097947318@
@@ -235,18 +235,18 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=10
 1 FAMC @F5@
 1 FAMS @F2@
-0 @P11@ INDI 
+0 @P11@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 30 Jul 1894
 2 PLAC Southern Illinois
-1 DEAT 
+1 DEAT
 2 DATE Jan 1987
 2 PLAC Indianapolis, Marion, Indiana, USA
 1 NAME Ollie Emma Etta /Smith/
 1 FAMC @F36@
 1 FAMS @F3@
-0 @P12@ INDI 
+0 @P12@ INDI
 1 NAME Charles /Blackman/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -255,24 +255,24 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=12
 1 FAMS @F3@
 1 FAMS @F4@
-0 @P13@ INDI 
-1 BIRT 
+0 @P13@ INDI
+1 BIRT
 2 DATE 19 Jan 1843
 2 PLAC Steuben, Indiana, United States
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 488; Image: 48.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953423&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1843 Birth place:  Indiana Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953423
-1 RESI 
+1 RESI
 2 DATE 1860
 2 PLAC Steuben, Steuben, Indiana
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 488; Image: 48.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953423&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1843 Birth place:  Indiana Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953423
@@ -280,11 +280,11 @@
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 488; Image: 48.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953423&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1843 Birth place:  Indiana Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953423
-1 DEAT 
+1 DEAT
 2 DATE 30 Dec 1928
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
 1 SEX F
@@ -294,52 +294,52 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=13
 1 FAMC @F6@
 1 FAMS @F5@
-0 @P14@ INDI 
-1 BIRT 
+0 @P14@ INDI
+1 BIRT
 2 DATE 5 Aug 1839
 2 PLAC Erie, Ohio, United States
 2 SOUR @S-2097948098@
 3 PAGE Year: 1850; Census Place: Vermilion, Erie, Ohio; Roll: M432_676; Page: 445; Image: 149.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=13531912&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1839 Birth place:  Ohio Residence date:  1850 Residence place:  Vermilion, Erie, Ohio
 3 _APID 1,8054::13531912
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 1A; Enumeration District: 138; Image: 744.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915318&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915318
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689913&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1839 Birth place:  Ohio Marriage date:  1862 Marriage place:   Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689913
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645461
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 491; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953517&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953517
-1 RESI 
+1 RESI
 2 DATE 1860
 2 PLAC Steuben, Steuben, Indiana
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 491; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953517&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953517
@@ -347,132 +347,132 @@
 2 SOUR @S-2097948098@
 3 PAGE Year: 1850; Census Place: Vermilion, Erie, Ohio; Roll: M432_676; Page: 445; Image: 149.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=13531912&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1839 Birth place:  Ohio Residence date:  1850 Residence place:  Vermilion, Erie, Ohio
 3 _APID 1,8054::13531912
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 1A; Enumeration District: 138; Image: 744.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915318&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915318
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689913&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1839 Birth place:  Ohio Marriage date:  1862 Marriage place:   Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689913
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645461
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=2049141&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  Angola, Indiana, USA
 3 _APID 1,1555::2049141
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=916538&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  USA
 3 _APID 1,1555::916538
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=220613&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  USA
 3 _APID 1,1555::220613
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Steuben, Steuben, Indiana; Roll: M653_298; Page: 491; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=8953517&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1860 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7667::8953517
-1 RESI 
+1 RESI
 2 PLAC USA
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=220613&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  USA
 3 _APID 1,1555::220613
-1 RESI 
+1 RESI
 2 PLAC USA
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=916538&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  USA
 3 _APID 1,1555::916538
-1 RESI 
+1 RESI
 2 PLAC Angola, Indiana, USA
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=2049141&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  Angola, Indiana, USA
 3 _APID 1,1555::2049141
-1 RESI 
+1 RESI
 2 PLAC Angola, Indiana, USA
 2 SOUR @S-2097948224@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=civilwar_histdatasys&h=2049141&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:   Residence place:  Angola, Indiana, USA
 3 _APID 1,1555::2049141
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Steuben, Steuben, Indiana, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Steuben, Steuben, Indiana; Roll: T9_312; Family History Film: 1254312; Page: 300.1000; Enumeration District: 4; Image: 0365.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=27645461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1880 Residence place:  Steuben, Steuben, Indiana, United States
 3 _APID 1,6742::27645461
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Ashley & Hudson Town, Steuben, Indiana
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Steuben, Steuben, Indiana; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=44689913&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1839 Birth place:  Ohio Marriage date:  1862 Marriage place:   Residence date:  1900 Residence place:  Ashley & Hudson Town, Steuben, Indiana
 3 _APID 1,7602::44689913
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Steuben, Steuben, Indiana
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Steuben, Steuben, Indiana; Roll: T624_380; Page: 1A; Enumeration District: 138; Image: 744.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=6915318&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Ohio Residence date:  1910 Residence place:  Steuben, Steuben, Indiana
 3 _APID 1,7884::6915318
-1 RESI 
+1 RESI
 2 DATE 1850
 2 PLAC Vermilion, Erie, Ohio
 2 SOUR @S-2097948098@
 3 PAGE Year: 1850; Census Place: Vermilion, Erie, Ohio; Roll: M432_676; Page: 445; Image: 149.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=13531912&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1839 Birth place:  Ohio Residence date:  1850 Residence place:  Vermilion, Erie, Ohio
 3 _APID 1,8054::13531912
-1 MARR 
+1 MARR
 2 DATE 10 Oct 1861
 2 PLAC Steuben, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 18 Apr 1912
 2 PLAC Steuben, Steuben, Indiana, United States
 1 SEX M
@@ -482,9 +482,9 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=14
 1 FAMC @F7@
 1 FAMS @F5@
-0 @P15@ INDI 
+0 @P15@ INDI
 1 NAME Winton B /Huffman/
-1 BIRT 
+1 BIRT
 2 DATE 1910
 2 PLAC Steuben, Steuben, Indiana, United States
 1 SEX M
@@ -493,9 +493,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=15
 1 FAMC @F2@
-0 @P16@ INDI 
+0 @P16@ INDI
 1 NAME Harold D /Huffman/
-1 BIRT 
+1 BIRT
 2 DATE 1908
 2 PLAC Steuben, Steuben, Indiana, United States
 1 SEX M
@@ -504,11 +504,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=16
 1 FAMC @F2@
-0 @P17@ INDI 
-1 DEAT 
+0 @P17@ INDI
+1 DEAT
 2 DATE 1912
 2 PLAC Salem Township, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE Jun 1847
 1 NAME Mary Magdalene /Ritter/
 1 SEX F
@@ -517,11 +517,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=17
 1 FAMS @F33@
-0 @P18@ INDI 
-1 DEAT 
+0 @P18@ INDI
+1 DEAT
 2 DATE 1931
 2 PLAC Salem Township, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE Oct 1848
 2 PLAC Butler, Columbiana, Ohio, United States
 1 NAME Aaron /Deller/
@@ -531,31 +531,31 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=18
 1 FAMS @F33@
-0 @P19@ INDI 
-1 DEAT 
+0 @P19@ INDI
+1 DEAT
 2 PLAC Centralia, IL
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE about 1899
 2 PLAC Richview, Washington, Illinois, USA
 1 NAME Floyd /Blackman/
 1 FAMC @F4@
 1 FAMS @F47@
-0 @P20@ INDI 
+0 @P20@ INDI
 1 SEX F
-1 DEAT 
+1 DEAT
 2 PLAC IL
-1 BIRT 
+1 BIRT
 2 PLAC WI
 1 NAME Jessie /Stewart/
 1 FAMS @F4@
-0 @P21@ INDI 
-1 BIRT 
+0 @P21@ INDI
+1 BIRT
 2 DATE 12 Jul 1809
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
-1 MARR 
+1 MARR
 2 DATE 1829
-1 DEAT 
+1 DEAT
 2 DATE 1867
 2 PLAC Steuben, Steuben, Indiana, United States
 1 NAME Clarissa /Dana/
@@ -566,7 +566,7 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=21
 1 FAMC @F8@
 1 FAMS @F7@
-0 @P22@ INDI 
+0 @P22@ INDI
 1 NAME Orla /Huffman/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -574,11 +574,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=22
 1 FAMC @F5@
-0 @P23@ INDI 
-1 BIRT 
+0 @P23@ INDI
+1 BIRT
 2 DATE 1802
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 13 Jun 1865
 2 PLAC Steuben, Steuben, Indiana, United States
 1 NAME William /Huffman/
@@ -588,11 +588,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=23
 1 FAMS @F7@
-0 @P24@ INDI 
-1 DEAT 
+0 @P24@ INDI
+1 DEAT
 2 DATE 25 Jan 1952
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 29 Aug 1882
 2 PLAC Steuben, Steuben, Indiana, United States
 1 NAME Blaine C /Huffman/
@@ -602,10 +602,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=24
 1 FAMC @F5@
-0 @P25@ INDI 
-1 DEAT 
+0 @P25@ INDI
+1 DEAT
 2 PLAC Albion, Calhoun, Michigan, United States
-1 BIRT 
+1 BIRT
 2 DATE Feb 1874
 2 PLAC Steuben, Steuben, Indiana, United States
 1 NAME Sidney C /Huffman/
@@ -615,11 +615,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=25
 1 FAMC @F5@
-0 @P26@ INDI 
-1 BIRT 
+0 @P26@ INDI
+1 BIRT
 2 DATE Nov 1868
 2 PLAC Steuben, Steuben, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 1955
 2 PLAC Kalamazoo, Kalamazoo, Michigan, United States
 1 NAME Orla /Huffman/
@@ -629,11 +629,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=26
 1 FAMC @F5@
-0 @P27@ INDI 
-1 DEAT 
+0 @P27@ INDI
+1 DEAT
 2 DATE 4 Sep 1942
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 14 Jan 1867
 2 PLAC Steuben, Steuben, Indiana, United States
 1 SEX M
@@ -643,15 +643,15 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=27
 1 FAMC @F5@
-0 @P28@ INDI 
-1 MARR 
+0 @P28@ INDI
+1 MARR
 2 DATE 10 Jul 1834
 2 PLAC Sandusky, Ohio, United States
-1 DEAT 
+1 DEAT
 2 DATE 25 Dec 1880
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
 1 NAME Philora H /Gould/
-1 BIRT 
+1 BIRT
 2 DATE 14 Jun 1818
 2 PLAC Cayuga, Cayuga, New York, United States
 1 SEX F
@@ -660,11 +660,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=28
 1 FAMS @F6@
-0 @P29@ INDI 
-1 DEAT 
+0 @P29@ INDI
+1 DEAT
 2 DATE 28 Jun 1881
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 14 Mar 1813
 2 PLAC New York, United States
 1 NAME Matthias Lemmon /Tuttle/
@@ -675,14 +675,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=29
 1 FAMC @F18@
 1 FAMS @F6@
-0 @P30@ INDI 
-1 MARR 
+0 @P30@ INDI
+1 MARR
 2 DATE 1812
 2 PLAC Bradford, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 11 Dec 1878
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 25 Mar 1796
 2 PLAC Bradford, Pennsylvania, United States
 1 NAME Patience /Powell/
@@ -692,8 +692,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=30
 1 FAMS @F18@
-0 @P31@ INDI 
-1 BIRT 
+0 @P31@ INDI
+1 BIRT
 2 DATE 1861
 2 PLAC Steuben, Steuben, Indiana, United States
 1 NAME Althea /Tuttle/
@@ -703,12 +703,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=31
 1 FAMC @F6@
-0 @P32@ INDI 
-1 DEAT 
+0 @P32@ INDI
+1 DEAT
 2 DATE 1949
 2 PLAC Steuben, Indiana, United States
 1 NAME Frank M /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 31 Oct 1857
 2 PLAC Indiana, United States
 1 SEX M
@@ -717,11 +717,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=32
 1 FAMC @F6@
-0 @P33@ INDI 
-1 DEAT 
+0 @P33@ INDI
+1 DEAT
 2 DATE 7 Dec 1902
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 8 Jul 1847
 2 PLAC Steuben, Indiana, United States
 1 NAME Chester V /Tuttle/
@@ -731,10 +731,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=33
 1 FAMC @F6@
-0 @P34@ INDI 
-1 DEAT 
+0 @P34@ INDI
+1 DEAT
 2 DATE 1899
-1 BIRT 
+1 BIRT
 2 DATE 15 Apr 1840
 2 PLAC Lagrange, Indiana, United States
 1 NAME Lorana /Tuttle/
@@ -744,10 +744,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=34
 1 FAMC @F6@
-0 @P35@ INDI 
-1 DEAT 
+0 @P35@ INDI
+1 DEAT
 2 DATE 25 Mar 1880
-1 BIRT 
+1 BIRT
 2 DATE 1839
 2 PLAC Michigan, United States
 1 NAME Adesta /Tuttle/
@@ -757,11 +757,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=35
 1 FAMC @F6@
-0 @P36@ INDI 
-1 DEAT 
+0 @P36@ INDI
+1 DEAT
 2 DATE 17 Jan 1870
 2 PLAC Pleasant Lake, Steuben, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 21 Nov 1789
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 NAME VanRensselaer /Tuttle/
@@ -772,8 +772,8 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=36
 1 FAMC @F19@
 1 FAMS @F18@
-0 @P37@ INDI 
-1 BIRT 
+0 @P37@ INDI
+1 BIRT
 2 DATE 1837
 2 PLAC Ohio, United States
 1 NAME Susan /Huffman/
@@ -783,12 +783,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=37
 1 FAMC @F7@
-0 @P38@ INDI 
+0 @P38@ INDI
 1 NAME Silas Dana /Huffman/
-1 BIRT 
+1 BIRT
 2 DATE 15 Sep 1833
 2 PLAC Minda Valley, New York, United States
-1 DEAT 
+1 DEAT
 2 DATE 4 Jun 1907
 2 PLAC Mesick, Wexford, Michigan, United States
 1 SEX M
@@ -797,8 +797,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=38
 1 FAMC @F7@
-0 @P39@ INDI 
-1 BIRT 
+0 @P39@ INDI
+1 BIRT
 2 DATE 1832
 2 PLAC New York, United States
 1 NAME Eliza /Huffman/
@@ -808,11 +808,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=39
 1 FAMC @F7@
-0 @P40@ INDI 
-1 BIRT 
+0 @P40@ INDI
+1 BIRT
 2 DATE 25 Feb 1829
 2 PLAC Allegheny, New York, United States
-1 DEAT 
+1 DEAT
 2 DATE 19 Jan 1903
 2 PLAC Steuben, Indiana, United States
 1 NAME Miriam Lowell /Huffman/
@@ -822,7 +822,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=40
 1 FAMC @F7@
-0 @P41@ INDI 
+0 @P41@ INDI
 1 NAME Mildred /Huffman/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -830,8 +830,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=41
 1 FAMC @F7@
-0 @P42@ INDI 
-1 BIRT 
+0 @P42@ INDI
+1 BIRT
 2 DATE 1846
 2 PLAC Ohio, United States
 1 NAME Samuel /Huffman/
@@ -841,9 +841,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=42
 1 FAMC @F7@
-0 @P43@ INDI 
+0 @P43@ INDI
 1 NAME John /Huffman/
-1 BIRT 
+1 BIRT
 2 DATE 1844
 2 PLAC Ohio, United States
 1 SEX M
@@ -852,12 +852,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=43
 1 FAMC @F7@
-0 @P44@ INDI 
-1 DEAT 
+0 @P44@ INDI
+1 DEAT
 2 DATE 23 Jan 1831
 2 PLAC Allegany, New York, United States
 1 NAME Sally /Cowel/
-1 BIRT 
+1 BIRT
 2 DATE 6 Feb 1782
 2 PLAC New York, United States
 1 SEX F
@@ -866,24 +866,24 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=44
 1 FAMS @F8@
-0 @P45@ INDI 
-1 BIRT 
+0 @P45@ INDI
+1 BIRT
 2 DATE 9 Mar 1775
 2 PLAC Ashford, Windham, Connecticut, United States
 2 SOUR @S-2097948485@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ctvitalsbarbour&h=561399&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  9 Mar 1775 Birth place:  Ashford
 3 _APID 1,1034::561399
 1 NAME Silas /Dana/
 2 SOUR @S-2097948485@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ctvitalsbarbour&h=561399&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  9 Mar 1775 Birth place:  Ashford
 3 _APID 1,1034::561399
-1 DEAT 
+1 DEAT
 2 DATE 14 Feb 1846
 1 SEX M
 1 SOUR @S-2097947318@
@@ -892,11 +892,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=45
 1 FAMC @F9@
 1 FAMS @F8@
-0 @P46@ INDI 
-1 MARR 
+0 @P46@ INDI
+1 MARR
 2 DATE 27 Nov 1770
 2 PLAC Brooklyn, Windham, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 10 Oct 1747
 2 PLAC Hampton, Windham, Connecticut, United States
 1 NAME Lucy /Holt/
@@ -906,12 +906,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=46
 1 FAMS @F9@
-0 @P47@ INDI 
+0 @P47@ INDI
 1 NAME Jedediah /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 9 Aug 1739
 2 PLAC Ashford, Windham, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 27 Nov 1770
 2 PLAC Brooklyn, Windham, Connecticut, United States
 1 SEX M
@@ -921,14 +921,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=47
 1 FAMC @F10@
 1 FAMS @F9@
-0 @P48@ INDI 
-1 MARR 
+0 @P48@ INDI
+1 MARR
 2 DATE 1731
 2 PLAC Ashford, Windham, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 1711
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 30 Jan 1786
 2 PLAC Ashford, Windham, Connecticut, United States
 1 NAME Elizabeth /Dana/
@@ -938,7 +938,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=48
 1 FAMS @F10@
-0 @P49@ INDI 
+0 @P49@ INDI
 1 NAME Sally /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -946,7 +946,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=49
 1 FAMC @F9@
-0 @P50@ INDI 
+0 @P50@ INDI
 1 NAME Polly /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -954,7 +954,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=50
 1 FAMC @F9@
-0 @P51@ INDI 
+0 @P51@ INDI
 1 NAME Lucy /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -962,7 +962,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=51
 1 FAMC @F9@
-0 @P52@ INDI 
+0 @P52@ INDI
 1 NAME Jedidiah /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -970,7 +970,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=52
 1 FAMC @F9@
-0 @P53@ INDI 
+0 @P53@ INDI
 1 NAME Daniel /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -978,7 +978,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=53
 1 FAMC @F9@
-0 @P54@ INDI 
+0 @P54@ INDI
 1 NAME Clarina /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -986,7 +986,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=54
 1 FAMC @F9@
-0 @P55@ INDI 
+0 @P55@ INDI
 1 NAME Anna /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -994,11 +994,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=55
 1 FAMC @F9@
-0 @P56@ INDI 
-1 BIRT 
+0 @P56@ INDI
+1 BIRT
 2 DATE 8 Jun 1771
 2 PLAC Ashford, Windham, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1840
 2 PLAC Marshall, Illinois, United States
 1 NAME Elizabeth /Dana/
@@ -1008,11 +1008,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=56
 1 FAMC @F9@
-0 @P57@ INDI 
-1 BIRT 
+0 @P57@ INDI
+1 BIRT
 2 DATE 11 Feb 1707
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 28 Mar 1787
 2 PLAC Ashford, Windham, Connecticut, United States
 1 NAME Jedidiah /Dana/
@@ -1023,15 +1023,15 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=57
 1 FAMC @F11@
 1 FAMS @F10@
-0 @P58@ INDI 
-1 MARR 
+0 @P58@ INDI
+1 MARR
 2 DATE 24 May 1688
 2 PLAC Brighton, Suffolk, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 14 Feb 1754
 2 PLAC Newton, Middlesex, Massachusetts, United States
 1 NAME Mary /Buckminster/
-1 BIRT 
+1 BIRT
 2 DATE 1667
 2 PLAC Brookline, Middlesex, Massachusetts, United States
 1 SEX F
@@ -1040,7 +1040,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=58
 1 FAMS @F11@
-0 @P59@ INDI 
+0 @P59@ INDI
 1 NAME Solomon /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -1048,7 +1048,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=59
 1 FAMC @F10@
-0 @P60@ INDI 
+0 @P60@ INDI
 1 NAME Joseph /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -1056,7 +1056,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=60
 1 FAMC @F10@
-0 @P61@ INDI 
+0 @P61@ INDI
 1 NAME Jonthan /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -1064,7 +1064,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=61
 1 FAMC @F10@
-0 @P62@ INDI 
+0 @P62@ INDI
 1 NAME Benjamin /Dana/
 1 SEX M
 1 SOUR @S-2097947318@
@@ -1072,7 +1072,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=62
 1 FAMC @F10@
-0 @P63@ INDI 
+0 @P63@ INDI
 1 NAME Anna /Dana/
 1 SEX F
 1 SOUR @S-2097947318@
@@ -1080,8 +1080,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=63
 1 FAMC @F10@
-0 @P64@ INDI 
-1 BIRT 
+0 @P64@ INDI
+1 BIRT
 2 DATE 10 Oct 1743
 2 PLAC Ashford, Windham, Connecticut, United States
 1 NAME Elizabeth /Dana/
@@ -1091,12 +1091,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=64
 1 FAMC @F10@
-0 @P65@ INDI 
-1 DEAT 
+0 @P65@ INDI
+1 DEAT
 2 DATE 11 Dec 1805
 2 PLAC Lebanon, Grafton, New Hampshire, United States
 1 NAME William /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 9 Aug 1737
 2 PLAC Ashford, Windham, Connecticut, United States
 1 SEX M
@@ -1105,12 +1105,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=65
 1 FAMC @F10@
-0 @P66@ INDI 
-1 DEAT 
+0 @P66@ INDI
+1 DEAT
 2 DATE 16 Oct 1817
 2 PLAC Cobleskill, Schoharie, New York, United States
 1 NAME James /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 9 Oct 1735
 2 PLAC Ashford, Windham, Connecticut, United States
 1 SEX M
@@ -1119,12 +1119,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=66
 1 FAMC @F10@
-0 @P67@ INDI 
-1 DEAT 
+0 @P67@ INDI
+1 DEAT
 2 DATE 13 Aug 1738
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Benjamin /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 20 Feb 1660
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX M
@@ -1134,14 +1134,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=67
 1 FAMC @F12@
 1 FAMS @F11@
-0 @P68@ INDI 
-1 MARR 
+0 @P68@ INDI
+1 MARR
 2 DATE 1648
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 2 Apr 1690
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 BIRT 
+1 BIRT
 2 DATE 31 Oct 1617
 2 PLAC Manchester, Lancashire, , England
 1 NAME Richard /Dana/
@@ -1151,8 +1151,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=68
 1 FAMS @F12@
-0 @P69@ INDI 
-1 BIRT 
+0 @P69@ INDI
+1 BIRT
 2 DATE 11 May 1705
 1 NAME Sarah /Dana/
 1 SEX F
@@ -1161,11 +1161,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=69
 1 FAMC @F11@
-0 @P70@ INDI 
-1 BIRT 
+0 @P70@ INDI
+1 BIRT
 2 DATE 11 May 1705
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 27 Nov 1726
 2 PLAC Pomfret, Windham, Connecticut, United States
 1 NAME Ann /Dana/
@@ -1175,11 +1175,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=70
 1 FAMC @F11@
-0 @P71@ INDI 
-1 BIRT 
+0 @P71@ INDI
+1 BIRT
 2 DATE 12 Sep 1703
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 17 May 1770
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME William /Dana/
@@ -1189,12 +1189,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=71
 1 FAMC @F11@
-0 @P72@ INDI 
-1 DEAT 
+0 @P72@ INDI
+1 DEAT
 2 DATE 13 Sep 1702
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME John /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 16 Aug 1702
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX M
@@ -1203,11 +1203,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=72
 1 FAMC @F11@
-0 @P73@ INDI 
-1 BIRT 
+0 @P73@ INDI
+1 BIRT
 2 DATE 21 Feb 1700
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 1778
 2 PLAC Lebanon, Grafton, New Hampshire, United States
 1 NAME Joseph /Dana/
@@ -1217,12 +1217,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=73
 1 FAMC @F11@
-0 @P74@ INDI 
+0 @P74@ INDI
 1 NAME Isaac /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 3 Oct 1697
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 21 Apr 1767
 2 PLAC Pomfret, Windsor, Vermont, United States
 1 SEX M
@@ -1231,9 +1231,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=74
 1 FAMC @F11@
-0 @P75@ INDI 
+0 @P75@ INDI
 1 NAME Mary /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 1693
 1 SEX F
 1 SOUR @S-2097947318@
@@ -1241,11 +1241,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=75
 1 FAMC @F11@
-0 @P76@ INDI 
-1 BIRT 
+0 @P76@ INDI
+1 BIRT
 2 DATE 1691
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 1736
 2 PLAC Berwick, York, Maine, United States
 1 NAME Jonathan /Dana/
@@ -1255,12 +1255,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=76
 1 FAMC @F11@
-0 @P77@ INDI 
+0 @P77@ INDI
 1 NAME Benjamin /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 28 Apr 1689
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 5 Jun 1751
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX M
@@ -1269,12 +1269,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=77
 1 FAMC @F11@
-0 @P78@ INDI 
-1 DEAT 
+0 @P78@ INDI
+1 DEAT
 2 DATE 15 Jul 1711
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Anne /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1624
 2 PLAC Barnham, Suffolk, , England
 1 SEX F
@@ -1284,9 +1284,9 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=78
 1 FAMC @F13@
 1 FAMS @F12@
-0 @P79@ INDI 
+0 @P79@ INDI
 1 NAME Abigail /Dana/
-1 BIRT 
+1 BIRT
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX F
 1 SOUR @S-2097947318@
@@ -1294,12 +1294,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=79
 1 FAMC @F12@
-0 @P80@ INDI 
+0 @P80@ INDI
 1 NAME Sarah /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 1 Jan 1669
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 11 Jan 1669
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX F
@@ -1308,11 +1308,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=80
 1 FAMC @F12@
-0 @P81@ INDI 
-1 BIRT 
+0 @P81@ INDI
+1 BIRT
 2 DATE 5 May 1667
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 10 Nov 1741
 2 PLAC Newton, Middlesex, Massachusetts, United States
 1 NAME Deliverence /Dana/
@@ -1322,11 +1322,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=81
 1 FAMC @F12@
-0 @P82@ INDI 
-1 BIRT 
+0 @P82@ INDI
+1 BIRT
 2 DATE 20 Mar 1663
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 10 Oct 1749
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Daniel /Dana/
@@ -1336,11 +1336,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=82
 1 FAMC @F12@
-0 @P83@ INDI 
-1 DEAT 
+0 @P83@ INDI
+1 DEAT
 2 DATE 27 Apr 1662
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 BIRT 
+1 BIRT
 2 DATE 20 Feb 1662
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Elizabeth /Dana/
@@ -1350,11 +1350,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=83
 1 FAMC @F12@
-0 @P84@ INDI 
-1 BIRT 
+0 @P84@ INDI
+1 BIRT
 2 DATE 21 May 1656
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 11 Feb 1700
 2 PLAC Concord, Middlesex, Massachusetts, United States
 1 NAME Joseph /Dana/
@@ -1364,12 +1364,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=84
 1 FAMC @F12@
-0 @P85@ INDI 
-1 DEAT 
+0 @P85@ INDI
+1 DEAT
 2 DATE 10 Oct 1668
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Abiah /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 21 May 1655
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 SEX F
@@ -1378,12 +1378,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=85
 1 FAMC @F12@
-0 @P86@ INDI 
-1 DEAT 
+0 @P86@ INDI
+1 DEAT
 2 DATE 24 Dec 1698
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Jacob /Dana/
-1 BIRT 
+1 BIRT
 2 DATE 2 Dec 1654
 2 PLAC Massachusetts, United States
 1 SEX M
@@ -1392,11 +1392,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=86
 1 FAMC @F12@
-0 @P87@ INDI 
-1 BIRT 
+0 @P87@ INDI
+1 BIRT
 2 DATE 13 Oct 1653
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 8 Nov 1653
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Samuel /Dana/
@@ -1406,11 +1406,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=87
 1 FAMC @F12@
-0 @P88@ INDI 
-1 DEAT 
+0 @P88@ INDI
+1 DEAT
 2 DATE 1728
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 BIRT 
+1 BIRT
 2 DATE 8 Jul 1651
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME Hannah /Dana/
@@ -1420,11 +1420,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=88
 1 FAMC @F12@
-0 @P89@ INDI 
-1 BIRT 
+0 @P89@ INDI
+1 BIRT
 2 DATE 15 Apr 1649
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
-1 DEAT 
+1 DEAT
 2 DATE 12 Oct 1649
 2 PLAC Cambridge, Middlesex, Massachusetts, United States
 1 NAME John /Dana/
@@ -1434,15 +1434,15 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=89
 1 FAMC @F12@
-0 @P90@ INDI 
-1 MARR 
+0 @P90@ INDI
+1 MARR
 2 DATE 1625
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 1660
 2 PLAC Watertown, Middlesex, Massachusetts, United States
 1 NAME Anne /Martyn/
-1 BIRT 
+1 BIRT
 2 DATE 1604
 2 PLAC Barnham, Suffolk, , England
 1 SEX F
@@ -1451,11 +1451,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=90
 1 FAMS @F13@
-0 @P91@ INDI 
-1 BIRT 
+0 @P91@ INDI
+1 BIRT
 2 DATE 1599
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 24 Apr 1639
 2 PLAC Watertown, Middlesex, Massachusetts, United States
 1 NAME Robert /Bullard/
@@ -1466,14 +1466,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=91
 1 FAMC @F14@
 1 FAMS @F13@
-0 @P92@ INDI 
-1 MARR 
+0 @P92@ INDI
+1 MARR
 2 DATE 2 Jul 1587
 2 PLAC Barnham, Suffolk, , England
-1 BIRT 
+1 BIRT
 2 DATE 1566
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 8 Feb 1630
 2 PLAC Barnham, Suffolk, , England
 1 NAME Grace /Bignett/
@@ -1483,12 +1483,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=92
 1 FAMS @F14@
-0 @P93@ INDI 
-1 DEAT 
+0 @P93@ INDI
+1 DEAT
 2 DATE 27 Sep 1689
 2 PLAC Sherborn, Middlesex, Massachusetts, United States
 1 NAME Benjamin /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1630
 2 PLAC Sherborn, Middlesex, Massachusetts, United States
 1 SEX M
@@ -1497,12 +1497,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=93
 1 FAMC @F13@
-0 @P94@ INDI 
-1 DEAT 
+0 @P94@ INDI
+1 DEAT
 2 DATE 1609
 2 PLAC Barnham, Suffolk, , England
 1 NAME William /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1562
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1512,15 +1512,15 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=94
 1 FAMC @F15@
 1 FAMS @F14@
-0 @P95@ INDI 
-1 MARR 
+0 @P95@ INDI
+1 MARR
 2 DATE 1564
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 3 Aug 1587
 2 PLAC Barnham, Suffolk, , England
 1 NAME Margaret /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1539
 2 PLAC Barnham, Suffolk, , England
 1 SEX F
@@ -1529,12 +1529,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=95
 1 FAMS @F15@
-0 @P96@ INDI 
-1 DEAT 
+0 @P96@ INDI
+1 DEAT
 2 DATE 24 Dec 1687
 2 PLAC Dedham, Norfolk, Massachusetts, United States
 1 NAME William /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1594
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1543,12 +1543,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=96
 1 FAMC @F14@
-0 @P97@ INDI 
-1 DEAT 
+0 @P97@ INDI
+1 DEAT
 2 DATE 1591
 2 PLAC Barnham, Suffolk, , England
 1 NAME Henry /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1535
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1558,11 +1558,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=97
 1 FAMC @F16@
 1 FAMS @F15@
-0 @P98@ INDI 
-1 BIRT 
+0 @P98@ INDI
+1 BIRT
 2 DATE 1510
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 1587
 2 PLAC Barnham, Suffolk, , England
 1 NAME John /Buller/
@@ -1573,14 +1573,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=98
 1 FAMC @F17@
 1 FAMS @F16@
-0 @P99@ INDI 
-1 MARR 
+0 @P99@ INDI
+1 MARR
 2 DATE 1530
 2 PLAC , Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 2 Aug 1587
 2 PLAC Barnham, Suffolk, , England
-1 BIRT 
+1 BIRT
 2 DATE 1514
 2 PLAC Barnham, Suffolk, , England
 1 NAME Margaret /Buller/
@@ -1590,12 +1590,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=99
 1 FAMS @F16@
-0 @P100@ INDI 
-1 DEAT 
+0 @P100@ INDI
+1 DEAT
 2 DATE 26 Sep 1574
 2 PLAC Barnham, Suffolk, , England
 1 NAME Henry /Buller/
-1 BIRT 
+1 BIRT
 2 DATE 26 Sep 1574
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1604,8 +1604,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=100
 1 FAMC @F15@
-0 @P101@ INDI 
-1 BIRT 
+0 @P101@ INDI
+1 BIRT
 2 DATE 1570
 2 PLAC Barnham, Suffolk, , England
 1 NAME Ason /Buller/
@@ -1615,11 +1615,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=101
 1 FAMC @F15@
-0 @P102@ INDI 
-1 DEAT 
+0 @P102@ INDI
+1 DEAT
 2 PLAC Barnham, Suffolk, , England
 1 NAME Ellen /Bullard Buller/
-1 BIRT 
+1 BIRT
 2 DATE 1568
 2 PLAC Barnham, Suffolk, , England
 1 SEX F
@@ -1628,11 +1628,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=102
 1 FAMC @F15@
-0 @P103@ INDI 
-1 BIRT 
+0 @P103@ INDI
+1 BIRT
 2 DATE 1567
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 PLAC Barnham, Suffolk, , England
 1 NAME /Bullard Buller/
 1 SEX F
@@ -1641,12 +1641,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=103
 1 FAMC @F15@
-0 @P104@ INDI 
-1 DEAT 
+0 @P104@ INDI
+1 DEAT
 2 DATE 2 Feb 1564
 2 PLAC Barnham, Suffolk, , England
 1 NAME Margaret /Buller Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 2 Jan 1564
 2 PLAC Barnham, Suffolk, , England
 1 SEX F
@@ -1655,12 +1655,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=104
 1 FAMC @F15@
-0 @P105@ INDI 
+0 @P105@ INDI
 1 NAME John /Buller/
-1 BIRT 
+1 BIRT
 2 DATE 1485
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 1535
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1670,15 +1670,15 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=105
 1 FAMC @F57@
 1 FAMS @F17@
-0 @P106@ INDI 
-1 MARR 
+0 @P106@ INDI
+1 MARR
 2 DATE 1510
 2 PLAC St Martin, Suffolk, , England
 1 NAME John /Buller/
-1 BIRT 
+1 BIRT
 2 DATE 1489
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 PLAC Y, Somme, Picardie, France
 1 SEX F
 1 SOUR @S-2097947318@
@@ -1686,11 +1686,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=106
 1 FAMS @F17@
-0 @P107@ INDI 
-1 DEAT 
+0 @P107@ INDI
+1 DEAT
 2 PLAC , , , England
 1 NAME John /Bullard/
-1 BIRT 
+1 BIRT
 2 DATE 1460
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1699,12 +1699,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=107
 1 FAMS @F57@
-0 @P108@ INDI 
+0 @P108@ INDI
 1 NAME John /Buller/
-1 BIRT 
+1 BIRT
 2 DATE 1485
 2 PLAC Barnham, Suffolk, , England
-1 DEAT 
+1 DEAT
 2 DATE 1535
 2 PLAC Barnham, Suffolk, , England
 1 SEX M
@@ -1713,11 +1713,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=108
 1 FAMC @F57@
-0 @P109@ INDI 
-1 BIRT 
+0 @P109@ INDI
+1 BIRT
 2 DATE 30 Sep 1770
 2 PLAC Rockland, New York, United States
-1 DEAT 
+1 DEAT
 2 DATE 1801
 1 NAME Martha /Halstead/
 1 SEX F
@@ -1726,15 +1726,15 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=109
 1 FAMS @F19@
-0 @P110@ INDI 
-1 MARR 
+0 @P110@ INDI
+1 MARR
 2 DATE 1788
-1 MARR 
+1 MARR
 2 DATE 1788
-1 DEAT 
+1 DEAT
 2 DATE 1870
 1 NAME Sarah /Halstead/
-1 BIRT 
+1 BIRT
 2 DATE 30 Sep 1770
 2 PLAC Kakiat, Rockland, New York, United States
 1 SEX F
@@ -1743,10 +1743,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=110
 1 FAMS @F21@
-0 @P111@ INDI 
-1 DEAT 
+0 @P111@ INDI
+1 DEAT
 2 DATE 1801
-1 BIRT 
+1 BIRT
 2 DATE 30 Sep 1770
 2 PLAC Rockland, New York, United States
 1 NAME Martha /Halstead/
@@ -1756,8 +1756,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=111
 1 FAMS @F20@
-0 @P112@ INDI 
-1 BIRT 
+0 @P112@ INDI
+1 BIRT
 2 DATE 1852
 2 PLAC Green Creek, Sandusky, Ohio, United States
 1 NAME William /Tuttle/
@@ -1767,8 +1767,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=112
 1 FAMC @F18@
-0 @P113@ INDI 
-1 BIRT 
+0 @P113@ INDI
+1 BIRT
 2 DATE Mar 1850
 2 PLAC Ohio, United States
 1 NAME Flora Winslow /Tuttle/
@@ -1778,8 +1778,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=113
 1 FAMC @F18@
-0 @P114@ INDI 
-1 BIRT 
+0 @P114@ INDI
+1 BIRT
 2 DATE Mar 1837
 2 PLAC Ohio, United States
 1 NAME Caroline /Tuttle/
@@ -1789,11 +1789,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=114
 1 FAMC @F18@
-0 @P115@ INDI 
-1 BIRT 
+0 @P115@ INDI
+1 BIRT
 2 DATE 1835
 2 PLAC Clyde, Sandusky, Ohio, United States
-1 DEAT 
+1 DEAT
 2 DATE 14 May 1917
 2 PLAC Marion, Indiana, United States
 1 NAME Luke /Tuttle/
@@ -1803,11 +1803,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=115
 1 FAMC @F18@
-0 @P116@ INDI 
-1 DEAT 
+0 @P116@ INDI
+1 DEAT
 2 DATE 15 Dec 1914
 2 PLAC Trenton, Delaware, Ohio, United States
-1 BIRT 
+1 BIRT
 2 DATE 23 Jan 1833
 2 PLAC Sandusky, Ohio, United States
 1 NAME Sarah /Tuttle/
@@ -1817,8 +1817,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=116
 1 FAMC @F18@
-0 @P117@ INDI 
-1 BIRT 
+0 @P117@ INDI
+1 BIRT
 2 DATE 1830
 2 PLAC Ohio, United States
 1 NAME Lucy /Tuttle/
@@ -1828,10 +1828,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=117
 1 FAMC @F18@
-0 @P118@ INDI 
-1 DEAT 
+0 @P118@ INDI
+1 DEAT
 2 DATE 1853
-1 BIRT 
+1 BIRT
 2 DATE 1823
 2 PLAC Sandusky, Ohio, United States
 1 NAME William VanRensselaer /Tuttle/
@@ -1841,11 +1841,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=118
 1 FAMC @F18@
-0 @P119@ INDI 
-1 DEAT 
+0 @P119@ INDI
+1 DEAT
 2 DATE 12 Mar 1880
 2 PLAC India
-1 BIRT 
+1 BIRT
 2 DATE 5 Dec 1817
 2 PLAC Pickaway, Ohio, United States
 1 NAME Myron /Tuttle/
@@ -1855,11 +1855,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=119
 1 FAMC @F18@
-0 @P120@ INDI 
-1 DEAT 
+0 @P120@ INDI
+1 DEAT
 2 DATE 1825
 2 PLAC Sandusky, Erie, Ohio, United States
-1 BIRT 
+1 BIRT
 2 DATE 30 Apr 1766
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 NAME Arad /Tuttle/
@@ -1873,14 +1873,14 @@
 1 FAMS @F19@
 1 FAMS @F20@
 1 FAMS @F21@
-0 @P121@ INDI 
-1 MARR 
+0 @P121@ INDI
+1 MARR
 2 DATE 8 Aug 1765
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1844
 1 NAME Tapher /Castle/
-1 BIRT 
+1 BIRT
 2 DATE 21 Feb 1746
 2 PLAC Waterbury, Litchfield, Connecticut, United States
 1 SEX F
@@ -1889,12 +1889,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=121
 1 FAMS @F23@
-0 @P122@ INDI 
-1 DEAT 
+0 @P122@ INDI
+1 DEAT
 2 DATE 24 Mar 1898
 2 PLAC Amand, Hancock, Ohio, United States
 1 NAME Loretta /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1805
 2 PLAC Ontario, New York, United States
 1 SEX F
@@ -1903,11 +1903,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=122
 1 FAMC @F19@
-0 @P123@ INDI 
-1 DEAT 
+0 @P123@ INDI
+1 DEAT
 2 DATE 1842
 2 PLAC Lagrange, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 1809
 1 NAME Timothy Halstead /Tuttle/
 1 SEX M
@@ -1916,11 +1916,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=123
 1 FAMC @F21@
-0 @P124@ INDI 
-1 DEAT 
+0 @P124@ INDI
+1 DEAT
 2 DATE 1907
 1 NAME Margaret /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1807
 1 SEX F
 1 SOUR @S-2097947318@
@@ -1928,11 +1928,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=124
 1 FAMC @F21@
-0 @P125@ INDI 
-1 DEAT 
+0 @P125@ INDI
+1 DEAT
 2 DATE 24 Mar 1898
 2 PLAC Amand, Hancock, Ohio, United States
-1 BIRT 
+1 BIRT
 2 DATE 1805
 2 PLAC Ontario, New York, United States
 1 NAME Loretta /Tuttle/
@@ -1942,10 +1942,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=125
 1 FAMC @F21@
-0 @P126@ INDI 
-1 BIRT 
+0 @P126@ INDI
+1 BIRT
 2 DATE 1804
-1 DEAT 
+1 DEAT
 2 DATE 1905
 1 NAME Clorinda /Tuttle/
 1 SEX F
@@ -1954,11 +1954,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=126
 1 FAMC @F21@
-0 @P127@ INDI 
-1 DEAT 
+0 @P127@ INDI
+1 DEAT
 2 DATE 14 Mar 1840
 2 PLAC Green, Adams, Ohio, United States
-1 BIRT 
+1 BIRT
 2 DATE 26 Jul 1800
 2 PLAC Ulster, Bradford, Pennsylvania, United States
 1 NAME William W /Tuttle/
@@ -1968,11 +1968,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=127
 1 FAMC @F21@
-0 @P128@ INDI 
-1 BIRT 
+0 @P128@ INDI
+1 BIRT
 2 DATE 25 Mar 1798
 2 PLAC Genesee, New York, United States
-1 DEAT 
+1 DEAT
 2 DATE 11 Jan 1883
 2 PLAC Clyde, Sandusky, Ohio, United States
 1 NAME Sarah /Tuttle/
@@ -1982,11 +1982,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=128
 1 FAMC @F21@
-0 @P129@ INDI 
-1 BIRT 
+0 @P129@ INDI
+1 BIRT
 2 DATE May 1796
 2 PLAC Bradford, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 2 Jan 1852
 2 PLAC Clyde, Sandusky, Ohio, United States
 1 NAME Erastus /Tuttle/
@@ -1996,11 +1996,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=129
 1 FAMC @F21@
-0 @P130@ INDI 
-1 DEAT 
+0 @P130@ INDI
+1 DEAT
 2 DATE 1854
 2 PLAC Miami, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 1792
 1 NAME Wolcott /Tuttle/
 1 SEX M
@@ -2009,11 +2009,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=130
 1 FAMC @F21@
-0 @P131@ INDI 
-1 BIRT 
+0 @P131@ INDI
+1 BIRT
 2 DATE 14 Jan 1744
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1844
 2 PLAC Bradford, Pennsylvania, United States
 1 NAME William /Tuttle/
@@ -2024,11 +2024,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=131
 1 FAMC @F24@
 1 FAMS @F23@
-0 @P132@ INDI 
-1 DEAT 
+0 @P132@ INDI
+1 DEAT
 2 DATE 24 Mar 1898
 2 PLAC Amand, Hancock, Ohio, United States
-1 BIRT 
+1 BIRT
 2 DATE 1805
 2 PLAC Ontario, New York, United States
 1 NAME Loretta /Tuttle/
@@ -2038,11 +2038,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=132
 1 FAMC @F20@
-0 @P133@ INDI 
-1 DEAT 
+0 @P133@ INDI
+1 DEAT
 2 DATE 1842
 2 PLAC Lagrange, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 1809
 1 NAME Timothy Halstead /Tuttle/
 1 SEX M
@@ -2051,10 +2051,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=133
 1 FAMC @F21@
-0 @P134@ INDI 
-1 BIRT 
+0 @P134@ INDI
+1 BIRT
 2 DATE 1807
-1 DEAT 
+1 DEAT
 2 DATE 1907
 1 NAME Margaret /Tuttle/
 1 SEX F
@@ -2063,12 +2063,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=134
 1 FAMC @F21@
-0 @P135@ INDI 
-1 DEAT 
+0 @P135@ INDI
+1 DEAT
 2 DATE 24 Mar 1898
 2 PLAC Amand, Hancock, Ohio, United States
 1 NAME Loretta /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1805
 2 PLAC Ontario, New York, United States
 1 SEX F
@@ -2077,10 +2077,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=135
 1 FAMC @F21@
-0 @P136@ INDI 
-1 BIRT 
+0 @P136@ INDI
+1 BIRT
 2 DATE 1804
-1 DEAT 
+1 DEAT
 2 DATE 1905
 1 NAME Clorinda /Tuttle/
 1 SEX F
@@ -2089,11 +2089,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=136
 1 FAMC @F21@
-0 @P137@ INDI 
-1 BIRT 
+0 @P137@ INDI
+1 BIRT
 2 DATE 26 Jul 1800
 2 PLAC Ulster, Bradford, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 14 Mar 1840
 2 PLAC Green, Adams, Ohio, United States
 1 NAME William W /Tuttle/
@@ -2103,11 +2103,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=137
 1 FAMC @F21@
-0 @P138@ INDI 
-1 BIRT 
+0 @P138@ INDI
+1 BIRT
 2 DATE 25 Mar 1798
 2 PLAC Genesee, New York, United States
-1 DEAT 
+1 DEAT
 2 DATE 11 Jan 1883
 2 PLAC Clyde, Sandusky, Ohio, United States
 1 NAME Sarah /Tuttle/
@@ -2117,11 +2117,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=138
 1 FAMC @F21@
-0 @P139@ INDI 
-1 BIRT 
+0 @P139@ INDI
+1 BIRT
 2 DATE May 1796
 2 PLAC Bradford, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 2 Jan 1852
 2 PLAC Clyde, Sandusky, Ohio, United States
 1 NAME Erastus /Tuttle/
@@ -2131,11 +2131,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=139
 1 FAMC @F21@
-0 @P140@ INDI 
-1 DEAT 
+0 @P140@ INDI
+1 DEAT
 2 DATE 1854
 2 PLAC Miami, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 1792
 1 NAME Wolcott /Tuttle/
 1 SEX M
@@ -2144,10 +2144,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=140
 1 FAMC @F21@
-0 @P141@ INDI 
-1 DEAT 
+0 @P141@ INDI
+1 DEAT
 2 DATE 1844
-1 BIRT 
+1 BIRT
 2 DATE 21 Feb 1746
 2 PLAC Waterbury, Litchfield, Connecticut, United States
 1 NAME Tapher /Castle/
@@ -2157,11 +2157,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=141
 1 FAMS @F22@
-0 @P142@ INDI 
-1 BIRT 
+0 @P142@ INDI
+1 BIRT
 2 DATE 14 Jan 1744
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1844
 2 PLAC Bradford, Pennsylvania, United States
 1 NAME William /Tuttle/
@@ -2171,14 +2171,14 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=142
 1 FAMS @F22@
-0 @P143@ INDI 
-1 MARR 
+0 @P143@ INDI
+1 MARR
 2 DATE 26 Jun 1740
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1816
 1 NAME Naomi /Luddington/
-1 BIRT 
+1 BIRT
 2 DATE 15 Dec 1716
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2187,11 +2187,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=143
 1 FAMS @F24@
-0 @P144@ INDI 
-1 BIRT 
+0 @P144@ INDI
+1 BIRT
 2 DATE 1775
 2 PLAC East Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1846
 2 PLAC Standing Stone, Bradford, Pennsylvania, United States
 1 NAME Joel /Tuttle/
@@ -2201,12 +2201,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=144
 1 FAMC @F23@
-0 @P145@ INDI 
+0 @P145@ INDI
 1 NAME Josiah /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 28 Oct 1774
 2 PLAC Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 21 Jun 1830
 2 PLAC Wysox, Bradford, Pennsylvania, United States
 1 SEX M
@@ -2215,8 +2215,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=145
 1 FAMC @F23@
-0 @P146@ INDI 
-1 BIRT 
+0 @P146@ INDI
+1 BIRT
 2 DATE 1768
 1 NAME Aaron /Tuttle/
 1 SEX M
@@ -2225,12 +2225,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=146
 1 FAMC @F23@
-0 @P147@ INDI 
+0 @P147@ INDI
 1 NAME Josiah /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE Mar 1716
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 2 Sep 1749
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 SEX M
@@ -2240,11 +2240,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=147
 1 FAMC @F26@
 1 FAMS @F24@
-0 @P148@ INDI 
-1 BIRT 
+0 @P148@ INDI
+1 BIRT
 2 DATE 7 Apr 1696
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1747
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Josiah /Tuttle/
@@ -2256,12 +2256,12 @@
 1 FAMC @F28@
 1 FAMS @F25@
 1 FAMS @F26@
-0 @P149@ INDI 
-1 MARR 
+0 @P149@ INDI
+1 MARR
 2 DATE 1726
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Elizabeth /Thorpe/
-1 BIRT 
+1 BIRT
 2 DATE 6 Mar 1688
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2271,11 +2271,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=149
 1 FAMC @F29@
 1 FAMS @F26@
-0 @P150@ INDI 
-1 BIRT 
+0 @P150@ INDI
+1 BIRT
 2 DATE 7 May 1749
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 19 Apr 1778
 2 PLAC Litchfield, Litchfield, Connecticut, United States
 1 NAME Levi /Tuttle/
@@ -2285,11 +2285,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=150
 1 FAMC @F24@
-0 @P151@ INDI 
-1 BIRT 
+0 @P151@ INDI
+1 BIRT
 2 DATE 17 Apr 1747
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 16 Apr 1777
 2 PLAC Prospect, New Haven, Connecticut, United States
 1 NAME Hezehiah /Tuttle/
@@ -2299,11 +2299,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=151
 1 FAMC @F24@
-0 @P152@ INDI 
-1 DEAT 
+0 @P152@ INDI
+1 DEAT
 2 DATE 1845
 1 NAME Amy /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 5 May 1745
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 SEX F
@@ -2312,11 +2312,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=152
 1 FAMC @F24@
-0 @P153@ INDI 
-1 BIRT 
+0 @P153@ INDI
+1 BIRT
 2 DATE 5 May 1742
 2 PLAC Waterbury, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1842
 1 NAME Eliphet /Tuttle/
 1 SEX F
@@ -2325,8 +2325,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=153
 1 FAMC @F24@
-0 @P154@ INDI 
-1 BIRT 
+0 @P154@ INDI
+1 BIRT
 2 DATE 5 May 1742
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 NAME Eliphalet /Tuttle/
@@ -2336,8 +2336,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=154
 1 FAMC @F24@
-0 @P155@ INDI 
-1 BIRT 
+0 @P155@ INDI
+1 BIRT
 2 DATE 5 May 1741
 1 NAME Elizabeth /Tuttle/
 1 SEX F
@@ -2346,11 +2346,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=155
 1 FAMC @F24@
-0 @P156@ INDI 
-1 BIRT 
+0 @P156@ INDI
+1 BIRT
 2 DATE 20 Feb 1739
 2 PLAC East Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 27 Feb 1772
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Deborah /Tuttle/
@@ -2360,9 +2360,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=156
 1 FAMC @F25@
-0 @P157@ INDI 
+0 @P157@ INDI
 1 NAME Martha /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1736
 1 SEX F
 1 SOUR @S-2097947318@
@@ -2370,11 +2370,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=157
 1 FAMC @F25@
-0 @P158@ INDI 
-1 BIRT 
+0 @P158@ INDI
+1 BIRT
 2 DATE 31 Jul 1732
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1 Jul 1838
 2 PLAC Dryden, Tompkins, New York, United States
 1 NAME Ebenezer /Tuttle/
@@ -2384,12 +2384,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=158
 1 FAMC @F25@
-0 @P159@ INDI 
-1 DEAT 
+0 @P159@ INDI
+1 DEAT
 2 DATE 8 Oct 1781
 2 PLAC Torrington, Litchfield, Connecticut, United States
 1 NAME Jehiel /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 8 Jun 1729
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX M
@@ -2398,12 +2398,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=159
 1 FAMC @F25@
-0 @P160@ INDI 
-1 DEAT 
+0 @P160@ INDI
+1 DEAT
 2 DATE 9 Sep 1750
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Katherine /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1726
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2412,9 +2412,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=160
 1 FAMC @F25@
-0 @P161@ INDI 
+0 @P161@ INDI
 1 NAME Katherine /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1726
 1 SEX M
 1 SOUR @S-2097947318@
@@ -2422,12 +2422,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=161
 1 FAMC @F25@
-0 @P162@ INDI 
-1 DEAT 
+0 @P162@ INDI
+1 DEAT
 2 DATE 21 Mar 1818
 2 PLAC Hamden, New Haven, Connecticut, United States
 1 NAME Sarah /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1723
 1 SEX F
 1 SOUR @S-2097947318@
@@ -2435,8 +2435,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=162
 1 FAMC @F25@
-0 @P163@ INDI 
-1 BIRT 
+0 @P163@ INDI
+1 BIRT
 2 DATE 1720
 1 NAME Mahitabel /Tuttle/
 1 SEX F
@@ -2445,10 +2445,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=163
 1 FAMC @F25@
-0 @P164@ INDI 
-1 BIRT 
+0 @P164@ INDI
+1 BIRT
 2 DATE 1716
-1 DEAT 
+1 DEAT
 2 DATE 2 Sep 1749
 2 PLAC Waterbury, New Haven, Connecticut, United States
 1 NAME Josiah /Tuttle/
@@ -2458,15 +2458,15 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=164
 1 FAMC @F25@
-0 @P165@ INDI 
-1 MARR 
+0 @P165@ INDI
+1 MARR
 2 DATE 11 Jan 1720
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 2 Oct 1750
 2 PLAC Cheshire, New Haven, Connecticut, United States
 1 NAME Deborah /Barnes/
-1 BIRT 
+1 BIRT
 2 DATE 1 Feb 1698
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2475,14 +2475,14 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=165
 1 FAMS @F25@
-0 @P166@ INDI 
-1 MARR 
+0 @P166@ INDI
+1 MARR
 2 DATE 1 Jun 1684
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 1665
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1708
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Sarah /Newman/
@@ -2492,11 +2492,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=166
 1 FAMS @F28@
-0 @P167@ INDI 
-1 BIRT 
+0 @P167@ INDI
+1 BIRT
 2 DATE 9 Jan 1659
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 8 Jul 1733
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Samuel /Tuttle/
@@ -2508,12 +2508,12 @@
 1 FAMC @F30@
 1 FAMS @F27@
 1 FAMS @F28@
-0 @P168@ INDI 
-1 DEAT 
+0 @P168@ INDI
+1 DEAT
 2 DATE 23 Apr 1735
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Elizabeth /Little/
-1 BIRT 
+1 BIRT
 2 DATE 4 Apr 1666
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2522,11 +2522,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=168
 1 FAMS @F29@
-0 @P169@ INDI 
-1 DEAT 
+0 @P169@ INDI
+1 DEAT
 2 DATE 11 Apr 1737
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 6 Mar 1664
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Nathaniel /Thorpe/
@@ -2536,11 +2536,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=169
 1 FAMS @F29@
-0 @P170@ INDI 
-1 DEAT 
+0 @P170@ INDI
+1 DEAT
 2 DATE 20 Sep 1795
 1 NAME Stephen /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 22 Jul 1716
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX M
@@ -2549,15 +2549,15 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=170
 1 FAMC @F27@
-0 @P171@ INDI 
-1 DEAT 
+0 @P171@ INDI
+1 DEAT
 2 DATE 1748
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 MARR 
+1 MARR
 2 DATE 1703
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Abigail /Frost/
-1 BIRT 
+1 BIRT
 2 DATE 8 Oct 1670
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2566,12 +2566,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=171
 1 FAMS @F27@
-0 @P172@ INDI 
-1 DEAT 
+0 @P172@ INDI
+1 DEAT
 2 DATE 17 Feb 1772
 2 PLAC North Haven, New Haven, Connecticut, United States
 1 NAME Daniel /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 23 Aug 1702
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX M
@@ -2580,11 +2580,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=172
 1 FAMC @F28@
-0 @P173@ INDI 
-1 BIRT 
+0 @P173@ INDI
+1 BIRT
 2 DATE 27 Jan 1698
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 3 Nov 1734
 2 PLAC East Haven, New Haven, Connecticut, United States
 1 NAME Sarah /Tuttle/
@@ -2594,11 +2594,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=173
 1 FAMC @F28@
-0 @P174@ INDI 
-1 BIRT 
+0 @P174@ INDI
+1 BIRT
 2 DATE 4 Apr 1692
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 9 Jan 1769
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Abigail /Tuttle/
@@ -2608,9 +2608,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=174
 1 FAMC @F28@
-0 @P175@ INDI 
+0 @P175@ INDI
 1 NAME Stephen /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1688
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX M
@@ -2619,12 +2619,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=175
 1 FAMC @F28@
-0 @P176@ INDI 
-1 DEAT 
+0 @P176@ INDI
+1 DEAT
 2 DATE 23 Mar 1753
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Jemima /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 6 Dec 1686
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2633,12 +2633,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=176
 1 FAMC @F28@
-0 @P177@ INDI 
-1 DEAT 
+0 @P177@ INDI
+1 DEAT
 2 DATE 22 Jun 1733
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Mary /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 31 Jan 1684
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2647,14 +2647,14 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=177
 1 FAMC @F28@
-0 @P178@ INDI 
-1 MARR 
+0 @P178@ INDI
+1 MARR
 2 DATE 8 Nov 1653
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 1632
 2 PLAC Milford, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1669
 2 PLAC Milford, New Haven, Connecticut, United States
 1 NAME Katherine /Lane/
@@ -2664,19 +2664,19 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=178
 1 FAMS @F30@
-0 @P179@ INDI 
-1 DEAT 
+0 @P179@ INDI
+1 DEAT
 2 DATE 12 Nov 1683
 2 PLAC Charlestown, Suffolk, Massachusetts, United States
 1 NAME John /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 8 Dec 1631
 2 PLAC Middletown, Middlesex, Connecticut, United States
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 22 Nov 1640
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE Sep 1690
 2 PLAC Milford, New Haven, Connecticut, United States
 1 NAME Joseph /Tuttle/
@@ -2686,14 +2686,14 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=179
 1 FAMC @F31@
 1 FAMS @F30@
-0 @P180@ INDI 
-1 MARR 
+0 @P180@ INDI
+1 MARR
 2 DATE 1630
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 BIRT 
+1 BIRT
 2 DATE 1612
 2 PLAC Exeter, Devon, , England
-1 DEAT 
+1 DEAT
 2 DATE 30 Dec 1684
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Elizabeth /Mathews/
@@ -2703,11 +2703,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=180
 1 FAMS @F31@
-0 @P181@ INDI 
-1 BIRT 
+0 @P181@ INDI
+1 BIRT
 2 DATE 14 Nov 1668
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 16 Jan 1752
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME David /Tuttle/
@@ -2717,12 +2717,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=181
 1 FAMC @F30@
-0 @P182@ INDI 
+0 @P182@ INDI
 1 NAME Elizabeth /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 19 Nov 1666
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 1724
 2 PLAC Norwalk, Fairfield, Connecticut, United States
 1 SEX F
@@ -2731,11 +2731,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=182
 1 FAMC @F30@
-0 @P183@ INDI 
-1 BIRT 
+0 @P183@ INDI
+1 BIRT
 2 DATE 22 Jan 1661
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 10 Jan 1698
 2 PLAC Wallingford, New Haven, Connecticut, United States
 1 NAME Sarah /Tuttle/
@@ -2745,11 +2745,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=183
 1 FAMC @F30@
-0 @P184@ INDI 
-1 BIRT 
+0 @P184@ INDI
+1 BIRT
 2 DATE 2 Nov 1655
 2 PLAC New Haven, New Haven, Connecticut, United States
-1 DEAT 
+1 DEAT
 2 DATE 21 Dec 1708
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Hannah /Tuttle/
@@ -2759,11 +2759,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=184
 1 FAMC @F30@
-0 @P185@ INDI 
-1 BIRT 
+0 @P185@ INDI
+1 BIRT
 2 DATE 26 Dec 1607
 2 PLAC Ringstead, Northamptonshire, , England
-1 DEAT 
+1 DEAT
 2 DATE 16 Jun 1673
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME William /Tuttle/
@@ -2774,12 +2774,12 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=185
 1 FAMC @F32@
 1 FAMS @F31@
-0 @P186@ INDI 
-1 DEAT 
+0 @P186@ INDI
+1 DEAT
 2 DATE 17 Nov 1676
 2 PLAC Milford, New Haven, Connecticut, United States
 1 NAME Elizabeth /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 9 Nov 1645
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 SEX F
@@ -2788,12 +2788,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=186
 1 FAMC @F31@
-0 @P187@ INDI 
-1 DEAT 
+0 @P187@ INDI
+1 DEAT
 2 DATE 9 Aug 1683
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Hannah /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 20 Jan 1633
 2 PLAC Ringstead, Northamptonshire, , England
 1 SEX F
@@ -2802,11 +2802,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=187
 1 FAMC @F31@
-0 @P188@ INDI 
-1 BIRT 
+0 @P188@ INDI
+1 BIRT
 2 DATE 1565
 2 PLAC Ringstead, Northamptonshire, , England
-1 DEAT 
+1 DEAT
 2 DATE 1635
 2 PLAC New Haven, New Haven, Connecticut, United States
 1 NAME Isabel /Wells/
@@ -2816,12 +2816,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=188
 1 FAMS @F32@
-0 @P189@ INDI 
+0 @P189@ INDI
 1 NAME Simon /Tuttle/
-1 BIRT 
+1 BIRT
 2 DATE 1560
 2 PLAC Ringstead, Northamptonshire, , England
-1 DEAT 
+1 DEAT
 2 DATE 15 Jun 1630
 2 PLAC Ringstead, Northamptonshire, , England
 1 SEX M
@@ -2830,38 +2830,38 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=189
 1 FAMS @F32@
-0 @P190@ INDI 
-1 BIRT 
+0 @P190@ INDI
+1 BIRT
 2 DATE 3 Mar 1856
 2 PLAC Washington, Illinois, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 398A; Enumeration District: 44; Image: 0559.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=46727861&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::46727861
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Washington, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=15081400&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Washington, Illinois, United States
 3 _APID 1,7163::15081400
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Township 2 S Range 1 W, Washington, Illinois; Roll: ; Page: 707; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=37284744&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1860 Residence place:  Township 2 S Range 1 W, Washington, Illinois, United States
 3 _APID 1,7667::37284744
-1 RESI 
+1 RESI
 2 DATE 1860
 2 PLAC Township 2 S Range 1 W, Washington, Illinois, United States
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Township 2 S Range 1 W, Washington, Illinois; Roll: ; Page: 707; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=37284744&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1860 Residence place:  Township 2 S Range 1 W, Washington, Illinois, United States
 3 _APID 1,7667::37284744
@@ -2869,45 +2869,45 @@
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 398A; Enumeration District: 44; Image: 0559.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=46727861&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::46727861
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Washington, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=15081400&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Washington, Illinois, United States
 3 _APID 1,7163::15081400
 2 SOUR @S-2097948048@
 3 PAGE Year: 1860; Census Place: Township 2 S Range 1 W, Washington, Illinois; Roll: ; Page: 707; Image: 51.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=37284744&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1860 Residence place:  Township 2 S Range 1 W, Washington, Illinois, United States
 3 _APID 1,7667::37284744
-1 RESI 
+1 RESI
 2 DATE 1870
 2 PLAC Township 2 Range 1, Washington, Illinois, United States
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Washington, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=15081400&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Washington, Illinois, United States
 3 _APID 1,7163::15081400
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Casner, Jefferson, Illinois, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 398A; Enumeration District: 44; Image: 0559.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=46727861&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1856 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::46727861
-1 DEAT 
+1 DEAT
 2 DATE 18 Apr 1897
 2 PLAC Woodlawn, Jefferson, Illinois, United States
 1 SEX F
@@ -2917,8 +2917,8 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=190
 1 FAMC @F34@
 1 FAMS @F36@
-0 @P191@ INDI 
-1 BIRT 
+0 @P191@ INDI
+1 BIRT
 2 DATE Apr 1892
 1 NAME Lewis /Smith/
 1 SEX M
@@ -2927,8 +2927,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=191
 1 FAMC @F36@
-0 @P192@ INDI 
-1 BIRT 
+0 @P192@ INDI
+1 BIRT
 2 DATE May 1890
 2 PLAC Illinois, United States
 1 NAME Francis R /Smith/
@@ -2938,8 +2938,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=192
 1 FAMC @F36@
-0 @P193@ INDI 
-1 BIRT 
+0 @P193@ INDI
+1 BIRT
 2 DATE May 1888
 1 NAME Cyrena A /Smith/
 1 SEX F
@@ -2948,8 +2948,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=193
 1 FAMC @F36@
-0 @P194@ INDI 
-1 BIRT 
+0 @P194@ INDI
+1 BIRT
 2 DATE Jan 1887
 1 NAME Nora B /Smith/
 1 SEX F
@@ -2958,8 +2958,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=194
 1 FAMC @F36@
-0 @P195@ INDI 
-1 BIRT 
+0 @P195@ INDI
+1 BIRT
 2 DATE Dec 1884
 1 NAME Ernest /Smith/
 1 SEX M
@@ -2968,11 +2968,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=195
 1 FAMC @F36@
-0 @P196@ INDI 
-1 BIRT 
+0 @P196@ INDI
+1 BIRT
 2 DATE 14 Feb 1862
 2 PLAC Ashley, Washington, Illinois, United States
-1 DEAT 
+1 DEAT
 2 DATE 17 Jul 1932
 2 PLAC Washington, Illinois, United States
 1 NAME Owen Lovejoy /Smith/
@@ -2984,11 +2984,11 @@
 1 FAMC @F37@
 1 FAMS @F35@
 1 FAMS @F36@
-0 @P197@ INDI 
-1 DEAT 
+0 @P197@ INDI
+1 DEAT
 2 DATE 31 Dec 1857
 2 PLAC Ashley, Washington, Illinois, United States
-1 BIRT 
+1 BIRT
 2 DATE 26 Aug 1817
 2 PLAC Blount, Tennessee, United States
 1 NAME Margaret /Rhea/
@@ -2998,11 +2998,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=197
 1 FAMS @F34@
-0 @P198@ INDI 
-1 DEAT 
+0 @P198@ INDI
+1 DEAT
 2 DATE 27 Jan 1890
 2 PLAC Washington, Illinois, United States
-1 BIRT 
+1 BIRT
 2 PLAC Tennessee, United States
 1 NAME Joel Duncan /Stephens/
 1 SEX M
@@ -3011,8 +3011,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=198
 1 FAMS @F34@
-0 @P199@ INDI 
-1 BIRT 
+0 @P199@ INDI
+1 BIRT
 2 DATE 1908
 1 NAME Virden /Smith/
 1 SEX M
@@ -3022,50 +3022,50 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=199
 1 FAMC @F35@
 1 FAMS @F41@
-0 @P200@ INDI 
-1 DEAT 
+0 @P200@ INDI
+1 DEAT
 2 DATE 26 Mar 1957
 2 PLAC Wabasha, Minnesota
 2 SOUR @S-1622670302@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=dalbyburials&h=508675&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1906 Birth place:   Death date:  1957 Death place:  Olmsted, Minnesota
 3 _APID 1,3775::508675
 2 SOUR @S-1622655171@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mndeaths&h=2471155&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 May 1906 Birth place:   Death date:  26 Mar 1957 Death place:  Wabasha, Minnesota
 3 _APID 1,7316::2471155
 2 SOUR @S-1622670302@
 3 PAGE Oak Hill Cemetery, Viola, Olmstead County MN
-1 BIRT 
+1 BIRT
 2 DATE 6 May 1906
 2 PLAC Illinois
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Pleasant Grove, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78920010&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Illinois Residence date:  1930 Residence place:  Pleasant Grove, Olmsted, Minnesota
 3 _APID 1,6224::78920010
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Eyota, Olmsted, Minnesota; Roll: T625_847; Page: 4A; Enumeration District: 104; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47589437&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1906 Birth place:  Illinois Residence date:  1920 Residence place:  Eyota, Olmsted, Minnesota
 3 _APID 1,6061::47589437
 2 SOUR @S-1622670302@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=dalbyburials&h=508675&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1906 Birth place:   Death date:  1957 Death place:  Olmsted, Minnesota
 3 _APID 1,3775::508675
 2 SOUR @S-1622655171@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mndeaths&h=2471155&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 May 1906 Birth place:   Death date:  26 Mar 1957 Death place:  Wabasha, Minnesota
 3 _APID 1,7316::2471155
@@ -3073,39 +3073,39 @@
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Pleasant Grove, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78920010&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Illinois Residence date:  1930 Residence place:  Pleasant Grove, Olmsted, Minnesota
 3 _APID 1,6224::78920010
 2 SOUR @S-1622670302@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=dalbyburials&h=508675&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1906 Birth place:   Death date:  1957 Death place:  Olmsted, Minnesota
 3 _APID 1,3775::508675
 2 SOUR @S-1622655171@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mndeaths&h=2471155&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 May 1906 Birth place:   Death date:  26 Mar 1957 Death place:  Wabasha, Minnesota
 3 _APID 1,7316::2471155
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Eyota, Olmsted, Minnesota
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Eyota, Olmsted, Minnesota; Roll: T625_847; Page: 4A; Enumeration District: 104; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47589437&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1906 Birth place:  Illinois Residence date:  1920 Residence place:  Eyota, Olmsted, Minnesota
 3 _APID 1,6061::47589437
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Pleasant Grove, Olmsted, Minnesota
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Pleasant Grove, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78920010&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Illinois Residence date:  1930 Residence place:  Pleasant Grove, Olmsted, Minnesota
 3 _APID 1,6224::78920010
@@ -3114,7 +3114,7 @@
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Eyota, Olmsted, Minnesota; Roll: T625_847; Page: 4A; Enumeration District: 104; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47589437&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1906 Birth place:  Illinois Residence date:  1920 Residence place:  Eyota, Olmsted, Minnesota
 3 _APID 1,6061::47589437
@@ -3124,11 +3124,11 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=200
 1 FAMC @F35@
 1 FAMS @F40@
-0 @P201@ INDI 
+0 @P201@ INDI
 1 EVEN pig farmer.  His farm was a model farm.
 2 TYPE profession
 2 PLAC Leland, La Salle, Illinois, USA
-1 BIRT 
+1 BIRT
 2 DATE 1905
 1 NAME Gerald /Smith/
 1 SEX M
@@ -3139,8 +3139,8 @@
 1 FAMC @F35@
 1 FAMS @F38@
 1 FAMS @F39@
-0 @P202@ INDI 
-1 BIRT 
+0 @P202@ INDI
+1 BIRT
 2 DATE 1903
 1 NAME Carter /Smith/
 1 SEX M
@@ -3149,8 +3149,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=202
 1 FAMC @F35@
-0 @P203@ INDI 
-1 BIRT 
+0 @P203@ INDI
+1 BIRT
 2 DATE Apr 1892
 2 PLAC Illinois, United States
 1 NAME Lewis /Smith/
@@ -3160,10 +3160,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=203
 1 FAMC @F35@
-0 @P204@ INDI 
-1 DEAT 
+0 @P204@ INDI
+1 DEAT
 2 DATE 27 May 1921
-1 BIRT 
+1 BIRT
 2 DATE Apr 1869
 2 PLAC Illinois, United States
 1 NAME Lois /Baldridge/
@@ -3173,11 +3173,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=204
 1 FAMS @F35@
-0 @P205@ INDI 
-1 DEAT 
+0 @P205@ INDI
+1 DEAT
 2 DATE 26 Feb 1907
 2 PLAC Illinois, United States
-1 BIRT 
+1 BIRT
 2 DATE 4 Mar 1837
 2 PLAC Illinois, United States
 1 NAME Cyrena /McMillion/
@@ -3187,10 +3187,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=205
 1 FAMS @F37@
-0 @P206@ INDI 
-1 BIRT 
+0 @P206@ INDI
+1 BIRT
 2 DATE 1840
-1 DEAT 
+1 DEAT
 2 DATE 1878
 1 NAME Christopher Columbus Lum /Smith/
 1 SEX M
@@ -3199,181 +3199,181 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12321748&pid=206
 1 FAMS @F37@
-0 @P207@ INDI 
-1 BIRT 
+0 @P207@ INDI
+1 BIRT
 2 PLAC Casner, Jefferson, Illinois, USA
 1 SEX M
 1 NAME Isaac /Smith/
 1 FAMC @F37@
-0 @P208@ INDI 
+0 @P208@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 1860
 2 PLAC Illinois, USA
-1 DEAT 
+1 DEAT
 2 DATE 1939
 2 PLAC Eyota, MN
 1 NAME Mary /Smith/
 1 FAMC @F37@
 1 FAMS @F43@
 1 FAMS @F44@
-0 @P209@ INDI 
+0 @P209@ INDI
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE About 1931
 1 NAME Clifford /Smith/
 1 FAMC @F39@
-0 @P210@ INDI 
+0 @P210@ INDI
 1 SEX M
 1 NAME Lester /Smith/
-1 BIRT 
+1 BIRT
 2 DATE about 1928
 1 FAMC @F39@
-0 @P211@ INDI 
-1 RESI 
+0 @P211@ INDI
+1 RESI
 2 DATE 1993 1994 1995 1996 1997
 2 PLAC El Cajon, California
 2 SOUR @S-1620657271@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=2000wp&h=197724555&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:  1993 1994 1995 1996 1997 Residence place:  El Cajon, California
 3 _APID 1,7339::197724555
 1 NAME Lois /Smith/
 2 SOUR @S-1620657271@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=2000wp&h=197724555&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Residence date:  1993 1994 1995 1996 1997 Residence place:  El Cajon, California
 3 _APID 1,7339::197724555
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE about 1926
 1 FAMC @F39@
 1 FAMS @F45@
 1 FAMS @F46@
-0 @P212@ INDI 
+0 @P212@ INDI
 1 NAME Emma
 1 SEX F
 1 FAMS @F38@
-0 @P213@ INDI 
+0 @P213@ INDI
 1 SEX F
 1 NAME Emma
 1 FAMS @F39@
-0 @P214@ INDI 
+0 @P214@ INDI
 1 SEX F
-1 DEAT 
+1 DEAT
 2 PLAC Iowa
 1 NAME /Smith/
 1 FAMC @F40@
-0 @P215@ INDI 
+0 @P215@ INDI
 1 SEX M
-1 BIRT 
+1 BIRT
 2 PLAC MN
 1 NAME Paul /Smith/
 1 FAMC @F40@
-0 @P216@ INDI 
-1 DEAT 
+0 @P216@ INDI
+1 DEAT
 2 PLAC MN
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 1929
 2 PLAC MN
 1 NAME Ivan /Smith/
 1 FAMC @F40@
-0 @P217@ INDI 
+0 @P217@ INDI
 1 SEX F
 1 NAME Irene
 1 FAMS @F40@
-0 @P218@ INDI 
+0 @P218@ INDI
 1 SEX F
-1 DEAT 
+1 DEAT
 2 PLAC UT
 1 NAME Janet /Smith/
 1 FAMC @F41@
-0 @P219@ INDI 
+0 @P219@ INDI
 1 NAME Roy /Smith/
 1 SEX M
 1 FAMC @F41@
-0 @P220@ INDI 
+0 @P220@ INDI
 1 SEX M
 1 NAME Lloyd /Smith/
 1 FAMC @F41@
-0 @P221@ INDI 
+0 @P221@ INDI
 1 SEX F
-1 DEAT 
+1 DEAT
 2 PLAC Provo, UT
 1 NAME Eura Mae
 1 FAMS @F41@
-0 @P222@ INDI 
+0 @P222@ INDI
 1 SEX M
 1 NAME Charles /Yahr/
 1 FAMS @F46@
-0 @P223@ INDI 
+0 @P223@ INDI
 1 SEX M
 1 NAME Charles /Yahr/
 1 FAMS @F45@
-0 @P224@ INDI 
+0 @P224@ INDI
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 1862
-1 DEAT 
+1 DEAT
 2 DATE 1933
 1 NAME George W. /Axley/
 1 FAMS @F44@
-0 @P225@ INDI 
-1 BIRT 
+0 @P225@ INDI
+1 BIRT
 2 DATE Aug 1862
 2 PLAC Illinois
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 397C; Enumeration District: 044; Image: 0557.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=30156410&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::30156410
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Jefferson, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=17260279&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Jefferson, Illinois, United States
 3 _APID 1,7163::17260279
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Casner, Jefferson, Illinois; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=5409710&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1863 Birth place:  Illinois Residence date:  1910 Residence place:  Casner, Jefferson, Illinois
 3 _APID 1,7884::5409710
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Viola, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78895294&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1930 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6224::78895294
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Viola, Olmsted, Minnesota; Roll: T625_847; Page: 3B; Enumeration District: 123; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47613300&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  Illinois Residence date:  1920 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6061::47613300
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Casner, Jefferson, Illinois; Roll: T623_308; Page: 6B; Enumeration District: 67.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=78697364&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1862 Birth place:  Illinois Marriage date:  1883 Marriage place:   Residence date:  1900 Residence place:  Woodlawn village (pt.), Jefferson, Illinois
 3 _APID 1,7602::78697364
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Woodlawn village (pt.), Jefferson, Illinois
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Casner, Jefferson, Illinois; Roll: T623_308; Page: 6B; Enumeration District: 67.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=78697364&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1862 Birth place:  Illinois Marriage date:  1883 Marriage place:   Residence date:  1900 Residence place:  Woodlawn village (pt.), Jefferson, Illinois
 3 _APID 1,7602::78697364
@@ -3381,237 +3381,237 @@
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 397C; Enumeration District: 044; Image: 0557.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=30156410&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::30156410
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Jefferson, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=17260279&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Jefferson, Illinois, United States
 3 _APID 1,7163::17260279
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Casner, Jefferson, Illinois; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=5409710&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1863 Birth place:  Illinois Residence date:  1910 Residence place:  Casner, Jefferson, Illinois
 3 _APID 1,7884::5409710
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Viola, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78895294&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1930 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6224::78895294
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Viola, Olmsted, Minnesota; Roll: T625_847; Page: 3B; Enumeration District: 123; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47613300&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  Illinois Residence date:  1920 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6061::47613300
 2 SOUR @S-2097947701@
 3 PAGE Year: 1900; Census Place: Casner, Jefferson, Illinois; Roll: T623_308; Page: 6B; Enumeration District: 67.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=78697364&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Aug 1862 Birth place:  Illinois Marriage date:  1883 Marriage place:   Residence date:  1900 Residence place:  Woodlawn village (pt.), Jefferson, Illinois
 3 _APID 1,7602::78697364
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Viola, Olmsted, Minnesota
 2 SOUR @S-1622673680@
 3 PAGE Year: 1920; Census Place: Viola, Olmsted, Minnesota; Roll: T625_847; Page: 3B; Enumeration District: 123; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=47613300&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  Illinois Residence date:  1920 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6061::47613300
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Viola, Olmsted, Minnesota
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Viola, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78895294&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1930 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6224::78895294
-1 DEAT 
+1 DEAT
 2 DATE 1933
 2 PLAC Viola, Olmsted, Minnesota, USA
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Viola, Olmsted, Minnesota
 2 SOUR @S-1646356391@
 3 PAGE Year: 1930; Census Place: Viola, Olmsted, Minnesota; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=78895294&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1930 Residence place:  Viola, Olmsted, Minnesota
 3 _APID 1,6224::78895294
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Casner, Jefferson, Illinois
 2 SOUR @S-2097947709@
 3 PAGE Year: 1910; Census Place: Casner, Jefferson, Illinois; Roll: ; Page: ; Enumeration District: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=5409710&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1863 Birth place:  Illinois Residence date:  1910 Residence place:  Casner, Jefferson, Illinois
 3 _APID 1,7884::5409710
-1 RESI 
+1 RESI
 2 DATE 1870
 2 PLAC Township 2 Range 1, Jefferson, Illinois, United States
 2 SOUR @S-1646356261@
 3 PAGE Year: 1870; Census Place: Township 2 Range 1, Jefferson, Illinois; Roll: M593_; Page: ; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=17260279&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1870 Residence place:  Township 2 Range 1, Jefferson, Illinois, United States
 3 _APID 1,7163::17260279
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Casner, Jefferson, Illinois, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 397C; Enumeration District: 044; Image: 0557.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=30156410&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::30156410
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Casner, Jefferson, Illinois, United States
 2 SOUR @S-2097947640@
 3 PAGE Year: 1880; Census Place: Casner, Jefferson, Illinois; Roll: 215; Family History Film: 1254215; Page: 397C; Enumeration District: 044; Image: 0557.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=30156410&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Illinois Residence date:  1880 Residence place:  Casner, Jefferson, Illinois, United States
 3 _APID 1,6742::30156410
 1 SEX M
 1 FAMS @F43@
-0 @P226@ INDI 
+0 @P226@ INDI
 1 SEX M
-1 DEAT 
+1 DEAT
 2 DATE before 2007
 1 NAME William L. /Smith/
 1 FAMC @F47@
 1 FAMS @F56@
-0 @P227@ INDI 
+0 @P227@ INDI
 1 SEX F
 1 NAME Maye /Severs/
 1 FAMS @F47@
-0 @P228@ INDI 
+0 @P228@ INDI
 1 _MILT member of VFW Post 2055, Centralia, IL
 1 RELI member of White Swan Baptist Church
 1 _EMPLOY truck driver for Spector Freight for 42 years; retired in 1982
-1 DEAT 
+1 DEAT
 2 DATE 24 May 2007
 2 PLAC Centralia, IL
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 23 Oct. 1925
 2 PLAC Ashley Township, IL
 1 NAME Charles L. /Blackman/ Sr.
 1 FAMC @F47@
 1 FAMS @F48@
-0 @P229@ INDI 
+0 @P229@ INDI
 1 SEX F
 1 NAME Gayla /Blackman/
 1 FAMC @F48@
 1 FAMS @F55@
-0 @P230@ INDI 
+0 @P230@ INDI
 1 SEX F
 1 NAME Brenda /Blackman/
 1 FAMC @F48@
 1 FAMS @F51@
-0 @P231@ INDI 
+0 @P231@ INDI
 1 RESI lived in Trenton, IL
 2 DATE 2007
 1 SEX F
 1 NAME Mary /Blackman/
 1 FAMC @F48@
 1 FAMS @F54@
-0 @P232@ INDI 
+0 @P232@ INDI
 1 SEX F
 1 NAME Dottie /Blackman/
 1 FAMC @F48@
 1 FAMS @F53@
-0 @P233@ INDI 
+0 @P233@ INDI
 1 RESI lived in Walnut Hill, IL
 2 DATE 2007
 1 SEX F
 1 NAME Sherie /Blackman/
 1 FAMC @F48@
 1 FAMS @F52@
-0 @P234@ INDI 
+0 @P234@ INDI
 1 RESI lived in Centralia, IL
 2 DATE 2007
 1 NAME Charles L. /Blackman/ Jr.
 1 SEX M
 1 FAMC @F48@
 1 FAMS @F49@
-0 @P235@ INDI 
+0 @P235@ INDI
 1 SEX F
-1 DEAT 
+1 DEAT
 2 DATE 22 June 2003
 2 PLAC Centralia, Marion, Illinois, USA
 1 NAME Dorothy E. /Atchison/
 1 FAMS @F48@
 1 FAMS @F58@
-0 @P236@ INDI 
+0 @P236@ INDI
 1 RESI lived in Joliet, IL
 2 DATE 2007
 1 SEX M
 1 NAME Vernnon /Sellars/
 1 FAMC @F58@
 1 FAMS @F50@
-0 @P237@ INDI 
+0 @P237@ INDI
 1 NAME Madison /Blackman/
 1 SEX F
 1 FAMC @F49@
-0 @P238@ INDI 
+0 @P238@ INDI
 1 SEX F
 1 NAME Contessa /Blackman/
 1 FAMC @F49@
-0 @P239@ INDI 
+0 @P239@ INDI
 1 SEX F
 1 NAME Cheryl
 1 FAMS @F49@
-0 @P240@ INDI 
+0 @P240@ INDI
 1 SEX F
 1 NAME Delores
 1 FAMS @F50@
-0 @P241@ INDI 
+0 @P241@ INDI
 1 SEX M
 1 NAME Allen /Copple/
 1 FAMS @F52@
-0 @P242@ INDI 
+0 @P242@ INDI
 1 SEX M
 1 NAME Norman /Matthews/
 1 FAMS @F53@
-0 @P243@ INDI 
+0 @P243@ INDI
 1 SEX M
 1 NAME Gary /Litteken/
 1 FAMS @F54@
-0 @P244@ INDI 
+0 @P244@ INDI
 1 NAME /Sanders/
 1 SEX M
 1 FAMS @F51@
-0 @P245@ INDI 
+0 @P245@ INDI
 1 SEX M
 1 NAME /Snell/
 1 FAMS @F55@
-0 @P246@ INDI 
+0 @P246@ INDI
 1 NAME Marion Cooley
 1 SEX F
 1 FAMS @F56@
-0 @F1@ FAM 
+0 @F1@ FAM
 1 HUSB @P7@
 1 WIFE @P6@
 1 CHIL @P1@
@@ -3620,7 +3620,7 @@
 1 CHIL @P8@
 2 _FREL Natural
 2 _MREL Natural
-0 @F2@ FAM 
+0 @F2@ FAM
 1 HUSB @P10@
 1 WIFE @P9@
 1 CHIL @P16@
@@ -3632,19 +3632,19 @@
 1 CHIL @P7@
 2 _FREL Natural
 2 _MREL Natural
-0 @F3@ FAM 
+0 @F3@ FAM
 1 HUSB @P12@
 1 WIFE @P11@
 1 CHIL @P6@
 2 _FREL Natural
 2 _MREL Natural
-0 @F4@ FAM 
+0 @F4@ FAM
 1 HUSB @P12@
 1 WIFE @P20@
 1 CHIL @P19@
 2 _FREL Natural
 2 _MREL Natural
-0 @F5@ FAM 
+0 @F5@ FAM
 1 HUSB @P14@
 1 WIFE @P13@
 1 CHIL @P10@
@@ -3665,7 +3665,7 @@
 1 CHIL @P24@
 2 _FREL Natural
 2 _MREL Natural
-0 @F6@ FAM 
+0 @F6@ FAM
 1 HUSB @P29@
 1 WIFE @P28@
 1 CHIL @P35@
@@ -3686,10 +3686,10 @@
 1 CHIL @P31@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 10 Jul 1834
 2 PLAC Sandusky, Ohio, United States
-0 @F7@ FAM 
+0 @F7@ FAM
 1 HUSB @P23@
 1 WIFE @P21@
 1 CHIL @P40@
@@ -3716,15 +3716,15 @@
 1 CHIL @P42@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1829
-0 @F8@ FAM 
+0 @F8@ FAM
 1 HUSB @P45@
 1 WIFE @P44@
 1 CHIL @P21@
 2 _FREL Natural
 2 _MREL Natural
-0 @F9@ FAM 
+0 @F9@ FAM
 1 HUSB @P47@
 1 WIFE @P46@
 1 CHIL @P56@
@@ -3754,10 +3754,10 @@
 1 CHIL @P55@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 27 Nov 1770
 2 PLAC Brooklyn, Windham, Connecticut, United States
-0 @F10@ FAM 
+0 @F10@ FAM
 1 HUSB @P57@
 1 WIFE @P48@
 1 CHIL @P66@
@@ -3787,10 +3787,10 @@
 1 CHIL @P64@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1731
 2 PLAC Ashford, Windham, Connecticut, United States
-0 @F11@ FAM 
+0 @F11@ FAM
 1 HUSB @P67@
 1 WIFE @P58@
 1 CHIL @P77@
@@ -3823,10 +3823,10 @@
 1 CHIL @P57@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 24 May 1688
 2 PLAC Brighton, Suffolk, Massachusetts, United States
-0 @F12@ FAM 
+0 @F12@ FAM
 1 HUSB @P68@
 1 WIFE @P78@
 1 CHIL @P79@
@@ -3865,7 +3865,7 @@
 1 CHIL @P80@
 2 _FREL Natural
 2 _MREL Natural
-0 @F13@ FAM 
+0 @F13@ FAM
 1 HUSB @P91@
 1 WIFE @P90@
 1 CHIL @P78@
@@ -3874,10 +3874,10 @@
 1 CHIL @P93@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1625
 2 PLAC Barnham, Suffolk, , England
-0 @F14@ FAM 
+0 @F14@ FAM
 1 HUSB @P94@
 1 WIFE @P92@
 1 CHIL @P96@
@@ -3886,10 +3886,10 @@
 1 CHIL @P91@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 2 Jul 1587
 2 PLAC Barnham, Suffolk, , England
-0 @F15@ FAM 
+0 @F15@ FAM
 1 HUSB @P97@
 1 WIFE @P95@
 1 CHIL @P94@
@@ -3910,28 +3910,28 @@
 1 CHIL @P100@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1564
 2 PLAC Barnham, Suffolk, , England
-0 @F16@ FAM 
+0 @F16@ FAM
 1 HUSB @P98@
 1 WIFE @P99@
 1 CHIL @P97@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1530
 2 PLAC , Suffolk, , England
-0 @F17@ FAM 
+0 @F17@ FAM
 1 HUSB @P105@
 1 WIFE @P106@
 1 CHIL @P98@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1510
 2 PLAC St Martin, Suffolk, , England
-0 @F18@ FAM 
+0 @F18@ FAM
 1 HUSB @P36@
 1 WIFE @P30@
 1 CHIL @P29@
@@ -3961,10 +3961,10 @@
 1 CHIL @P112@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1812
 2 PLAC Bradford, Pennsylvania, United States
-0 @F19@ FAM 
+0 @F19@ FAM
 1 HUSB @P120@
 1 WIFE @P109@
 1 CHIL @P36@
@@ -3973,13 +3973,13 @@
 1 CHIL @P122@
 2 _FREL Natural
 2 _MREL Natural
-0 @F20@ FAM 
+0 @F20@ FAM
 1 HUSB @P120@
 1 WIFE @P111@
 1 CHIL @P132@
 2 _FREL Natural
 2 _MREL Natural
-0 @F21@ FAM 
+0 @F21@ FAM
 1 HUSB @P120@
 1 WIFE @P110@
 1 CHIL @P130@
@@ -4030,17 +4030,17 @@
 1 CHIL @P133@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1788***Data is already there***
-1 MARR 
+1 MARR
 2 DATE 1788
-0 @F22@ FAM 
+0 @F22@ FAM
 1 HUSB @P142@
 1 WIFE @P141@
 1 CHIL @P120@
 2 _FREL Natural
 2 _MREL Natural
-0 @F23@ FAM 
+0 @F23@ FAM
 1 HUSB @P131@
 1 WIFE @P121@
 1 CHIL @P120@
@@ -4055,10 +4055,10 @@
 1 CHIL @P144@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 8 Aug 1765
 2 PLAC Waterbury, New Haven, Connecticut, United States
-0 @F24@ FAM 
+0 @F24@ FAM
 1 HUSB @P147@
 1 WIFE @P143@
 1 CHIL @P155@
@@ -4082,10 +4082,10 @@
 1 CHIL @P150@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 26 Jun 1740
 2 PLAC Waterbury, New Haven, Connecticut, United States
-0 @F25@ FAM 
+0 @F25@ FAM
 1 HUSB @P148@
 1 WIFE @P165@
 1 CHIL @P164@
@@ -4115,28 +4115,28 @@
 1 CHIL @P156@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 11 Jan 1720
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F26@ FAM 
+0 @F26@ FAM
 1 HUSB @P148@
 1 WIFE @P149@
 1 CHIL @P147@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1726
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F27@ FAM 
+0 @F27@ FAM
 1 HUSB @P167@
 1 WIFE @P171@
 1 CHIL @P170@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1703
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F28@ FAM 
+0 @F28@ FAM
 1 HUSB @P167@
 1 WIFE @P166@
 1 CHIL @P177@
@@ -4160,16 +4160,16 @@
 1 CHIL @P172@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1 Jun 1684
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F29@ FAM 
+0 @F29@ FAM
 1 HUSB @P169@
 1 WIFE @P168@
 1 CHIL @P149@
 2 _FREL Natural
 2 _MREL Natural
-0 @F30@ FAM 
+0 @F30@ FAM
 1 HUSB @P179@
 1 WIFE @P178@
 1 CHIL @P184@
@@ -4187,10 +4187,10 @@
 1 CHIL @P181@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 8 Nov 1653
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F31@ FAM 
+0 @F31@ FAM
 1 HUSB @P185@
 1 WIFE @P180@
 1 CHIL @P179@
@@ -4202,28 +4202,28 @@
 1 CHIL @P186@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1630
 2 PLAC New Haven, New Haven, Connecticut, United States
-0 @F32@ FAM 
+0 @F32@ FAM
 1 HUSB @P189@
 1 WIFE @P188@
 1 CHIL @P185@
 2 _FREL Natural
 2 _MREL Natural
-0 @F33@ FAM 
+0 @F33@ FAM
 1 HUSB @P18@
 1 WIFE @P17@
 1 CHIL @P9@
 2 _FREL Natural
 2 _MREL Natural
-0 @F34@ FAM 
+0 @F34@ FAM
 1 HUSB @P198@
 1 WIFE @P197@
 1 CHIL @P190@
 2 _FREL Natural
 2 _MREL Natural
-0 @F35@ FAM 
+0 @F35@ FAM
 1 HUSB @P196@
 1 WIFE @P204@
 1 CHIL @P203@
@@ -4241,9 +4241,9 @@
 1 CHIL @P199@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1899
-0 @F36@ FAM 
+0 @F36@ FAM
 1 HUSB @P196@
 1 WIFE @P190@
 1 CHIL @P195@
@@ -4265,10 +4265,10 @@
 2 _FREL Natural
 2 _MREL Natural
 1 MARR marriage
-1 MARR 
+1 MARR
 2 DATE 13 Jan 1884
 2 PLAC Jefferson, Illinois, United States
-0 @F37@ FAM 
+0 @F37@ FAM
 1 HUSB @P206@
 1 WIFE @P205@
 1 CHIL @P196@
@@ -4280,10 +4280,10 @@
 1 CHIL @P208@
 2 _FREL Natural
 2 _MREL Natural
-0 @F38@ FAM 
+0 @F38@ FAM
 1 HUSB @P201@
 1 WIFE @P212@
-0 @F39@ FAM 
+0 @F39@ FAM
 1 HUSB @P201@
 1 WIFE @P213@
 1 CHIL @P211@
@@ -4295,7 +4295,7 @@
 1 CHIL @P209@
 2 _FREL Natural
 2 _MREL Natural
-0 @F40@ FAM 
+0 @F40@ FAM
 1 HUSB @P200@
 1 WIFE @P217@
 1 CHIL @P214@
@@ -4307,7 +4307,7 @@
 1 CHIL @P216@
 2 _FREL Natural
 2 _MREL Natural
-0 @F41@ FAM 
+0 @F41@ FAM
 1 HUSB @P199@
 1 WIFE @P221@
 1 CHIL @P218@
@@ -4319,7 +4319,7 @@
 1 CHIL @P220@
 2 _FREL Natural
 2 _MREL Natural
-0 @F42@ FAM 
+0 @F42@ FAM
 1 HUSB @P5@
 1 WIFE @P1@
 1 CHIL @P4@
@@ -4331,19 +4331,19 @@
 1 CHIL @P2@
 2 _FREL Natural
 2 _MREL Natural
-0 @F43@ FAM 
+0 @F43@ FAM
 1 HUSB @P225@
 1 WIFE @P208@
-0 @F44@ FAM 
+0 @F44@ FAM
 1 HUSB @P224@
 1 WIFE @P208@
-0 @F45@ FAM 
+0 @F45@ FAM
 1 HUSB @P223@
 1 WIFE @P211@
-0 @F46@ FAM 
+0 @F46@ FAM
 1 HUSB @P222@
 1 WIFE @P211@
-0 @F47@ FAM 
+0 @F47@ FAM
 1 HUSB @P19@
 1 WIFE @P227@
 1 CHIL @P226@
@@ -4352,7 +4352,7 @@
 1 CHIL @P228@
 2 _FREL Natural
 2 _MREL Natural
-0 @F48@ FAM 
+0 @F48@ FAM
 1 HUSB @P228@
 1 WIFE @P235@
 1 CHIL @P229@
@@ -4373,7 +4373,7 @@
 1 CHIL @P234@
 2 _FREL Natural
 2 _MREL Natural
-0 @F49@ FAM 
+0 @F49@ FAM
 1 HUSB @P234@
 1 WIFE @P239@
 1 CHIL @P237@
@@ -4382,50 +4382,50 @@
 1 CHIL @P238@
 2 _FREL Natural
 2 _MREL Natural
-0 @F50@ FAM 
+0 @F50@ FAM
 1 HUSB @P236@
 1 WIFE @P240@
-0 @F51@ FAM 
+0 @F51@ FAM
 1 HUSB @P244@
 1 WIFE @P230@
-1 MARR 
+1 MARR
 2 PLAC IL
-0 @F52@ FAM 
+0 @F52@ FAM
 1 HUSB @P241@
 1 WIFE @P233@
-0 @F53@ FAM 
+0 @F53@ FAM
 1 HUSB @P242@
 1 WIFE @P232@
-0 @F54@ FAM 
+0 @F54@ FAM
 1 HUSB @P243@
 1 WIFE @P231@
-0 @F55@ FAM 
+0 @F55@ FAM
 1 HUSB @P245@
 1 WIFE @P229@
-0 @F56@ FAM 
+0 @F56@ FAM
 1 HUSB @P226@
 1 WIFE @P246@
-0 @F57@ FAM 
+0 @F57@ FAM
 1 HUSB @P107@
 1 CHIL @P105@
 2 _FREL Natural
 1 CHIL @P108@
 2 _FREL Natural
-0 @F58@ FAM 
+0 @F58@ FAM
 1 WIFE @P235@
 1 CHIL @P236@
 2 _MREL Natural
 0 @R-2142922637@ REPO
 1 NAME Ancestry.com
 1 ADDR http://www.Ancestry.com
-1 NOTE 
+1 NOTE
 0 @S-2097948485@ SOUR
 1 REPO @R-2142922637@
 1 TITL Connecticut Town Birth Records, pre-1870 (Barbour Collection)
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - White, Lorraine Cook, ed. The Barbour Collection of Connecticut Town Vital Records. Baltimore, MD, USA: Genealo
 2 CONC gical Publishing Co., 1994-2002.Original data: White, Lo
-1 NOTE 
+1 NOTE
 1 _APID 1,1034::0
 0 @S-2097948224@ SOUR
 1 REPO @R-2142922637@
@@ -4433,15 +4433,15 @@
 1 AUTH Historical Data Systems, comp.
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2009.Original data - Data compiled by Historical Data Systems of Kingston, MA from the following list of works.Copyright 1997-2009Hi
 2 CONC storical Data Systems, Inc. PO Box 35Duxbury, MA 02331.O
-1 NOTE 
+1 NOTE
 1 _APID 1,1555::0
 0 @S-2097948098@ SOUR
 1 REPO @R-2142922637@
 1 TITL 1850 United States Federal Census
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - United States of America, Bureau of the Census. Seventh Census of the United States, 1850. Washington, D.C.: Na
-2 CONC tional Archives and Records Administration, 1850. M432, 
-1 NOTE 
+2 CONC tional Archives and Records Administration, 1850. M432,
+1 NOTE
 1 _APID 1,8054::0
 0 @S-2097948048@ SOUR
 1 REPO @R-2142922637@
@@ -4449,7 +4449,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - United States of America, Bureau of the Census. Eighth Census of the United States, 1860. Washington, D.C.: Nat
 2 CONC ional Archives and Records Administration, 1860. M653, 1
-1 NOTE 
+1 NOTE
 1 _APID 1,7667::0
 0 @S-2097947822@ SOUR
 1 REPO @R-2142922637@
@@ -4457,7 +4457,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2007.Original data - United States, Selective Service System. Selective Service Registration Cards, World War II: Fourth Registratio
 2 CONC n. National Archives and Records Administration Branch l
-1 NOTE 
+1 NOTE
 1 _APID 1,1002::0
 0 @S-2097947709@ SOUR
 1 REPO @R-2142922637@
@@ -4465,15 +4465,15 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2006. For details on the contents of the film numbers, visit the following NARA web page: NARA.Original data - United States of Amer
 2 CONC ica, Bureau of the Census. Thirteenth Census of the Unit
-1 NOTE 
+1 NOTE
 1 _APID 1,7884::0
 0 @S-2097947701@ SOUR
 1 REPO @R-2142922637@
 1 TITL 1900 United States Federal Census
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - United States of America, Bureau of the Census. Twelfth Census of the United States, 1900. Washington, D.C.: Na
-2 CONC tional Archives and Records Administration, 1900. T623, 
-1 NOTE 
+2 CONC tional Archives and Records Administration, 1900. T623,
+1 NOTE
 1 _APID 1,7602::0
 0 @S-2097947640@ SOUR
 1 REPO @R-2142922637@
@@ -4481,7 +4481,7 @@
 1 AUTH Ancestry.com and The Church of Jesus Christ of Latter-day Saints
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005. 1880 U.S. Census Index provided by The Church of Jesus Christ of Latter-day Saints  © Copyright 1999 Intellectual Reserve, In
 2 CONC c. All rights reserved.  All use is subject to the limite
-1 NOTE 
+1 NOTE
 1 _APID 1,6742::0
 0 @S-2097947318@ SOUR
 1 REPO @R-2142922637@
@@ -4494,8 +4494,8 @@
 1 TITL 1930 United States Federal Census
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2002.Original data - United States of America, Bureau of the Census. Fifteenth Census of the United States, 1930. Washington, D.C.: Na
-2 CONC tional Archives and Records Administration, 1930. T626, 
-1 NOTE 
+2 CONC tional Archives and Records Administration, 1930. T626,
+1 NOTE
 1 _APID 1,6224::0
 0 @S-1646356261@ SOUR
 1 REPO @R-2142922637@
@@ -4503,7 +4503,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations, Inc., 2009. Images reproduced by FamilySearch.Original data - 1870 U.S. census, population schedules. NARA microfilm publication M593, 1,7
 2 CONC 61 rolls. Washington, D.C.: National Archives and Record
-1 NOTE 
+1 NOTE
 1 _APID 1,7163::0
 0 @S-1622673680@ SOUR
 1 REPO @R-2142922637@
@@ -4511,7 +4511,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2010. Images reproduced by FamilySearch.Original data - Fourteenth Census of the United States, 1920. (NARA microfilm publication T625
 2 CONC , 2076 rolls). Records of the Bureau of the Census, Reco
-1 NOTE 
+1 NOTE
 1 _APID 1,6061::0
 0 @S-1622670302@ SOUR
 1 REPO @R-2142922637@
@@ -4519,7 +4519,7 @@
 1 AUTH Dalby, John
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2003.Original data - See cemetery name and location provided with each entry.Original data: See cemetery name and location provided wi
 2 CONC th each entry.
-1 NOTE 
+1 NOTE
 1 _APID 1,3775::0
 0 @S-1622655171@ SOUR
 1 REPO @R-2142922637@
@@ -4527,7 +4527,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2001.Original data - State of Minnesota. Minnesota Death Index, 1908-1002. Minneapolis, MN, USA: Minnesota Department of Health.Origin
 2 CONC al data: State of Minnesota. Minnesota Death Index, 1908
-1 NOTE 
+1 NOTE
 1 _APID 1,7316::0
 0 @S-1620657271@ SOUR
 1 REPO @R-2142922637@
@@ -4535,6 +4535,6 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: Ancestry.com Operations Inc, 2005.Original data - 1993-2002 White Pages. Little Rock, AR, USA: Acxiom Corporation.Original data: 1993-2002 White Pages. Little Rock
 2 CONC , AR, USA: Acxiom Corporation.
-1 NOTE 
+1 NOTE
 1 _APID 1,7339::0
 0 TRLR

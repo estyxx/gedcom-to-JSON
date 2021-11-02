@@ -7,47 +7,47 @@
 1 GEDC
 2 VERS 5.5
 2 FORM LINEAGE-LINKED
-0 @P1@ INDI 
-1 BIRT 
+0 @P1@ INDI
+1 BIRT
 2 DATE 8/24/1966
 2 PLAC Little Rock Arkansas
 1 NAME Lisa Maria /Moreno/
 1 SEX F
 1 FAMC @F1@
-0 @P2@ INDI 
+0 @P2@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 6/3/1942
 2 PLAC Denver, CO
 1 NAME Marilyn Jean /Hammond/
 1 FAMC @F3@
 1 FAMS @F1@
-0 @P3@ INDI 
+0 @P3@ INDI
 1 NAME Cecil Lupe /Moreno/
 1 SEX M
-1 BIRT 
+1 BIRT
 2 DATE 2/16/1942
 2 PLAC Denver, CO
 1 FAMC @F2@
 1 FAMS @F1@
-0 @P4@ INDI 
-1 BIRT 
+0 @P4@ INDI
+1 BIRT
 2 DATE abt 1921
 2 PLAC Swink, Colorado, USA
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300940&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300940
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Aurora, Arapahoe, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300940&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300940
@@ -55,31 +55,31 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300940&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300940
 1 SEX F
 1 FAMC @F6@
 1 FAMS @F2@
-0 @P5@ INDI 
-1 BIRT 
+0 @P5@ INDI
+1 BIRT
 2 DATE 6 Jul 1912
 2 PLAC Lagos de Moreno, Jalisco, Mexico
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-01-1694; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=43579053&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 Jul 1912 Birth place:   Death date:  13 Nov 1999 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::43579053
-1 DEAT 
+1 DEAT
 2 DATE 13 Nov 1999
 2 PLAC Denver, Colorado, USA
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-01-1694; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=43579053&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 Jul 1912 Birth place:   Death date:  13 Nov 1999 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::43579053
@@ -87,45 +87,45 @@
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-01-1694; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=43579053&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  6 Jul 1912 Birth place:   Death date:  13 Nov 1999 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::43579053
 1 SEX M
 1 FAMC @F5@
 1 FAMS @F2@
-0 @P6@ INDI 
+0 @P6@ INDI
 1 NAME Paul Mark /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 5/14/1965
 2 PLAC Little Rock Arkansas
 1 SEX M
 1 FAMC @F1@
-0 @P7@ INDI 
-1 RESI 
+0 @P7@ INDI
+1 RESI
 2 DATE 1930
 2 PLAC Paonia, Delta, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Paonia, Delta, Colorado; Roll: 232; Page: 2B; Enumeration District: 10; Image: 125.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101413064&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Colorado Residence date:  1930 Residence place:  Paonia, Delta, Colorado
 3 _APID 1,6224::101413064
-1 BIRT 
+1 BIRT
 2 DATE 3 Sep 1906
 2 PLAC Delta, Colorado, USA
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-42-2958; Issue State: Colorado; Issue Date: 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25155752&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  3 Sep 1906 Birth place:   Death date:  Aug 1974 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::25155752
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Paonia, Delta, Colorado; Roll: 232; Page: 2B; Enumeration District: 10; Image: 125.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101413064&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Colorado Residence date:  1930 Residence place:  Paonia, Delta, Colorado
 3 _APID 1,6224::101413064
@@ -133,28 +133,28 @@
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-42-2958; Issue State: Colorado; Issue Date: 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25155752&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  3 Sep 1906 Birth place:   Death date:  Aug 1974 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::25155752
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Paonia, Delta, Colorado; Roll: 232; Page: 2B; Enumeration District: 10; Image: 125.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101413064&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1907 Birth place:  Colorado Residence date:  1930 Residence place:  Paonia, Delta, Colorado
 3 _APID 1,6224::101413064
-1 DEAT 
+1 DEAT
 2 DATE Aug 1974
 2 PLAC Denver, Colorado, USA
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-42-2958; Issue State: Colorado; Issue Date: 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25155752&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  3 Sep 1906 Birth place:   Death date:  Aug 1974 Death place:  Denver, Denver, Colorado, United States of America
 3 _APID 1,3693::25155752
-1 MARR 
+1 MARR
 2 DATE 22 Sep 1936
 2 PLAC Delta, Delta, Colo
 1 SEX F
@@ -164,31 +164,31 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=7
 1 FAMC @F8@
 1 FAMS @F3@
-0 @P8@ INDI 
-1 BIRT 
+0 @P8@ INDI
+1 BIRT
 2 DATE 30 Jun 1907
 2 PLAC Hotchkiss, Colorado, USA
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215750&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215750
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134626887&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::134626887
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Precinct 2, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134626887&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::134626887
@@ -196,28 +196,28 @@
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215750&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215750
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134626887&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::134626887
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Precinct 27, Gunnison, Colorado
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215750&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1908 Birth place:  Colorado Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215750
-1 DEAT 
+1 DEAT
 2 DATE 1 Nov 1967
 2 PLAC Denver, Colorado, USA
 1 SEX M
@@ -227,10 +227,10 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=8
 1 FAMC @F4@
 1 FAMS @F3@
-0 @P9@ INDI 
-1 BIRT 
+0 @P9@ INDI
+1 BIRT
 2 PLAC Mexico
-1 DEAT 
+1 DEAT
 2 PLAC Denver, Colorado, USA
 1 SEX F
 1 NAME Maximina /Gomez/
@@ -239,44 +239,44 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=9
 1 FAMS @F5@
-0 @P10@ INDI 
+0 @P10@ INDI
 1 SEX M
-1 DEAT 
+1 DEAT
 2 PLAC Denver, Colorado, USA
 1 NAME Leon /Moreno/
-1 BIRT 
+1 BIRT
 2 PLAC Mexico
 1 SOUR @S-2097950158@
 2 PAGE Ancestry Family Trees
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=10
 1 FAMS @F5@
-0 @P11@ INDI 
+0 @P11@ INDI
 1 NAME Anthony /Moreno/
-1 BIRT 
+1 BIRT
 2 PLAC Denver, Colorado, USA
 1 SEX M
 1 FAMC @F2@
-0 @P12@ INDI 
+0 @P12@ INDI
 1 NAME Barbara Ramona /Moreno/
-1 BIRT 
+1 BIRT
 2 PLAC Denver, Colorado, USA
 1 SEX F
 1 FAMC @F2@
-0 @P13@ INDI 
-1 BIRT 
+0 @P13@ INDI
+1 BIRT
 2 DATE 1888
 2 PLAC Durango, Durango, Mexico
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300978&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1889 Birth place:  Mexico Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300978
 2 SOUR @S-2097959820@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mexborder&h=2009461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1888 Birth place:  San Juan De Guadalupe Arrival date:  18 Jul 1919 Arrival place:  Eagle Pass
 3 _APID 1,1082::2009461
@@ -284,73 +284,73 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300978&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1889 Birth place:  Mexico Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300978
 2 SOUR @S-2097959820@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mexborder&h=2009461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1888 Birth place:  San Juan De Guadalupe Arrival date:  18 Jul 1919 Arrival place:  Eagle Pass
 3 _APID 1,1082::2009461
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Aurora, Arapahoe, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Aurora, Arapahoe, Colorado; Roll: 230; Page: 3A; Enumeration District: 34; Image: 446.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101300978&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1889 Birth place:  Mexico Residence date:  1930 Residence place:  Aurora, Arapahoe, Colorado
 3 _APID 1,6224::101300978
-1 DEAT 
+1 DEAT
 2 DATE 1975
 2 PLAC Aurora, Arapahoe, Colorado, USA
 1 SEX F
 1 FAMC @F9@
 1 FAMS @F6@
-0 @P14@ INDI 
-1 DEAT 
+0 @P14@ INDI
+1 DEAT
 2 PLAC Aurora, Arapahoe, Colorado, USA
 1 SEX M
 1 NAME John /Ontiveros/
-1 BIRT 
+1 BIRT
 2 PLAC Durango, Durango, Mexico
 1 FAMC @F7@
 1 FAMS @F6@
-0 @P15@ INDI 
-1 BIRT 
+0 @P15@ INDI
+1 BIRT
 2 DATE 23 Feb 1886
 2 PLAC , Cherokee, Kansas
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215749&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1887 Birth place:  Kansas Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215749
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-16-9657; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25153026&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  23 Feb 1886 Birth place:   Death date:  Mar 1971 Death place:  Hotchkiss, Delta, Colorado, United States of America
 3 _APID 1,3693::25153026
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll: T623_124; Page: 19B; Enumeration District: 140.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460526&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Feb 1886 Birth place:  Kansas Residence date:  1900 Residence place:  Precinct 22, Gunnison, Colorado
 3 _APID 1,7602::33460526
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Precinct 22, Gunnison, Colorado
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll: T623_124; Page: 19B; Enumeration District: 140.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460526&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Feb 1886 Birth place:  Kansas Residence date:  1900 Residence place:  Precinct 22, Gunnison, Colorado
 3 _APID 1,7602::33460526
@@ -358,45 +358,45 @@
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215749&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1887 Birth place:  Kansas Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215749
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-16-9657; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25153026&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  23 Feb 1886 Birth place:   Death date:  Mar 1971 Death place:  Hotchkiss, Delta, Colorado, United States of America
 3 _APID 1,3693::25153026
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll: T623_124; Page: 19B; Enumeration District: 140.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460526&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Feb 1886 Birth place:  Kansas Residence date:  1900 Residence place:  Precinct 22, Gunnison, Colorado
 3 _APID 1,7602::33460526
-1 DEAT 
+1 DEAT
 2 DATE 29 Mar 1971
 2 PLAC Hotchkiss, Delta, Colo
 2 SOUR @S-2097950933@
 3 PAGE Number: 522-16-9657; Issue State: Colorado; Issue Date: Before 1951.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ssdi&h=25153026&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  23 Feb 1886 Birth place:   Death date:  Mar 1971 Death place:  Hotchkiss, Delta, Colorado, United States of America
 3 _APID 1,3693::25153026
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Precinct 27, Gunnison, Colorado
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215749&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1887 Birth place:  Kansas Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215749
-1 MARR 
+1 MARR
 2 DATE 2 Jun 1906
 2 PLAC Hotchkiss, Delta, Colo
 1 SEX F
@@ -406,31 +406,31 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=15
 1 FAMC @F14@
 1 FAMS @F4@
-0 @P16@ INDI 
-1 BIRT 
+0 @P16@ INDI
+1 BIRT
 2 DATE 13 Sep 1880
 2 PLAC Burchard, Pawnee, Neb.
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215748&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215748
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1973807&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::1973807
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Precinct 2, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1973807&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::1973807
@@ -438,28 +438,28 @@
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215748&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215748
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Precinct 2, Delta, Colorado; Roll: T624_114; Page: 3A; Enumeration District: 28; Image: 106.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1973807&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1910 Residence place:  Precinct 2, Delta, Colorado
 3 _APID 1,7884::1973807
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Precinct 27, Gunnison, Colorado
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Precinct 27, Gunnison, Colorado; Roll: T625_164; Page: 2A; Enumeration District: 165; Image: 540.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6215748&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1882 Birth place:  Nebraska Residence date:  1920 Residence place:  Precinct 27, Gunnison, Colorado
 3 _APID 1,6061::6215748
-1 DEAT 
+1 DEAT
 2 DATE 21 Jun 1962
 2 PLAC Hotchkiss, Delta, Colo.
 1 SEX M
@@ -469,67 +469,67 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=16
 1 FAMC @F25@
 1 FAMS @F4@
-0 @P17@ INDI 
-1 BIRT 
+0 @P17@ INDI
+1 BIRT
 2 DATE 1/27/1868
 2 PLAC Longford Ireland
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134622718&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:  
+4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:
 3 _APID 1,7884::134622718
-1 EVEN 
+1 EVEN
 2 TYPE Arrival
 2 DATE 1885
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134622718&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:  
+4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:
 3 _APID 1,7884::134622718
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Delta, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134622718&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:  
+4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:
 3 _APID 1,7884::134622718
 1 NAME Daisy Ana /Haney /
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134622718&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:  
+4 TEXT Birth date:  abt 1872 Birth place:  Ireland Residence date:  1910 Residence place:  Delta, Delta, Colorado Arrival date:  1885 Arrival place:
 3 _APID 1,7884::134622718
-1 DEAT 
+1 DEAT
 2 DATE 10/21/1956
 2 PLAC Delta, Colorado, USA
 1 SEX F
 1 FAMC @F13@
 1 FAMS @F8@
 1 FAMS @F28@
-0 @P18@ INDI 
-1 BIRT 
+0 @P18@ INDI
+1 BIRT
 2 DATE 12/4/1865
 2 PLAC Nova Scotia, Canada
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Delta, Delta, Colorado; Roll: T625_157; Page: 5B; Enumeration District: 13; Image: 607.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6066603&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:  
+4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:
 3 _APID 1,6061::6066603
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213131&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213131
@@ -537,81 +537,81 @@
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Delta, Delta, Colorado; Roll: T625_157; Page: 5B; Enumeration District: 13; Image: 607.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6066603&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:  
+4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:
 3 _APID 1,6061::6066603
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213131&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213131
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213131&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213131
-1 EVEN 
+1 EVEN
 2 TYPE Arrival
 2 DATE 1866
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Delta, Delta, Colorado; Roll: T625_157; Page: 5B; Enumeration District: 13; Image: 607.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6066603&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:  
+4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:
 3 _APID 1,6061::6066603
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Delta, Delta, Colorado
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Delta, Delta, Colorado; Roll: T625_157; Page: 5B; Enumeration District: 13; Image: 607.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6066603&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:  
+4 TEXT Birth date:  abt 1865 Birth place:  Nova Scotia Residence date:  1920 Residence place:  Delta, Delta, Colorado Arrival date:  1866 Arrival place:
 3 _APID 1,6061::6066603
 1 SEX M
-1 DEAT 
+1 DEAT
 2 DATE 11/17/1944
 2 PLAC Delta, Delta, Colo
 1 FAMC @F27@
 1 FAMS @F8@
-0 @P19@ INDI 
+0 @P19@ INDI
 1 SEX F
 1 NAME Bedelia /Gillet/
-1 BIRT 
+1 BIRT
 2 DATE 1850
 2 PLAC Iowa USA
-1 DEAT 
+1 DEAT
 2 DATE 1909
 2 PLAC Montevista Colorado
 1 FAMS @F25@
-0 @P20@ INDI 
-1 RESI 
+0 @P20@ INDI
+1 RESI
 2 DATE 1880
 2 PLAC Miles, Pawnee, Nebraska, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Miles, Pawnee, Nebraska; Roll: 753; Family History Film: 1254753; Page: 28B; Enumeration District: 254; Image: 0606.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=48228220&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1880 Residence place:  Miles, Pawnee, Nebraska, United States
 3 _APID 1,6742::48228220
-1 BIRT 
+1 BIRT
 2 DATE 1834
 2 PLAC Pittsburgh, Pennsylvania, USA
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Miles, Pawnee, Nebraska; Roll: 753; Family History Film: 1254753; Page: 28B; Enumeration District: 254; Image: 0606.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=48228220&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1880 Residence place:  Miles, Pawnee, Nebraska, United States
 3 _APID 1,6742::48228220
@@ -619,11 +619,11 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Miles, Pawnee, Nebraska; Roll: 753; Family History Film: 1254753; Page: 28B; Enumeration District: 254; Image: 0606.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=48228220&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1880 Residence place:  Miles, Pawnee, Nebraska, United States
 3 _APID 1,6742::48228220
-1 DEAT 
+1 DEAT
 2 DATE 10/21/1926
 2 PLAC Denver Colorado USA
 1 SEX M
@@ -633,9 +633,9 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=20
 1 FAMS @F24@
 1 FAMS @F25@
-0 @P21@ INDI 
+0 @P21@ INDI
 1 NAME Arlene Loretta /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 14 May 1915
 2 PLAC Somerset, Gunnan, Colo
 1 SEX F
@@ -644,8 +644,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=21
 1 FAMC @F4@
-0 @P22@ INDI 
-1 BIRT 
+0 @P22@ INDI
+1 BIRT
 2 DATE 3 Mar 1912
 2 PLAC Somerset, Gunnan, Colo
 1 NAME Maurice Hiatt /Hammond/
@@ -655,12 +655,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=22
 1 FAMC @F4@
-0 @P23@ INDI 
+0 @P23@ INDI
 1 NAME Martin LeRoy /Hammond/
-1 DEAT 
+1 DEAT
 2 DATE 1984
 2 PLAC Tacoma, , Wash
-1 BIRT 
+1 BIRT
 2 DATE 14 Jun 1909
 2 PLAC Hotchkiss, Delta, Colo
 1 SEX M
@@ -669,27 +669,27 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=23
 1 FAMC @F4@
-0 @P24@ INDI 
-1 MARR 
+0 @P24@ INDI
+1 MARR
 2 DATE 25 Mar 1883
 2 PLAC Eureka, Greenwood, Kansas, United States
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Crawford, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134628686&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1865 Birth place:  Kansas Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::134628686
-1 BIRT 
+1 BIRT
 2 DATE 8/8/1963
 2 PLAC Kansas, USA
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134628686&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1865 Birth place:  Kansas Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::134628686
@@ -697,11 +697,11 @@
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=134628686&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1865 Birth place:  Kansas Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::134628686
-1 DEAT 
+1 DEAT
 2 DATE 2/25/1952
 2 PLAC Fruita, Colorado, USA
 1 SEX F
@@ -711,50 +711,50 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=24
 1 FAMC @F26@
 1 FAMS @F14@
-0 @P25@ INDI 
-1 BIRT 
+0 @P25@ INDI
+1 BIRT
 2 DATE 9/30/1863
 2 PLAC Indiana
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460524&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Sep 1861 Birth place:  Indiana Marriage date:  1882 Marriage place:   Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460524
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1974315&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::1974315
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085130
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Fruita, Mesa, Colorado; Roll: 247; Page: 10B; Enumeration District: 3; Image: 64.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101958199&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1930 Residence place:  Fruita, Mesa, Colorado
 3 _APID 1,6224::101958199
 2 SOUR @S-2097951845@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ksstatecen&h=18338&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1 Mar 1885 Residence place:  Pleasant View, Cherokee, Kansas
 3 _APID 1,1088::18338
-1 RESI 
+1 RESI
 2 DATE 1 Mar 1885
 2 PLAC Pleasant View, Cherokee, Kansas
 2 SOUR @S-2097951845@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ksstatecen&h=18338&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1 Mar 1885 Residence place:  Pleasant View, Cherokee, Kansas
 3 _APID 1,1088::18338
@@ -762,87 +762,87 @@
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460524&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Sep 1861 Birth place:  Indiana Marriage date:  1882 Marriage place:   Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460524
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1974315&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::1974315
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085130
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Fruita, Mesa, Colorado; Roll: 247; Page: 10B; Enumeration District: 3; Image: 64.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101958199&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1930 Residence place:  Fruita, Mesa, Colorado
 3 _APID 1,6224::101958199
 2 SOUR @S-2097951845@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ksstatecen&h=18338&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1 Mar 1885 Residence place:  Pleasant View, Cherokee, Kansas
 3 _APID 1,1088::18338
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Fruita, Mesa, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Fruita, Mesa, Colorado; Roll: 247; Page: 10B; Enumeration District: 3; Image: 64.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101958199&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1930 Residence place:  Fruita, Mesa, Colorado
 3 _APID 1,6224::101958199
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1863 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085130
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Crawford, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Crawford, Delta, Colorado; Roll: T624_114; Page: 2B; Enumeration District: 29; Image: 141.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1974315&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  Indiana Residence date:  1910 Residence place:  Crawford, Delta, Colorado
 3 _APID 1,7884::1974315
-1 MARR 
+1 MARR
 2 DATE 1882
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460524&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Sep 1861 Birth place:  Indiana Marriage date:  1882 Marriage place:   Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460524
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460524&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Sep 1861 Birth place:  Indiana Marriage date:  1882 Marriage place:   Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460524
-1 DEAT 
+1 DEAT
 2 DATE 3/25/1950
 2 PLAC Fruita, Colorado, USA
 1 SEX M
@@ -853,41 +853,41 @@
 1 FAMC @F15@
 1 FAMS @F14@
 1 FAMS @F33@
-0 @P26@ INDI 
+0 @P26@ INDI
 1 NAME Tony /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 11/1934
 2 PLAC Denver Colorado USA
 1 SEX M
 1 FAMC @F5@
-0 @P27@ INDI 
-1 BIRT 
+0 @P27@ INDI
+1 BIRT
 2 DATE 3/1932
 2 PLAC Denver Colorado USA
 1 SEX F
 1 NAME Francis /Moreno/
 1 FAMC @F5@
-0 @P28@ INDI 
+0 @P28@ INDI
 1 NAME Pauline /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 7/7/1929
 2 PLAC Denver Colorado USA
 1 SEX F
 1 FAMC @F5@
-0 @P29@ INDI 
+0 @P29@ INDI
 1 SEX F
 1 NAME Freida /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 3/12/1923
 1 FAMC @F5@
-0 @P30@ INDI 
+0 @P30@ INDI
 1 NAME Dominic /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 2/25/1923
 1 SEX M
 1 FAMC @F5@
-0 @P31@ INDI 
-1 BIRT 
+0 @P31@ INDI
+1 BIRT
 2 DATE 1921
 2 PLAC Swink, Colorado, USA
 1 NAME Leno /Moreno/
@@ -897,78 +897,78 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=31
 1 FAMC @F5@
-0 @P32@ INDI 
+0 @P32@ INDI
 1 SEX M
 1 NAME Simon /Moreno/
-1 BIRT 
-2 DATE 1918 
+1 BIRT
+2 DATE 1918
 2 PLAC Swink Colorado USA
-1 DEAT 
+1 DEAT
 2 DATE 1942
 1 FAMC @F5@
-0 @P33@ INDI 
-1 DEAT 
+0 @P33@ INDI
+1 DEAT
 2 DATE 1913
 1 SEX M
 1 NAME Rufino /Moreno/
-1 BIRT 
+1 BIRT
 2 DATE 1913
 1 FAMC @F5@
-0 @P34@ INDI 
-1 BIRT 
+0 @P34@ INDI
+1 BIRT
 2 PLAC Durango, Durango, Mexico
-1 DEAT 
+1 DEAT
 2 PLAC Aurora, Arapahoe, Colorado, USA
 1 SEX F
 1 NAME Martina /Rios/
 1 FAMS @F7@
-0 @P35@ INDI 
+0 @P35@ INDI
 1 SEX M
 1 NAME Natividad /Ontiveros/
-1 BIRT 
+1 BIRT
 2 PLAC Durango, Durango, Mexico
-1 DEAT 
+1 DEAT
 2 PLAC Aurora, Arapahoe, Colorado, USA
 1 FAMS @F7@
-0 @P36@ INDI 
+0 @P36@ INDI
 1 NAME Pilar?
-1 DEAT 
+1 DEAT
 2 DATE 1888
 2 PLAC Mexico
 1 SEX F
 1 FAMS @F9@
-0 @P37@ INDI 
+0 @P37@ INDI
 1 NAME Lucio /Ornelas/
 1 SEX M
 1 FAMS @F9@
 1 FAMS @F32@
-0 @P38@ INDI 
+0 @P38@ INDI
 1 SEX F
 1 NAME Felicitas /Ontiveros/
-1 BIRT 
+1 BIRT
 2 PLAC Durango Mexico
-1 DEAT 
+1 DEAT
 2 PLAC Colorado, USA
 1 FAMC @F7@
 1 FAMS @F11@
-0 @P39@ INDI 
-1 BIRT 
+0 @P39@ INDI
+1 BIRT
 2 DATE 1836
 2 PLAC Nova Scotia, Canada
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213130
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213130
@@ -976,140 +976,140 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213130&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213130
 1 SEX F
-1 DEAT 
+1 DEAT
 2 PLAC Ludlow Maine USA
 1 FAMS @F27@
-0 @P40@ INDI 
-1 EVEN 
+0 @P40@ INDI
+1 EVEN
 2 TYPE Arrival
 2 DATE 1865
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Houlton, Aroostook, Maine; Roll: T625_641; Page: 14A; Enumeration District: 32; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=83927285&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:  
+4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:
 3 _APID 1,6061::83927285
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Houlton, Aroostook, Maine
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Houlton, Aroostook, Maine; Roll: T625_641; Page: 14A; Enumeration District: 32; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=83927285&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:  
+4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:
 3 _APID 1,6061::83927285
-1 BIRT 
+1 BIRT
 2 DATE 1836
 2 PLAC Nova Scotia, Canada
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432970&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432970
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Houlton, Aroostook, Maine; Roll: T625_641; Page: 14A; Enumeration District: 32; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=83927285&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:  
+4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:
 3 _APID 1,6061::83927285
 1 NAME Shubal /Thompson/
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432970&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432970
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Houlton, Aroostook, Maine; Roll: T625_641; Page: 14A; Enumeration District: 32; Image: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=83927285&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
-4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:  
+4 TEXT Birth date:  abt 1837 Birth place:  Canada Residence date:  1920 Residence place:  Houlton, Aroostook, Maine Arrival date:  1865 Arrival place:
 3 _APID 1,6061::83927285
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432970&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1836 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432970
-1 DEAT 
+1 DEAT
 2 PLAC Ludlow Maine USA
 1 SEX M
 1 FAMS @F27@
-0 @P41@ INDI 
+0 @P41@ INDI
 1 SEX M
 1 NAME Luis /Ornelas/
 1 FAMC @F32@
-0 @P42@ INDI 
+0 @P42@ INDI
 1 NAME Trinidad /Ornelas/
 1 SEX M
 1 FAMC @F32@
-0 @P43@ INDI 
-1 EVEN 
+0 @P43@ INDI
+1 EVEN
 2 TYPE Arrival
 2 DATE 18 Jul 1919
 2 PLAC Eagle Pass
 2 SOUR @S-2097959820@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mexborder&h=2009461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1888 Birth place:  San Juan De Guadalupe Arrival date:  18 Jul 1919 Arrival place:  Eagle Pass
 3 _APID 1,1082::2009461
-1 BIRT 
+1 BIRT
 2 DATE abt 1888
 2 PLAC San Juan De Guadalupe
 2 SOUR @S-2097959820@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mexborder&h=2009461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1888 Birth place:  San Juan De Guadalupe Arrival date:  18 Jul 1919 Arrival place:  Eagle Pass
 3 _APID 1,1082::2009461
 1 NAME Tomas /Ornelas/
 2 SOUR @S-2097959820@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=mexborder&h=2009461&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1888 Birth place:  San Juan De Guadalupe Arrival date:  18 Jul 1919 Arrival place:  Eagle Pass
 3 _APID 1,1082::2009461
 1 SEX M
 1 FAMC @F9@
-0 @P44@ INDI 
+0 @P44@ INDI
 1 NAME Lupe /Ornelas/
 1 SEX M
 1 FAMC @F9@
-0 @P45@ INDI 
-1 RESI 
+0 @P45@ INDI
+1 RESI
 2 DATE 1930
 2 PLAC Denver, Denver, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629596&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1886 Birth place:  Mexico Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629596
-1 BIRT 
+1 BIRT
 2 DATE abt 1886
 2 PLAC Mexico
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629596&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1886 Birth place:  Mexico Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629596
@@ -1117,40 +1117,40 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629596&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1886 Birth place:  Mexico Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629596
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Denver, Denver, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629596&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1886 Birth place:  Mexico Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629596
 1 SEX M
 1 FAMC @F9@
 1 FAMS @F10@
-0 @P46@ INDI 
-1 RESI 
+0 @P46@ INDI
+1 RESI
 2 DATE 1930
 2 PLAC Denver, Denver, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629611&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1916 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629611
-1 BIRT 
+1 BIRT
 2 DATE abt 1916
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629611&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1916 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629611
@@ -1158,19 +1158,19 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629611&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1916 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629611
 1 SEX F
 1 FAMC @F10@
-0 @P47@ INDI 
-1 BIRT 
+0 @P47@ INDI
+1 BIRT
 2 DATE abt 1892
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629637&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1892 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629637
@@ -1178,38 +1178,38 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629637&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1892 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629637
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Denver, Denver, Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Denver, Denver, Colorado; Roll: 234; Page: 8A; Enumeration District: 46; Image: 533.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=101629637&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1892 Birth place:   Residence date:  1930 Residence place:  Denver, Denver, Colorado
 3 _APID 1,6224::101629637
 1 SEX F
 1 FAMS @F10@
-0 @P48@ INDI 
-1 BIRT 
+0 @P48@ INDI
+1 BIRT
 2 DATE 12 Oct 1881
 2 SOUR @S-2097951022@
 3 PAGE Registration Location: Weld County, Colorado; Roll: 1561804; Draft Board: 1.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ww1draft&h=20244684&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  12 Oct 1881 Birth place:   Residence date:   Residence place:  Weld, Colorado
 3 _APID 1,6482::20244684
-1 RESI 
+1 RESI
 2 PLAC Weld, Colorado
 2 SOUR @S-2097951022@
 3 PAGE Registration Location: Weld County, Colorado; Roll: 1561804; Draft Board: 1.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ww1draft&h=20244684&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  12 Oct 1881 Birth place:   Residence date:   Residence place:  Weld, Colorado
 3 _APID 1,6482::20244684
@@ -1217,32 +1217,32 @@
 2 SOUR @S-2097951022@
 3 PAGE Registration Location: Weld County, Colorado; Roll: 1561804; Draft Board: 1.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ww1draft&h=20244684&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  12 Oct 1881 Birth place:   Residence date:   Residence place:  Weld, Colorado
 3 _APID 1,6482::20244684
 1 SEX M
 1 FAMS @F11@
-0 @P49@ INDI 
-1 DEAT 
+0 @P49@ INDI
+1 DEAT
 2 DATE Dec 14, 1915
 2 PLAC Ohio USA
 2 SOUR @S-2097953155@
-3 PAGE Certificate: ; Volume: 
+3 PAGE Certificate: ; Volume:
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ohdeath93-98&h=6416502&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Death date:  14 Dec 1915 Death place:  Trumbull, Ohio
 3 _APID 1,5763::6416502
 1 NAME Robert /Haney/
 2 SOUR @S-2097953155@
-3 PAGE Certificate: ; Volume: 
+3 PAGE Certificate: ; Volume:
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=ohdeath93-98&h=6416502&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Death date:  14 Dec 1915 Death place:  Trumbull, Ohio
 3 _APID 1,5763::6416502
-1 BIRT 
+1 BIRT
 2 DATE May 1845
 2 PLAC Ireland
 1 SEX M
@@ -1253,55 +1253,55 @@
 1 FAMC @F31@
 1 FAMS @F12@
 1 FAMS @F13@
-0 @P50@ INDI 
+0 @P50@ INDI
 1 NAME Ana /Grier/
 1 SEX F
 1 FAMS @F13@
-0 @P51@ INDI 
-1 BIRT 
+0 @P51@ INDI
+1 BIRT
 2 DATE 6/11/1895
 2 PLAC Utah, USA
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1972366&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1910 Residence place:  Delta, Delta, Colorado
 3 _APID 1,7884::1972366
 2 SOUR @S-2097952924@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=cadeath1940&h=7018092&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  11 Jun 1895 Birth place:  Utah Death date:  24 Feb 1944 Death place:  Los Angeles, California
 3 _APID 1,5180::7018092
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Orchard, Delta, Colorado; Roll: T625_157; Page: 5A; Enumeration District: 16; Image: 676.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6069939&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1920 Residence place:  Orchard, Delta, Colorado
 3 _APID 1,6061::6069939
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802566&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802566
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Vernal, Uintah, Utah; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=61821334&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jun 1895 Birth place:  Utah Residence date:  1900 Residence place:  Vernal Town, Uintah, Utah
 3 _APID 1,7602::61821334
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Vernal Town, Uintah, Utah
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Vernal, Uintah, Utah; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=61821334&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jun 1895 Birth place:  Utah Residence date:  1900 Residence place:  Vernal Town, Uintah, Utah
 3 _APID 1,7602::61821334
@@ -1309,54 +1309,54 @@
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1972366&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1910 Residence place:  Delta, Delta, Colorado
 3 _APID 1,7884::1972366
 2 SOUR @S-2097952924@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=cadeath1940&h=7018092&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  11 Jun 1895 Birth place:  Utah Death date:  24 Feb 1944 Death place:  Los Angeles, California
 3 _APID 1,5180::7018092
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Orchard, Delta, Colorado; Roll: T625_157; Page: 5A; Enumeration District: 16; Image: 676.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6069939&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1920 Residence place:  Orchard, Delta, Colorado
 3 _APID 1,6061::6069939
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802566&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802566
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Vernal, Uintah, Utah; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=61821334&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jun 1895 Birth place:  Utah Residence date:  1900 Residence place:  Vernal Town, Uintah, Utah
 3 _APID 1,7602::61821334
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Maywood, Los Angeles, California
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802566&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802566
-1 RESI 
+1 RESI
 2 DATE 1920
 2 PLAC Orchard, Delta, Colorado
 2 SOUR @S-2097951516@
 3 PAGE Year: 1920; Census Place: Orchard, Delta, Colorado; Roll: T625_157; Page: 5A; Enumeration District: 16; Image: 676.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1920usfedcen&h=6069939&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1920 Residence place:  Orchard, Delta, Colorado
 3 _APID 1,6061::6069939
@@ -1365,47 +1365,47 @@
 2 PLAC California, USA
 2 SOUR @S-2097952924@
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=cadeath1940&h=7018092&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  11 Jun 1895 Birth place:  Utah Death date:  24 Feb 1944 Death place:  Los Angeles, California
 3 _APID 1,5180::7018092
-1 RESI 
+1 RESI
 2 DATE 1910
 2 PLAC Delta, Delta, Colorado
 2 SOUR @S-2097951588@
 3 PAGE Year: 1910; Census Place: Delta, Delta, Colorado; Roll: T624_114; Page: 8A; Enumeration District: 25; Image: 18.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1910uscenindex&h=1972366&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:  Utah Residence date:  1910 Residence place:  Delta, Delta, Colorado
 3 _APID 1,7884::1972366
 1 SEX M
 1 FAMC @F28@
 1 FAMS @F29@
-0 @P52@ INDI 
-1 BIRT 
+0 @P52@ INDI
+1 BIRT
 2 DATE 1893?
-1 DEAT 
+1 DEAT
 2 DATE 1896
 1 SEX M
 1 NAME Percy /Staunton/
 1 FAMC @F28@
-0 @P53@ INDI 
-1 BIRT 
+0 @P53@ INDI
+1 BIRT
 2 DATE 1863
 2 PLAC Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 5/8/1896
 2 PLAC Vernal Utah, USA
 1 SEX M
 1 NAME Adoniram /Staunton/
 1 FAMC @F30@
 1 FAMS @F28@
-0 @P54@ INDI 
+0 @P54@ INDI
 1 NAME Anne /Abbott/
-1 DEAT 
+1 DEAT
 2 PLAC prob. Ireland
-1 BIRT 
+1 BIRT
 2 DATE early 1800s
 2 PLAC Longford, County Longford, Ireland
 1 SEX F
@@ -1414,10 +1414,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=54
 1 FAMS @F31@
-0 @P55@ INDI 
-1 DEAT 
+0 @P55@ INDI
+1 DEAT
 2 PLAC prob. Ireland
-1 BIRT 
+1 BIRT
 2 DATE early 1800s
 2 PLAC Longford, County Longford, Ireland
 1 NAME William /Heaney/
@@ -1427,47 +1427,47 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=55
 1 FAMS @F31@
-0 @P56@ INDI 
+0 @P56@ INDI
 1 NAME Frances /Haney/
-1 BIRT 
+1 BIRT
 2 DATE 1888
 1 SEX F
 1 FAMC @F12@
-0 @P57@ INDI 
+0 @P57@ INDI
 1 NAME George /Haney/
-1 BIRT 
+1 BIRT
 2 DATE 1884
 2 PLAC Pennsylvania, United States
 1 SEX M
 1 FAMC @F12@
-0 @P58@ INDI 
+0 @P58@ INDI
 1 NAME Robert /Haney/
-1 BIRT 
+1 BIRT
 2 DATE 1882
 2 PLAC Pennsylvania, United States
 1 SEX M
 1 FAMC @F12@
-0 @P59@ INDI 
-1 BIRT 
+0 @P59@ INDI
+1 BIRT
 2 DATE 1879
 2 PLAC Ireland
 1 SEX F
 1 NAME Elizabeth /Haney/
 1 FAMC @F12@
-0 @P60@ INDI 
+0 @P60@ INDI
 1 NAME William /Haney/
-1 BIRT 
+1 BIRT
 2 DATE 1878
 2 PLAC Ireland
 1 SEX M
 1 FAMC @F12@
-0 @P61@ INDI 
-1 MARR 
+0 @P61@ INDI
+1 MARR
 2 DATE 1874
 2 PLAC Ireland
-1 DEAT 
+1 DEAT
 2 PLAC USA
-1 BIRT 
+1 BIRT
 2 DATE 1845
 2 PLAC Ireland
 1 SEX F
@@ -1477,11 +1477,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=61
 1 FAMS @F12@
-0 @P62@ INDI 
-1 BIRT 
+0 @P62@ INDI
+1 BIRT
 2 DATE 23 Jul 1884
 2 PLAC Fall River, Greenwood, Kansas, United States
-1 DEAT 
+1 DEAT
 2 DATE 30 Sep 1946
 2 PLAC Ft Collins, Larimer, Colorado, United States
 1 NAME Ernest Lewis /Hiatt/
@@ -1491,38 +1491,38 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=62
 1 FAMC @F14@
-0 @P63@ INDI 
-1 BIRT 
+0 @P63@ INDI
+1 BIRT
 2 DATE abt 1840
 2 PLAC Indiana
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381799&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381799
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=21745189&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::21745189
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275938&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275938
-1 RESI 
+1 RESI
 2 DATE 1850
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275938&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275938
@@ -1530,47 +1530,47 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381799&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381799
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=21745189&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::21745189
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275938&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275938
-1 RESI 
+1 RESI
 2 DATE 1870
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=21745189&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::21745189
-1 DEAT 
+1 DEAT
 2 DATE 22 Jul 1896
 2 PLAC Aspen, Pitkin, Colorado, United States
-1 MARR 
+1 MARR
 2 DATE 6 Dec 1861
 2 PLAC Winchester, Randolph, Indiana, United States
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381799&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1840 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381799
@@ -1581,31 +1581,31 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=63
 1 FAMC @F17@
 1 FAMS @F15@
-0 @P64@ INDI 
-1 BIRT 
+0 @P64@ INDI
+1 BIRT
 2 DATE Feb 3 1837
 2 PLAC Dayton, Ohio USA
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35084961&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1838 Birth place:  Ohio Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35084961
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=20847979&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1837 Birth place:  Ohio Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::20847979
-1 RESI 
+1 RESI
 2 DATE 1870
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=20847979&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1837 Birth place:  Ohio Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::20847979
@@ -1613,28 +1613,28 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35084961&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1838 Birth place:  Ohio Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35084961
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 547; Image: 535.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=20847979&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1837 Birth place:  Ohio Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::20847979
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35084961&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1838 Birth place:  Ohio Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35084961
-1 DEAT 
+1 DEAT
 2 DATE Feb 11 1900
 2 PLAC Aspen, Pitkin Colorado USA, buried Grand Junction
 1 SEX F
@@ -1644,24 +1644,24 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=64
 1 FAMC @F16@
 1 FAMS @F15@
-0 @P65@ INDI 
-1 BIRT 
+0 @P65@ INDI
+1 BIRT
 2 DATE Jul 1884
 2 PLAC Kansas
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460525&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jul 1884 Birth place:  Kansas Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460525
-1 RESI 
+1 RESI
 2 DATE 1900
 2 PLAC Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460525&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jul 1884 Birth place:  Kansas Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460525
@@ -1669,21 +1669,21 @@
 2 SOUR @S-2097951729@
 3 PAGE Year: 1900; Census Place: Precinct 22, Gunnison, Colorado; Roll:  ; Page: ; Enumeration District: .
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1900usfedcen&h=33460525&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  Jul 1884 Birth place:  Kansas Residence date:  1900 Residence place:  Crested Butte Town, Irwin Village, Marble Town, Gunnison, Colorado
 3 _APID 1,7602::33460525
 1 SEX M
 1 FAMC @F33@
-0 @P66@ INDI 
-1 MARR 
+0 @P66@ INDI
+1 MARR
 2 DATE 1863
 2 PLAC Greenwood, Kansas, United States
 1 NAME Thalba A /Barnes/
-1 BIRT 
+1 BIRT
 2 DATE 29 Feb 1844
 2 PLAC Missouri, United States
-1 DEAT 
+1 DEAT
 2 DATE 6 Apr 1873
 2 PLAC Fall River, Greenwood, Kansas, United States
 1 SEX F
@@ -1692,9 +1692,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=66
 1 FAMS @F26@
-0 @P67@ INDI 
+0 @P67@ INDI
 1 NAME Lewis J /Boyce/
-1 BIRT 
+1 BIRT
 2 DATE 1838
 2 PLAC , , , Canada
 1 SEX M
@@ -1703,34 +1703,34 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=67
 1 FAMS @F26@
-0 @P68@ INDI 
-1 MARR 
+0 @P68@ INDI
+1 MARR
 2 DATE 29 Nov 1828
 2 PLAC Randolph, Indiana, United States
-1 BIRT 
+1 BIRT
 2 DATE 27 Nov 1808
 2 PLAC Grayson, Virginia, United States
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569193&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1808 Birth place:  VA Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::569193
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275932&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1808 Birth place:  Virginia Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275932
-1 RESI 
+1 RESI
 2 DATE 1850
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275932&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1808 Birth place:  Virginia Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275932
@@ -1738,28 +1738,28 @@
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569193&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1808 Birth place:  VA Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::569193
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275932&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1808 Birth place:  Virginia Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275932
-1 MARR 
+1 MARR
 2 DATE 1828
 2 PLAC IN
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569193&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1808 Birth place:  VA Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::569193
-1 DEAT 
+1 DEAT
 2 DATE 5 May 1860
 2 PLAC Randolph, Indiana, United States
 1 SEX M
@@ -1769,38 +1769,38 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=68
 1 FAMC @F19@
 1 FAMS @F17@
-0 @P69@ INDI 
-1 BIRT 
+0 @P69@ INDI
+1 BIRT
 2 DATE 17 Apr 1812
 2 PLAC Darke, Ohio, United States
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=249701&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1812 Birth place:  OH Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::249701
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275933&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275933
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: White River, Randolph, Indiana; Roll: M653_292; Page: 826; Image: 295.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=2141040&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1860 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7667::2141040
-1 RESI 
+1 RESI
 2 DATE 1860
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: White River, Randolph, Indiana; Roll: M653_292; Page: 826; Image: 295.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=2141040&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1860 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7667::2141040
@@ -1808,45 +1808,45 @@
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=249701&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1812 Birth place:  OH Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::249701
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275933&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275933
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: White River, Randolph, Indiana; Roll: M653_292; Page: 826; Image: 295.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=2141040&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1860 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7667::2141040
-1 RESI 
+1 RESI
 2 DATE 1850
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097952024@
 3 PAGE Year: 1850; Census Place: White River, Randolph, Indiana; Roll: M432_168; Page: 64; Image: 126.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1850usfedcenancestry&h=2275933&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1812 Birth place:  Ohio Residence date:  1850 Residence place:  White River, Randolph, Indiana
 3 _APID 1,8054::2275933
-1 MARR 
+1 MARR
 2 DATE 1828
 2 PLAC IN
 2 SOUR @S-2097952102@
 3 PAGE Source number: 304.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=249701&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1812 Birth place:  OH Marriage date:  1828 Marriage place:  IN
 3 _APID 1,7836::249701
-1 DEAT 
+1 DEAT
 2 DATE 21 Sep 1888
 2 PLAC White River, Randolph, Indiana, United States
 1 SEX F
@@ -1856,27 +1856,27 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=69
 1 FAMC @F18@
 1 FAMS @F17@
-0 @P70@ INDI 
-1 DEAT 
+0 @P70@ INDI
+1 DEAT
 2 DATE 26 Nov 1937
 2 PLAC Butte, Silver Bow, Montana, United States
-1 BIRT 
+1 BIRT
 2 DATE abt 1876
 2 PLAC Indiana
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=26836001&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::26836001
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=26836001&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::26836001
@@ -1884,7 +1884,7 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=26836001&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::26836001
@@ -1894,17 +1894,17 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=70
 1 FAMC @F15@
-0 @P71@ INDI 
-1 DEAT 
+0 @P71@ INDI
+1 DEAT
 2 DATE 9 Apr 1965
 2 PLAC Pasadena, Los Angeles, California, United States
-1 BIRT 
+1 BIRT
 2 DATE abt 1871
 2 PLAC Indiana
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381864&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1871 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381864
@@ -1912,17 +1912,17 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381864&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1871 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381864
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35381864&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1871 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35381864
@@ -1932,17 +1932,17 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=71
 1 FAMC @F15@
-0 @P72@ INDI 
-1 DEAT 
+0 @P72@ INDI
+1 DEAT
 2 DATE 13 Jan 1937
 2 PLAC Grand Junction, Mesa, Colorado, United States
-1 BIRT 
+1 BIRT
 2 DATE abt 1870
 2 PLAC Indiana
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=49161958&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1870 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::49161958
@@ -1950,17 +1950,17 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=49161958&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1870 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::49161958
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=49161958&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1870 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::49161958
@@ -1970,27 +1970,27 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=72
 1 FAMC @F15@
-0 @P73@ INDI 
-1 DEAT 
+0 @P73@ INDI
+1 DEAT
 2 DATE 22 Sep 1955
 2 PLAC Los Angeles, Los Angeles, California, United States
-1 RESI 
+1 RESI
 2 DATE 1880
 2 PLAC Verdigris, Wilson, Kansas, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085107&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085107
-1 BIRT 
+1 BIRT
 2 DATE abt 1866
 2 PLAC Indiana
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085107&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085107
@@ -1998,7 +1998,7 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Verdigris, Wilson, Kansas; Roll: T9_399; Family History Film: 1254399; Page: 136.4000; Enumeration District: 187; Image: 0753.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=35085107&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1866 Birth place:  Indiana Residence date:  1880 Residence place:  Verdigris, Wilson, Kansas, United States
 3 _APID 1,6742::35085107
@@ -2008,11 +2008,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=73
 1 FAMC @F15@
-0 @P74@ INDI 
-1 DEAT 
+0 @P74@ INDI
+1 DEAT
 2 PLAC Indiana, United States
 1 NAME Mary /Anderson/
-1 BIRT 
+1 BIRT
 2 DATE 1803
 2 PLAC Pennsylvania, United States
 1 SEX F
@@ -2021,11 +2021,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=74
 1 FAMS @F16@
-0 @P75@ INDI 
-1 DEAT 
+0 @P75@ INDI
+1 DEAT
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME James G /Roberts/
-1 BIRT 
+1 BIRT
 2 DATE 1802
 2 PLAC Chester, Pennsylvania, United States
 1 SEX M
@@ -2034,27 +2034,27 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=75
 1 FAMS @F16@
-0 @P76@ INDI 
-1 MARR 
+0 @P76@ INDI
+1 MARR
 2 DATE 9 Mar 1791
 2 PLAC New Garden, Guilford, North Carolina, United States
-1 BIRT 
+1 BIRT
 2 DATE 7 Aug 1766
 2 PLAC Guilford, North Carolina, United States
 2 SOUR @S-2097952102@
 3 PAGE Source number: 306.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569138&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1766 Birth place:  NC Marriage date:  1792 Marriage place:  NC
 3 _APID 1,7836::569138
-1 MARR 
+1 MARR
 2 DATE 1792
 2 PLAC NC
 2 SOUR @S-2097952102@
 3 PAGE Source number: 306.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569138&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1766 Birth place:  NC Marriage date:  1792 Marriage place:  NC
 3 _APID 1,7836::569138
@@ -2062,11 +2062,11 @@
 2 SOUR @S-2097952102@
 3 PAGE Source number: 306.000; Source type: Electronic Database; Number of Pages: 1; Submitter Code: JBW.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=worldmarr_ga&h=569138&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  1766 Birth place:  NC Marriage date:  1792 Marriage place:  NC
 3 _APID 1,7836::569138
-1 DEAT 
+1 DEAT
 2 DATE 1836
 2 PLAC Randolph, Indiana, United States
 1 SEX M
@@ -2076,12 +2076,12 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=76
 1 FAMC @F20@
 1 FAMS @F19@
-0 @P77@ INDI 
+0 @P77@ INDI
 1 NAME Rachel /Williams/
-1 BIRT 
+1 BIRT
 2 DATE 4 Jun 1771
 2 PLAC New Garden, Guilford, North Carolina, United States
-1 DEAT 
+1 DEAT
 2 DATE 22 Jan 1852
 2 PLAC Wabash, Heath, Indiana, United States
 1 SEX F
@@ -2091,12 +2091,12 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=77
 1 FAMC @F21@
 1 FAMS @F19@
-0 @P78@ INDI 
-1 DEAT 
+0 @P78@ INDI
+1 DEAT
 2 DATE 16 Oct 1853
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME John /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 1851
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX M
@@ -2105,12 +2105,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=78
 1 FAMC @F17@
-0 @P79@ INDI 
-1 DEAT 
+0 @P79@ INDI
+1 DEAT
 2 DATE 1852
 2 PLAC Young, Texas, United States
 1 NAME John /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 1851
 2 PLAC Winchester, Randolph, India
 1 SEX M
@@ -2119,11 +2119,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=79
 1 FAMC @F17@
-0 @P80@ INDI 
-1 DEAT 
+0 @P80@ INDI
+1 DEAT
 2 DATE 21 Apr 1877
 1 NAME Lewis /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 9 Mar 1847
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX M
@@ -2132,11 +2132,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=80
 1 FAMC @F17@
-0 @P81@ INDI 
+0 @P81@ INDI
 1 NAME Mary /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 1847
-1 DEAT 
+1 DEAT
 2 DATE 1848
 2 PLAC Young, Texas, United States
 1 SEX F
@@ -2145,11 +2145,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=81
 1 FAMC @F17@
-0 @P82@ INDI 
-1 DEAT 
+0 @P82@ INDI
+1 DEAT
 2 DATE 25 Mar 1903
 1 NAME Esther /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 15 Jun 1845
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX F
@@ -2158,11 +2158,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=82
 1 FAMC @F17@
-0 @P83@ INDI 
-1 BIRT 
+0 @P83@ INDI
+1 BIRT
 2 DATE 29 Jun 1843
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 1935
 2 PLAC Greentown, Howard, Indiana, United States
 1 NAME Wilson J /Hiatt/
@@ -2172,11 +2172,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=83
 1 FAMC @F17@
-0 @P84@ INDI 
-1 BIRT 
+0 @P84@ INDI
+1 BIRT
 2 DATE 9 May 1841
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 20 Mar 1843
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME Miranda /Hiatt/
@@ -2186,12 +2186,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=84
 1 FAMC @F17@
-0 @P85@ INDI 
+0 @P85@ INDI
 1 NAME Rachel /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 1 Sep 1837
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 14 Apr 1929
 1 SEX F
 1 SOUR @S-2097950158@
@@ -2199,11 +2199,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=85
 1 FAMC @F17@
-0 @P86@ INDI 
-1 BIRT 
+0 @P86@ INDI
+1 BIRT
 2 DATE 20 Apr 1835
 2 PLAC Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 22 Jul 1870
 2 PLAC Wabash, Wabash, Indiana, United States
 1 NAME Sally /Hiatt/
@@ -2213,11 +2213,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=86
 1 FAMC @F17@
-0 @P87@ INDI 
-1 DEAT 
+0 @P87@ INDI
+1 DEAT
 2 DATE 27 Jul 1870
 1 NAME Lydia /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 16 Jun 1833
 2 PLAC Randolph, India
 1 SEX F
@@ -2226,11 +2226,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=87
 1 FAMC @F17@
-0 @P88@ INDI 
-1 BIRT 
+0 @P88@ INDI
+1 BIRT
 2 DATE 16 Jun 1833
 2 PLAC Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 16 Jun 1883
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME Lydia /Hiatt/
@@ -2240,12 +2240,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=88
 1 FAMC @F17@
-0 @P89@ INDI 
-1 DEAT 
+0 @P89@ INDI
+1 DEAT
 2 DATE 14 Feb 1912
 2 PLAC Randolph, Indiana, United States
 1 NAME Rosanna /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 13 Sep 1831
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX F
@@ -2254,11 +2254,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=89
 1 FAMC @F17@
-0 @P90@ INDI 
-1 BIRT 
+0 @P90@ INDI
+1 BIRT
 2 DATE 16 Apr 1830
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 1890
 2 PLAC Liberty, Elk, Kansas, United States
 1 NAME Pleasant /Hiatt/
@@ -2268,12 +2268,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=90
 1 FAMC @F17@
-0 @P91@ INDI 
-1 DEAT 
+0 @P91@ INDI
+1 DEAT
 2 DATE 11 Jul 1875
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME Sarah /Wright/
-1 BIRT 
+1 BIRT
 2 DATE 20 Sep 1789
 2 PLAC River, Saluda, South Carolina, United States
 1 SEX F
@@ -2283,24 +2283,24 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=91
 1 FAMC @F23@
 1 FAMS @F18@
-0 @P92@ INDI 
-1 RESI 
+0 @P92@ INDI
+1 RESI
 2 DATE 1870
 2 PLAC White River, Randolph, Indiana
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 546; Image: 533.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=18173935&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1788 Birth place:  South Carolina Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::18173935
-1 BIRT 
+1 BIRT
 2 DATE 20 Jan 1788
 2 PLAC River, Saluda, South Carolina, United States
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 546; Image: 533.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=18173935&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1788 Birth place:  South Carolina Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::18173935
@@ -2308,11 +2308,11 @@
 2 SOUR @S-2097951908@
 3 PAGE Year: 1870; Census Place: White River, Randolph, Indiana; Roll: M593_354; Page: 546; Image: 533.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1870usfedcen&h=18173935&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1788 Birth place:  South Carolina Residence date:  1870 Residence place:  White River, Randolph, Indiana
 3 _APID 1,7163::18173935
-1 DEAT 
+1 DEAT
 2 DATE 19 Nov 1878
 2 PLAC Union City, Randolph, Indiana, United States
 1 SEX M
@@ -2322,12 +2322,12 @@
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=92
 1 FAMC @F22@
 1 FAMS @F18@
-0 @P93@ INDI 
-1 DEAT 
+0 @P93@ INDI
+1 DEAT
 2 DATE 1882
 2 PLAC Time, Pike, Illinois, United States
 1 NAME Andrew /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 1833
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX M
@@ -2336,12 +2336,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=93
 1 FAMC @F18@
-0 @P94@ INDI 
-1 DEAT 
+0 @P94@ INDI
+1 DEAT
 2 DATE 20 Apr 1908
 2 PLAC Fall River, Greenwood, Kansas, United States
 1 NAME Lewis /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 1830
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX M
@@ -2350,12 +2350,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=94
 1 FAMC @F18@
-0 @P95@ INDI 
+0 @P95@ INDI
 1 NAME John /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 1828
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 20 Jul 1830
 2 PLAC Randolph, Indiana, United States
 1 SEX M
@@ -2364,11 +2364,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=95
 1 FAMC @F18@
-0 @P96@ INDI 
-1 BIRT 
+0 @P96@ INDI
+1 BIRT
 2 DATE 1826
 2 PLAC Winchester, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 26 Apr 1878
 2 PLAC Randolph, Indiana, United States
 1 NAME Joseph /Coats/
@@ -2378,12 +2378,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=96
 1 FAMC @F18@
-0 @P97@ INDI 
-1 DEAT 
+0 @P97@ INDI
+1 DEAT
 2 DATE 28 Dec 1862
 2 PLAC Chicasaw Buyou, Vicksburg, Tennessee, United States
 1 NAME Gabriel /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 3 Mar 1824
 2 PLAC White River, Randolph, Indiana, United States
 1 SEX M
@@ -2392,12 +2392,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=97
 1 FAMC @F18@
-0 @P98@ INDI 
-1 DEAT 
+0 @P98@ INDI
+1 DEAT
 2 DATE 28 Feb 1907
 2 PLAC Randolph, Indiana, United States
 1 NAME Mary Polly /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 1821
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX F
@@ -2406,12 +2406,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=98
 1 FAMC @F18@
-0 @P99@ INDI 
-1 DEAT 
+0 @P99@ INDI
+1 DEAT
 2 DATE 14 Oct 1891
 2 PLAC Randolph, Indiana, United States
 1 NAME James /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 10 Apr 1819
 2 PLAC Miami, Ohio, United States
 1 SEX M
@@ -2420,12 +2420,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=99
 1 FAMC @F18@
-0 @P100@ INDI 
+0 @P100@ INDI
 1 NAME William /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 28 May 1817
 2 PLAC Chillicothe, Ross, Ohio, United States
-1 DEAT 
+1 DEAT
 2 DATE 16 Jan 1894
 2 PLAC Winchester, Randolph, Indiana, United States
 1 SEX M
@@ -2434,11 +2434,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=100
 1 FAMC @F18@
-0 @P101@ INDI 
-1 BIRT 
+0 @P101@ INDI
+1 BIRT
 2 DATE 1815
 2 PLAC Drake, Ohio, United States
-1 DEAT 
+1 DEAT
 2 DATE 1816
 2 PLAC Drake, Ohio, United States
 1 NAME Betsey /Coats/
@@ -2448,12 +2448,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=101
 1 FAMC @F18@
-0 @P102@ INDI 
-1 DEAT 
+0 @P102@ INDI
+1 DEAT
 2 DATE 2 Sep 1890
 2 PLAC Winchester, Randolph, Indiana, United States
 1 NAME Charity /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 18 Dec 1813
 2 PLAC Covington, Miami, Ohio, United States
 1 SEX F
@@ -2462,12 +2462,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=102
 1 FAMC @F18@
-0 @P103@ INDI 
+0 @P103@ INDI
 1 NAME Isaac /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 24 Jul 1810
 2 PLAC Darke, Ohio, United States
-1 DEAT 
+1 DEAT
 2 DATE 23 Jul 1876
 2 PLAC Randolph, Indiana, United States
 1 SEX M
@@ -2476,12 +2476,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=103
 1 FAMC @F18@
-0 @P104@ INDI 
-1 DEAT 
+0 @P104@ INDI
+1 DEAT
 2 DATE 13 May 1864
 2 PLAC White River, Randolph, Indiana, United States
 1 NAME Thomas Wright /Coats/
-1 BIRT 
+1 BIRT
 2 DATE 22 Jul 1808
 2 PLAC Darke, Ohio, United States
 1 SEX M
@@ -2490,12 +2490,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=104
 1 FAMC @F18@
-0 @P105@ INDI 
+0 @P105@ INDI
 1 NAME Mary /Jay/
-1 BIRT 
+1 BIRT
 2 DATE 4 Jan 1777
 2 PLAC River, Saluda, South Carolina, United States
-1 DEAT 
+1 DEAT
 2 DATE 3 Mar 1822
 2 PLAC Miami, Ohio, United States
 1 SEX F
@@ -2504,11 +2504,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=105
 1 FAMS @F22@
-0 @P106@ INDI 
-1 BIRT 
+0 @P106@ INDI
+1 BIRT
 2 DATE 1768
 2 PLAC Newberry, South Carolina, United States
-1 DEAT 
+1 DEAT
 2 DATE 1826
 2 PLAC Marion, Indiana, United States
 1 NAME William /Coate/
@@ -2518,11 +2518,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=106
 1 FAMS @F22@
-0 @P107@ INDI 
-1 BIRT 
+0 @P107@ INDI
+1 BIRT
 2 DATE 16 Apr 1769
 2 PLAC White River, Randolph, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE Oct 1803
 2 PLAC White River, Randolph, Indiana, United States
 1 NAME Elizabeth /Jay/
@@ -2532,12 +2532,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=107
 1 FAMS @F23@
-0 @P108@ INDI 
-1 DEAT 
+0 @P108@ INDI
+1 DEAT
 2 DATE 30 Apr 1835
 2 PLAC White River, Randolph, Indiana, United States
 1 NAME Thomas /Wright/
-1 BIRT 
+1 BIRT
 2 DATE 8 Aug 1761
 2 PLAC Bush River, Newberry, South Carolina, United States
 1 SEX M
@@ -2546,12 +2546,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=108
 1 FAMS @F23@
-0 @P109@ INDI 
-1 DEAT 
+0 @P109@ INDI
+1 DEAT
 2 DATE 5 Nov 1866
 2 PLAC Milo, Warren, Iowa, United States
 1 NAME Martin /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 17 Jul 1817
 2 PLAC Champaign, Ohio, United States
 1 SEX M
@@ -2560,11 +2560,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=109
 1 FAMC @F19@
-0 @P110@ INDI 
-1 BIRT 
+0 @P110@ INDI
+1 BIRT
 2 DATE 1813
 2 PLAC Grayson, Virginia, United States
-1 DEAT 
+1 DEAT
 2 DATE 1882
 2 PLAC Randolph, Indiana, United States
 1 NAME Rachel /Hiatt/
@@ -2574,10 +2574,10 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=110
 1 FAMC @F19@
-0 @P111@ INDI 
-1 BIRT 
+0 @P111@ INDI
+1 BIRT
 2 DATE 1813
-1 DEAT 
+1 DEAT
 2 DATE 1840
 1 NAME Rachel /Hiatt/
 1 SEX M
@@ -2586,12 +2586,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=111
 1 FAMC @F19@
-0 @P112@ INDI 
-1 DEAT 
+0 @P112@ INDI
+1 DEAT
 2 DATE 30 Nov 1881
 2 PLAC Peru, Miami, Indiana, United States
 1 NAME Nathan W /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 27 Apr 1812
 2 PLAC Grayson, Virginia, United States
 1 SEX M
@@ -2600,11 +2600,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=112
 1 FAMC @F19@
-0 @P113@ INDI 
-1 BIRT 
+0 @P113@ INDI
+1 BIRT
 2 DATE 11 Apr 1810
 2 PLAC Jay, Indiana, United States
-1 DEAT 
+1 DEAT
 2 DATE 17 Feb 1841
 2 PLAC White River, Randolph, Indiana, United States
 1 NAME Sarah /Hiatt/
@@ -2614,11 +2614,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=113
 1 FAMC @F19@
-0 @P114@ INDI 
-1 BIRT 
+0 @P114@ INDI
+1 BIRT
 2 DATE 12 Aug 1805
 2 PLAC Grayson, Carroll, Virginia, United States
-1 DEAT 
+1 DEAT
 2 DATE 5 May 1860
 2 PLAC White River, Randolph, Indiana, United States
 1 NAME George /Hiatt/
@@ -2628,11 +2628,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=114
 1 FAMC @F19@
-0 @P115@ INDI 
-1 BIRT 
+0 @P115@ INDI
+1 BIRT
 2 DATE Oct 1804
 2 PLAC Grayson, Virginia, United States
-1 DEAT 
+1 DEAT
 2 DATE Jul 1867
 2 PLAC Wayne, Indiana, United States
 1 NAME Lydia /Hiatt/
@@ -2642,11 +2642,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=115
 1 FAMC @F19@
-0 @P116@ INDI 
-1 BIRT 
+0 @P116@ INDI
+1 BIRT
 2 DATE 1 Mar 1795
 2 PLAC Grayson, Carroll, Virginia, United States
-1 DEAT 
+1 DEAT
 2 DATE 1852
 2 PLAC Grant, Indiana, United States
 1 NAME Josiah /Hiatt/
@@ -2656,12 +2656,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=116
 1 FAMC @F19@
-0 @P117@ INDI 
-1 DEAT 
+0 @P117@ INDI
+1 DEAT
 2 DATE 22 Jun 1855
 2 PLAC Wabash, Wabash, Indiana, United States
 1 NAME Silas /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 14 Oct 1793
 2 PLAC Guilford, North Carolina, United States
 1 SEX M
@@ -2670,12 +2670,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=117
 1 FAMC @F19@
-0 @P118@ INDI 
-1 DEAT 
+0 @P118@ INDI
+1 DEAT
 2 DATE 25 Mar 1851
 2 PLAC Montgomery, Indiana, United States
 1 NAME John B /Hiatt/
-1 BIRT 
+1 BIRT
 2 DATE 17 Dec 1791
 2 PLAC Guilford, North Carolina, United States
 1 SEX M
@@ -2684,12 +2684,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=118
 1 FAMC @F19@
-0 @P119@ INDI 
+0 @P119@ INDI
 1 NAME Sarah /Hodgson/
-1 BIRT 
+1 BIRT
 2 DATE 1733
 2 PLAC Chester, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 1 Mar 1817
 2 PLAC Guilford, North Carolina, United States
 1 SEX F
@@ -2698,11 +2698,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=119
 1 FAMS @F20@
-0 @P120@ INDI 
-1 BIRT 
+0 @P120@ INDI
+1 BIRT
 2 DATE 19 Dec 1729
 2 PLAC Bucks, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 28 Nov 1767
 2 PLAC New Garden, Guilford, North Carolina, United States
 1 NAME John /Hiatt/
@@ -2712,12 +2712,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=120
 1 FAMS @F20@
-0 @P121@ INDI 
+0 @P121@ INDI
 1 NAME Mary /Hunt/
-1 BIRT 
+1 BIRT
 2 DATE 25 Mar 1754
 2 PLAC New Garden, Guilford, North Carolina, United States
-1 DEAT 
+1 DEAT
 2 DATE 1840
 2 PLAC Salem, Champaign, Ohio, United States
 1 SEX F
@@ -2726,12 +2726,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=121
 1 FAMS @F21@
-0 @P122@ INDI 
+0 @P122@ INDI
 1 NAME Silas /Williams/
-1 BIRT 
+1 BIRT
 2 DATE 5 Aug 1747
 2 PLAC New Garden, Guilford, North Carolina, United States
-1 DEAT 
+1 DEAT
 2 DATE 10 Jan 1831
 2 PLAC Salem, Champaign, Ohio, United States
 1 SEX M
@@ -2740,83 +2740,83 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=122
 1 FAMS @F21@
-0 @P123@ INDI 
+0 @P123@ INDI
 1 NAME Effie /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 8/1/1869
 2 PLAC Nebraska
-1 DEAT 
+1 DEAT
 2 DATE 10/1869
 2 PLAC Nebraska
 1 SEX F
 1 FAMC @F24@
-0 @P124@ INDI 
-1 DEAT 
+0 @P124@ INDI
+1 DEAT
 2 DATE 7/1937
 2 PLAC Nebraska
 1 SEX F
 1 NAME Mary Estella /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 1861
 2 PLAC IL USA
 1 FAMC @F24@
-0 @P125@ INDI 
+0 @P125@ INDI
 1 SEX M
 1 NAME Leid /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 1860
 2 PLAC IL, USA
 1 FAMC @F24@
-0 @P126@ INDI 
-1 DEAT 
+0 @P126@ INDI
+1 DEAT
 2 DATE 11/7/1869
 2 PLAC Nebraska
 1 SEX F
 1 NAME Sarah Rebecca /Withrow/
-1 BIRT 
+1 BIRT
 2 DATE 1835
 2 PLAC IL, USA
 1 FAMS @F24@
-0 @P127@ INDI 
-1 DEAT 
+0 @P127@ INDI
+1 DEAT
 2 DATE 1947
 2 PLAC Portland Oregon
 1 SEX M
 1 NAME Thomas /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 1884
 2 PLAC nebraska
 1 FAMC @F25@
-0 @P128@ INDI 
+0 @P128@ INDI
 1 NAME Delta /Hammond/
 1 SEX F
 1 FAMC @F25@
-0 @P129@ INDI 
+0 @P129@ INDI
 1 SEX F
-1 BIRT 
+1 BIRT
 2 DATE 10/1883
 2 PLAC Nebraska
-1 DEAT 
+1 DEAT
 2 DATE 10/1962
 2 PLAC Denver, CO
 1 NAME Doda /Hammond/
 1 FAMC @F25@
-0 @P130@ INDI 
-1 DEAT 
+0 @P130@ INDI
+1 DEAT
 2 DATE 4/1937
 2 PLAC California
 1 SEX F
 1 NAME Alveretta /Hammond/
-1 BIRT 
+1 BIRT
 2 DATE 7/1871
 2 PLAC NEbraska
 1 FAMC @F25@
-0 @P131@ INDI 
+0 @P131@ INDI
 1 NAME Nettie M /Hobson/
-1 DEAT 
+1 DEAT
 2 DATE 25 Nov 1975
 2 PLAC Port Clinton, Ottawa Co, OH
-1 BIRT 
+1 BIRT
 2 DATE 4 May 1893
 2 PLAC Monte Vista, Rio Grande Co. CO
 1 SEX F
@@ -2825,9 +2825,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=131
 1 FAMC @F25@
-0 @P132@ INDI 
+0 @P132@ INDI
 1 NAME Llewellyn /Boyce/
-1 BIRT 
+1 BIRT
 2 DATE 1871
 2 PLAC Greenwood, Kansas, United States
 1 SEX M
@@ -2836,8 +2836,8 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=132
 1 FAMC @F26@
-0 @P133@ INDI 
-1 BIRT 
+0 @P133@ INDI
+1 BIRT
 2 DATE 1869
 2 PLAC Greenwood, Kansas, United States
 1 NAME HARRIET J /BOYCE/
@@ -2847,11 +2847,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=133
 1 FAMC @F26@
-0 @P134@ INDI 
-1 BIRT 
+0 @P134@ INDI
+1 BIRT
 2 DATE 1867
 2 PLAC Greenwood, Kansas, United States
-1 DEAT 
+1 DEAT
 2 PLAC Bideford, Devon, , England
 1 NAME Marcus C /Boyce/
 1 SEX M
@@ -2860,11 +2860,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=134
 1 FAMC @F26@
-0 @P135@ INDI 
-1 BIRT 
+0 @P135@ INDI
+1 BIRT
 2 DATE 1863
 2 PLAC Greenwood, Kansas, United States
-1 DEAT 
+1 DEAT
 2 DATE 25 Feb 1952
 2 PLAC Fruita, Mesa, Colorado, United States
 1 NAME Mary M /Boyce/
@@ -2874,24 +2874,24 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=135
 1 FAMC @F26@
-0 @P136@ INDI 
-1 RESI 
+0 @P136@ INDI
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=21806159&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Maine Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::21806159
-1 BIRT 
+1 BIRT
 2 DATE abt 1876
 2 PLAC Maine
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=21806159&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Maine Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::21806159
@@ -2899,30 +2899,30 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=21806159&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1876 Birth place:  Maine Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::21806159
 1 SEX F
 1 FAMC @F27@
-0 @P137@ INDI 
-1 RESI 
+0 @P137@ INDI
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432988&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1869 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432988
-1 BIRT 
+1 BIRT
 2 DATE abt 1869
 2 PLAC N Scotia
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432988&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1869 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432988
@@ -2930,30 +2930,30 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23432988&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1869 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23432988
 1 SEX M
 1 FAMC @F27@
-0 @P138@ INDI 
-1 RESI 
+0 @P138@ INDI
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213194&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213194
-1 BIRT 
+1 BIRT
 2 DATE abt 1864
 2 PLAC N Scotia
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213194&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213194
@@ -2961,30 +2961,30 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=44213194&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1864 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::44213194
 1 SEX F
 1 FAMC @F27@
-0 @P139@ INDI 
-1 RESI 
+0 @P139@ INDI
+1 RESI
 2 DATE 1880
 2 PLAC Ludlow, Aroostook, Maine, United States
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23433121&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23433121
-1 BIRT 
+1 BIRT
 2 DATE abt 1862
 2 PLAC N Scotia
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23433121&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23433121
@@ -2992,30 +2992,30 @@
 2 SOUR @S-2097951772@
 3 PAGE Year: 1880; Census Place: Ludlow, Aroostook, Maine; Roll: T9_477; Family History Film: 1254477; Page: 480.3000; Enumeration District: 219; Image: 0234.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1880usfedcen&h=23433121&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1862 Birth place:  N Scotia Residence date:  1880 Residence place:  Ludlow, Aroostook, Maine, United States
 3 _APID 1,6742::23433121
 1 SEX F
 1 FAMC @F27@
-0 @P140@ INDI 
-1 BIRT 
+0 @P140@ INDI
+1 BIRT
 2 DATE 9/23/1831
 2 PLAC Allegheny City, Pennsylvania USA
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: Sharon, Mercer, Pennsylvania; Roll: M653_1140; Page: 659; Image: 184.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=4103891&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1860 Residence place:  Sharon, Mercer, Pennsylvania
 3 _APID 1,7667::4103891
-1 RESI 
+1 RESI
 2 DATE 1860
 2 PLAC Sharon, Mercer, Pennsylvania
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: Sharon, Mercer, Pennsylvania; Roll: M653_1140; Page: 659; Image: 184.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=4103891&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1860 Residence place:  Sharon, Mercer, Pennsylvania
 3 _APID 1,7667::4103891
@@ -3023,7 +3023,7 @@
 2 SOUR @S-2097952163@
 3 PAGE Year: 1860; Census Place: Sharon, Mercer, Pennsylvania; Roll: M653_1140; Page: 659; Image: 184.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1860usfedcenancestry&h=4103891&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1832 Birth place:  Pennsylvania Residence date:  1860 Residence place:  Sharon, Mercer, Pennsylvania
 3 _APID 1,7667::4103891
@@ -3033,19 +3033,19 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=140
 1 FAMS @F30@
-0 @P141@ INDI 
-1 BIRT 
+0 @P141@ INDI
+1 BIRT
 2 DATE 1835
 1 SEX F
 1 NAME Teresa /DeForest/
 1 FAMS @F30@
-0 @P142@ INDI 
-1 BIRT 
+0 @P142@ INDI
+1 BIRT
 2 DATE abt 1921
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802552&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802552
@@ -3053,40 +3053,40 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802552&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802552
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Maywood, Los Angeles, California
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802552&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1921 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802552
 1 SEX M
 1 FAMC @F29@
-0 @P143@ INDI 
-1 BIRT 
+0 @P143@ INDI
+1 BIRT
 2 DATE abt 1915
 2 PLAC Colorado
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802569&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1915 Birth place:  Colorado Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802569
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Maywood, Los Angeles, California
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802569&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1915 Birth place:  Colorado Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802569
@@ -3094,29 +3094,29 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802569&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1915 Birth place:  Colorado Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802569
 1 SEX M
 1 FAMC @F29@
-0 @P144@ INDI 
-1 BIRT 
+0 @P144@ INDI
+1 BIRT
 2 DATE abt 1896
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802556&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802556
-1 RESI 
+1 RESI
 2 DATE 1930
 2 PLAC Maywood, Los Angeles, California
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802556&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802556
@@ -3124,17 +3124,17 @@
 2 SOUR @S-2097950395@
 3 PAGE Year: 1930; Census Place: Maywood, Los Angeles, California; Roll: 172; Page: 7A; Enumeration District: 1342; Image: 134.0.
 3 NOTE http://trees.ancestry.com/rd?f=sse&db=1930usfedcen&h=90802556&ti=0&indiv=try&gss=pt
-3 NOTE 
+3 NOTE
 3 DATA
 4 TEXT Birth date:  abt 1896 Birth place:   Residence date:  1930 Residence place:  Maywood, Los Angeles, California
 3 _APID 1,6224::90802556
 1 SEX F
 1 FAMS @F29@
-0 @P145@ INDI 
-1 BIRT 
+0 @P145@ INDI
+1 BIRT
 2 DATE 9/1869
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 6/1956
 1 NAME Eliza (Birdie) /Staunton/
 1 SEX F
@@ -3143,11 +3143,11 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=145
 1 FAMC @F30@
-0 @P146@ INDI 
-1 BIRT 
+0 @P146@ INDI
+1 BIRT
 2 DATE Apr 1867
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE Dec 1957
 2 PLAC Sarasota, Florida, United States
 1 NAME Betty Mae /Staunton/
@@ -3157,12 +3157,12 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=146
 1 FAMC @F30@
-0 @P147@ INDI 
+0 @P147@ INDI
 1 NAME Isaac D T /Staunton/
-1 BIRT 
+1 BIRT
 2 DATE Oct 1857
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
-1 DEAT 
+1 DEAT
 2 DATE 1933
 2 PLAC Los Angeles California USA
 1 SEX M
@@ -3171,9 +3171,9 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=147
 1 FAMC @F30@
-0 @P148@ INDI 
+0 @P148@ INDI
 1 NAME Teresa /Staunton/
-1 BIRT 
+1 BIRT
 2 DATE 1856
 2 PLAC Pennsylvania, Somerset, Pennsylvania, United States
 1 SEX F
@@ -3182,7 +3182,7 @@
 2 DATA
 3 TEXT http://trees.ancestry.com/pt/AMTCitationRedir.aspx?tid=12322932&pid=148
 1 FAMC @F30@
-0 @F1@ FAM 
+0 @F1@ FAM
 1 HUSB @P3@
 1 WIFE @P2@
 1 CHIL @P6@
@@ -3191,7 +3191,7 @@
 1 CHIL @P1@
 2 _FREL Natural
 2 _MREL Natural
-0 @F2@ FAM 
+0 @F2@ FAM
 1 HUSB @P5@
 1 WIFE @P4@
 1 CHIL @P3@
@@ -3203,16 +3203,16 @@
 1 CHIL @P12@
 2 _FREL Natural
 2 _MREL Natural
-0 @F3@ FAM 
+0 @F3@ FAM
 1 HUSB @P8@
 1 WIFE @P7@
 1 CHIL @P2@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 22 Sep 1936
 2 PLAC Delta, Delta, Colo
-0 @F4@ FAM 
+0 @F4@ FAM
 1 HUSB @P16@
 1 WIFE @P15@
 1 CHIL @P8@
@@ -3227,10 +3227,10 @@
 1 CHIL @P21@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 2 Jun 1906
 2 PLAC Hotchkiss, Delta, Colo
-0 @F5@ FAM 
+0 @F5@ FAM
 1 HUSB @P10@
 1 WIFE @P9@
 1 CHIL @P5@
@@ -3260,13 +3260,13 @@
 1 CHIL @P26@
 2 _FREL Natural
 2 _MREL Natural
-0 @F6@ FAM 
+0 @F6@ FAM
 1 HUSB @P14@
 1 WIFE @P13@
 1 CHIL @P4@
 2 _FREL Natural
 2 _MREL Natural
-0 @F7@ FAM 
+0 @F7@ FAM
 1 HUSB @P35@
 1 WIFE @P34@
 1 CHIL @P14@
@@ -3275,13 +3275,13 @@
 1 CHIL @P38@
 2 _FREL Natural
 2 _MREL Natural
-0 @F8@ FAM 
+0 @F8@ FAM
 1 HUSB @P18@
 1 WIFE @P17@
 1 CHIL @P7@
 2 _FREL Natural
 2 _MREL Natural
-0 @F9@ FAM 
+0 @F9@ FAM
 1 HUSB @P37@
 1 WIFE @P36@
 1 CHIL @P13@
@@ -3296,16 +3296,16 @@
 1 CHIL @P45@
 2 _FREL Natural
 2 _MREL Natural
-0 @F10@ FAM 
+0 @F10@ FAM
 1 HUSB @P45@
 1 WIFE @P47@
 1 CHIL @P46@
 2 _FREL Natural
 2 _MREL Natural
-0 @F11@ FAM 
+0 @F11@ FAM
 1 HUSB @P48@
 1 WIFE @P38@
-0 @F12@ FAM 
+0 @F12@ FAM
 1 HUSB @P49@
 1 WIFE @P61@
 1 CHIL @P60@
@@ -3323,16 +3323,16 @@
 1 CHIL @P56@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1874
 2 PLAC Ireland
-0 @F13@ FAM 
+0 @F13@ FAM
 1 HUSB @P49@
 1 WIFE @P50@
 1 CHIL @P17@
 2 _FREL Natural
 2 _MREL Natural
-0 @F14@ FAM 
+0 @F14@ FAM
 1 HUSB @P25@
 1 WIFE @P24@
 1 CHIL @P62@
@@ -3341,10 +3341,10 @@
 1 CHIL @P15@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 25 Mar 1883
 2 PLAC Eureka, Greenwood, Kansas, United States
-0 @F15@ FAM 
+0 @F15@ FAM
 1 HUSB @P63@
 1 WIFE @P64@
 1 CHIL @P25@
@@ -3362,13 +3362,13 @@
 1 CHIL @P70@
 2 _FREL Natural
 2 _MREL Natural
-0 @F16@ FAM 
+0 @F16@ FAM
 1 HUSB @P75@
 1 WIFE @P74@
 1 CHIL @P64@
 2 _FREL Natural
 2 _MREL Natural
-0 @F17@ FAM 
+0 @F17@ FAM
 1 HUSB @P68@
 1 WIFE @P69@
 1 CHIL @P90@
@@ -3413,7 +3413,7 @@
 1 CHIL @P79@
 2 _FREL Natural
 2 _MREL Natural
-0 @F18@ FAM 
+0 @F18@ FAM
 1 HUSB @P92@
 1 WIFE @P91@
 1 CHIL @P104@
@@ -3455,7 +3455,7 @@
 1 CHIL @P93@
 2 _FREL Natural
 2 _MREL Natural
-0 @F19@ FAM 
+0 @F19@ FAM
 1 HUSB @P76@
 1 WIFE @P77@
 1 CHIL @P118@
@@ -3491,31 +3491,31 @@
 1 CHIL @P109@
 2 _FREL Natural
 2 _MREL Natural
-0 @F20@ FAM 
+0 @F20@ FAM
 1 HUSB @P120@
 1 WIFE @P119@
 1 CHIL @P76@
 2 _FREL Natural
 2 _MREL Natural
-0 @F21@ FAM 
+0 @F21@ FAM
 1 HUSB @P122@
 1 WIFE @P121@
 1 CHIL @P77@
 2 _FREL Natural
 2 _MREL Natural
-0 @F22@ FAM 
+0 @F22@ FAM
 1 HUSB @P106@
 1 WIFE @P105@
 1 CHIL @P92@
 2 _FREL Natural
 2 _MREL Natural
-0 @F23@ FAM 
+0 @F23@ FAM
 1 HUSB @P108@
 1 WIFE @P107@
 1 CHIL @P91@
 2 _FREL Natural
 2 _MREL Natural
-0 @F24@ FAM 
+0 @F24@ FAM
 1 HUSB @P20@
 1 WIFE @P126@
 1 CHIL @P125@
@@ -3527,7 +3527,7 @@
 1 CHIL @P123@
 2 _FREL Natural
 2 _MREL Natural
-0 @F25@ FAM 
+0 @F25@ FAM
 1 HUSB @P20@
 1 WIFE @P19@
 1 CHIL @P16@
@@ -3548,7 +3548,7 @@
 1 CHIL @P131@
 2 _FREL Natural
 2 _MREL Natural
-0 @F26@ FAM 
+0 @F26@ FAM
 1 HUSB @P67@
 1 WIFE @P66@
 1 CHIL @P135@
@@ -3566,10 +3566,10 @@
 1 CHIL @P24@
 2 _FREL Natural
 2 _MREL Natural
-1 MARR 
+1 MARR
 2 DATE 1863
 2 PLAC Greenwood, Kansas, United States
-0 @F27@ FAM 
+0 @F27@ FAM
 1 HUSB @P40@
 1 WIFE @P39@
 1 CHIL @P139@
@@ -3587,7 +3587,7 @@
 1 CHIL @P136@
 2 _FREL Natural
 2 _MREL Natural
-0 @F28@ FAM 
+0 @F28@ FAM
 1 HUSB @P53@
 1 WIFE @P17@
 1 CHIL @P52@
@@ -3596,7 +3596,7 @@
 1 CHIL @P51@
 2 _FREL Natural
 2 _MREL Natural
-0 @F29@ FAM 
+0 @F29@ FAM
 1 HUSB @P51@
 1 WIFE @P144@
 1 CHIL @P143@
@@ -3605,7 +3605,7 @@
 1 CHIL @P142@
 2 _FREL Natural
 2 _MREL Natural
-0 @F30@ FAM 
+0 @F30@ FAM
 1 HUSB @P140@
 1 WIFE @P141@
 1 CHIL @P148@
@@ -3623,33 +3623,33 @@
 1 CHIL @P145@
 2 _FREL Natural
 2 _MREL Natural
-0 @F31@ FAM 
+0 @F31@ FAM
 1 HUSB @P55@
 1 WIFE @P54@
 1 CHIL @P49@
 2 _FREL Natural
 2 _MREL Natural
-0 @F32@ FAM 
+0 @F32@ FAM
 1 HUSB @P37@
 1 CHIL @P41@
 2 _FREL Natural
 1 CHIL @P42@
 2 _FREL Natural
-0 @F33@ FAM 
+0 @F33@ FAM
 1 HUSB @P25@
 1 CHIL @P65@
 2 _FREL Natural
 0 @R-2142922900@ REPO
 1 NAME Ancestry.com
 1 ADDR http://www.Ancestry.com
-1 NOTE 
+1 NOTE
 0 @S-2097959820@ SOUR
 1 REPO @R-2142922900@
 1 TITL Border Crossings: From Mexico to U.S., 1903-1957
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - Lists of Aliens Arriving at Brownsville, Del Rio, Eagle Pass, El Paso, Laredo, Presidio, Rio Grande City, and R
 2 CONC oma, Texas, May 1903-June 1909, and at Aros Ranch, Dougl
-1 NOTE 
+1 NOTE
 1 _APID 1,1082::0
 0 @S-2097953155@ SOUR
 1 REPO @R-2142922900@
@@ -3657,7 +3657,7 @@
 1 AUTH Ancestry.com and Ohio Department of Health
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2006.Original data - Ohio. Division of Vital Statistics. Death Certificates and index, December 20, 1908-December 31, 1953. State Ar
 2 CONC chives Series 3094. Ohio Historical Society, Ohio.Ohio D
-1 NOTE 
+1 NOTE
 1 _APID 1,5763::0
 0 @S-2097952924@ SOUR
 1 REPO @R-2142922900@
@@ -3665,7 +3665,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2000.Original data - State of California. California Death Index, 1940-1997. Sacramento, CA, USA: State of California Department o
 2 CONC f Health Services, Center for Health Statistics.Original d
-1 NOTE 
+1 NOTE
 1 _APID 1,5180::0
 0 @S-2097952163@ SOUR
 1 REPO @R-2142922900@
@@ -3673,7 +3673,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - United States of America, Bureau of the Census. Eighth Census of the United States, 1860. Washington, D.C.: Nat
 2 CONC ional Archives and Records Administration, 1860. M653, 1
-1 NOTE 
+1 NOTE
 1 _APID 1,7667::0
 0 @S-2097952102@ SOUR
 1 REPO @R-2142922900@
@@ -3681,15 +3681,15 @@
 1 AUTH Yates Publishing
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - This unique collection of records was extracted from a variety of sources including family group sheets and ele
 2 CONC ctronic databases. Originally, the information was deriv
-1 NOTE 
+1 NOTE
 1 _APID 1,7836::0
 0 @S-2097952024@ SOUR
 1 REPO @R-2142922900@
 1 TITL 1850 United States Federal Census
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - United States of America, Bureau of the Census. Seventh Census of the United States, 1850. Washington, D.C.: Na
-2 CONC tional Archives and Records Administration, 1850. M432, 
-1 NOTE 
+2 CONC tional Archives and Records Administration, 1850. M432,
+1 NOTE
 1 _APID 1,8054::0
 0 @S-2097951908@ SOUR
 1 REPO @R-2142922900@
@@ -3697,7 +3697,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2003.Original data - 1870. United States. Ninth Census of the United States, 1870. Washington, D.C. National Archives and Records Ad
 2 CONC ministration. M593, RG29, 1,761 rolls.Minnesota. Minneso
-1 NOTE 
+1 NOTE
 1 _APID 1,7163::0
 0 @S-2097951845@ SOUR
 1 REPO @R-2142922900@
@@ -3705,7 +3705,7 @@
 1 AUTH Ancestry.com.
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2009.Original data - 1855 Kansas Territory Census. Microfilm reel K-1. Kansas State Historical Society.1856, 1857, and 1858 Kansas T
 2 CONC erritory Censuses. Microfilm reel K-1. Kansas State Hist
-1 NOTE 
+1 NOTE
 1 _APID 1,1088::0
 0 @S-2097951772@ SOUR
 1 REPO @R-2142922900@
@@ -3713,15 +3713,15 @@
 1 AUTH Ancestry.com and The Church of Jesus Christ of Latter-day Saints
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005. 1880 U.S. Census Index provided by The Church of Jesus Christ of Latter-day Saints  © Copyright 1999 Intellectual Reserve, In
 2 CONC c. All rights reserved.  All use is subject to the limite
-1 NOTE 
+1 NOTE
 1 _APID 1,6742::0
 0 @S-2097951729@ SOUR
 1 REPO @R-2142922900@
 1 TITL 1900 United States Federal Census
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2004.Original data - United States of America, Bureau of the Census. Twelfth Census of the United States, 1900. Washington, D.C.: Na
-2 CONC tional Archives and Records Administration, 1900. T623, 
-1 NOTE 
+2 CONC tional Archives and Records Administration, 1900. T623,
+1 NOTE
 1 _APID 1,7602::0
 0 @S-2097951588@ SOUR
 1 REPO @R-2142922900@
@@ -3729,7 +3729,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2006. For details on the contents of the film numbers, visit the following NARA web page: NARA.Original data - United States of Amer
 2 CONC ica, Bureau of the Census. Thirteenth Census of the Unit
-1 NOTE 
+1 NOTE
 1 _APID 1,7884::0
 0 @S-2097951516@ SOUR
 1 REPO @R-2142922900@
@@ -3737,7 +3737,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005. For details on the contents of the film numbers, visit the following NARA web page: NARA.  Note: Enumeration Districts 819-83
 2 CONC 9 on roll 323 (Chicago City.Original data - United States
-1 NOTE 
+1 NOTE
 1 _APID 1,6061::0
 0 @S-2097951022@ SOUR
 1 REPO @R-2142922900@
@@ -3745,7 +3745,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2005.Original data - United States, Selective Service System. World War I Selective Service System Draft Registration Cards, 1917-19
 2 CONC 18. Washington, D.C.: National Archives and Records Admi
-1 NOTE 
+1 NOTE
 1 _APID 1,6482::0
 0 @S-2097950933@ SOUR
 1 REPO @R-2142922900@
@@ -3753,7 +3753,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2009.Original data - Social Security Administration. Social Security Death Index, Master File. Social Security Administration.Origin
 2 CONC al data: Social Security Administration. Social Security
-1 NOTE 
+1 NOTE
 1 _APID 1,3693::0
 0 @S-2097950395@ SOUR
 1 REPO @R-2142922900@
@@ -3761,7 +3761,7 @@
 1 AUTH Ancestry.com
 1 PUBL Online publication - Provo, UT, USA: The Generations Network, Inc., 2002.Original data - United States of America, Bureau of the Census. Fifteenth Census of the United States, 1930. Washington, D.C.
 2 CONC : National Archives and Records Administration, 1930. T626
-1 NOTE 
+1 NOTE
 1 _APID 1,6224::0
 0 @S-2097950158@ SOUR
 1 REPO @R-2142922900@

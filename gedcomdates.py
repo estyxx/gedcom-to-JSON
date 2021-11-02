@@ -1,7 +1,8 @@
-import gedcom
-from datetime import datetime
+import os
 import re
-import sys, os
+import sys
+from datetime import datetime
+
 
 def parseTime(filename, event):
     """
@@ -22,43 +23,49 @@ def parseTime(filename, event):
                     try:
                         dates.append(event.date)
                     except AttributeError:
-                        dates.append('00000')
+                        dates.append("00000")
             else:
                 try:
                     dates.append(attr.date)
                 except AttributeError:
-                    dates.append('00000')
+                    dates.append("00000")
         except AttributeError:
             pass
 
     """
     Approximation RegExp to be removed
     """
-    abt = re.compile('abt\.? ', re.IGNORECASE) # matches 'abt', possibly followed by a '.'
-    bet = re.compile('bet\.? ', re.I) # matche 'bet', possibly followed by a '.'
-    bef = re.compile('bef\.? ', re.I) # matches 'bef', possibly followed by a '.'
-    sep = re.compile('sept', re.I) # matches 'sept'
-    be = re.compile('before ', re.I) # matches 'about'
-    a = re.compile('about ', re.I) # matches 'about'
-    e = re.compile('early ', re.I) # matches 'early'
-    s = re.compile('(?<=\d)s') # matches an 's' preceded by a number - 1800(s)
-    p = re.compile('\.(?= \d)') # matches a '.' followed by a space and a number - oct. 1995
-    q = re.compile('\?') # matches a '?'
+    abt = re.compile(
+        "abt\.? ", re.IGNORECASE
+    )  # matches 'abt', possibly followed by a '.'
+    bet = re.compile("bet\.? ", re.I)  # matche 'bet', possibly followed by a '.'
+    bef = re.compile("bef\.? ", re.I)  # matches 'bef', possibly followed by a '.'
+    sep = re.compile("sept", re.I)  # matches 'sept'
+    be = re.compile("before ", re.I)  # matches 'about'
+    a = re.compile("about ", re.I)  # matches 'about'
+    e = re.compile("early ", re.I)  # matches 'early'
+    s = re.compile("(?<=\d)s")  # matches an 's' preceded by a number - 1800(s)
+    p = re.compile(
+        "\.(?= \d)"
+    )  # matches a '.' followed by a space and a number - oct. 1995
+    q = re.compile("\?")  # matches a '?'
 
     parsedDates = []
 
     # loop through dates
     for date in dates:
-        date = abt.sub('', date)
-        date = bet.sub('', date)
-        date = bef.sub('', date)
-        date = sep.sub('sep', date) # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
-        date = be.sub('', date)
-        date = a.sub('', date)
-        date = e.sub('', date)
-        date = s.sub('', date)
-        date = p.sub('', date)
-        date = q.sub('', date)
+        date = abt.sub("", date)
+        date = bet.sub("", date)
+        date = bef.sub("", date)
+        date = sep.sub(
+            "sep", date
+        )  # not removing approx -- changing the september month abbrev. sept is not a parseable month abbrev
+        date = be.sub("", date)
+        date = a.sub("", date)
+        date = e.sub("", date)
+        date = s.sub("", date)
+        date = p.sub("", date)
+        date = q.sub("", date)
 
         # append parsed birthdate to new birth date list
         parsedDates.append(date)
@@ -88,52 +95,99 @@ def formatTime(dates):
     ISOdates = []
     "ISO dates init"
 
-    dateFormat = ['%m/%d/%Y', '%m-%d-%Y', '%d-%m-%Y', '%d, %b %Y', '%d %B %Y', '%d %b %Y', '%d %B, %Y', '%b %d, %Y', '%B %d, %Y', '%B %d %Y', '%b %d %Y', '%Y, %b %d', '%Y %m %d', '%B %Y', '%b %Y', '%m/%Y', '%Y']
+    dateFormat = [
+        "%m/%d/%Y",
+        "%m-%d-%Y",
+        "%d-%m-%Y",
+        "%d, %b %Y",
+        "%d %B %Y",
+        "%d %b %Y",
+        "%d %B, %Y",
+        "%b %d, %Y",
+        "%B %d, %Y",
+        "%B %d %Y",
+        "%b %d %Y",
+        "%Y, %b %d",
+        "%Y %m %d",
+        "%B %Y",
+        "%b %Y",
+        "%m/%Y",
+        "%Y",
+    ]
 
-    years = re.compile('^\d{4} \d{4} \d{4} .+') # for more than 2 years sequentially 1997 1998 1999 ...
-    commayrs = re.compile('^\d{4}, \d{4}') # for years separated by a comma 1998, 1999
-    dashyrs = re.compile('^\d{4}-\d{4}') # for years separated by a dash # 1998-1999
-
+    years = re.compile(
+        "^\d{4} \d{4} \d{4} .+"
+    )  # for more than 2 years sequentially 1997 1998 1999 ...
+    commayrs = re.compile("^\d{4}, \d{4}")  # for years separated by a comma 1998, 1999
+    dashyrs = re.compile("^\d{4}-\d{4}")  # for years separated by a dash # 1998-1999
 
     for date in dates:
         logfile = open("log/event.log", "a")
-        if '\xe2\x80\x93' in date or dashyrs.match(date) or commayrs.match(date) :
+        if "\xe2\x80\x93" in date or dashyrs.match(date) or commayrs.match(date):
             # if there is a dash char in the date string that means the date in the file is between date1 & date2. get the avg of these dates and use that. set the ApproxDate to true
             date1 = int(date[:4])
             date2 = int(date[-4:])
-            avgDate = (date1+date2)/2
-            ISOdates.append('"eventDate" : "' + str(datetime.strptime(str(avgDate), '%Y')) + '",\n"approxDate" : "year"')
-        elif '00000' in date:
+            avgDate = (date1 + date2) / 2
+            ISOdates.append(
+                '"eventDate" : "'
+                + str(datetime.strptime(str(avgDate), "%Y"))
+                + '",\n"approxDate" : "year"'
+            )
+        elif "00000" in date:
             # if the date is stored as 00000 that means that it did not exist while parsing through to remove the approximation strings
             ISOdates.append('"eventDate" : null,\n"approxDate" : "exact"')
         elif years.match(date):
-            ISOdates.append('"eventDate" : "' + str(datetime.strptime(str(rd[:4]), '%Y')) + '",\n"approxDate" : true,')
+            ISOdates.append(
+                '"eventDate" : "'
+                + str(datetime.strptime(str(rd[:4]), "%Y"))
+                + '",\n"approxDate" : true,'
+            )
         else:
-            j = 0 # counter for error handling
+            j = 0  # counter for error handling
             for df in dateFormat:
                 # loop through the dateFarmats, try to parse the date - expect errors but if the counter goes beyond the length of dateFormat, then the date didn't match any known format strings.
                 try:
-                    if df == '%Y':
+                    if df == "%Y":
                         # datetime.strptime is a public lib -- see the README. if the date does not match the date format string being tested, this function will error and exception will be passed
-                        ISOdates.append('"eventDate" : "' + str(datetime.strptime(date, df)) + '",\n"approxDate" : "year"')
+                        ISOdates.append(
+                            '"eventDate" : "'
+                            + str(datetime.strptime(date, df))
+                            + '",\n"approxDate" : "year"'
+                        )
                         break
-                    elif ( (df == '%B %Y') or (df == '%b %Y') or (df == '%m/%Y') ):
-                        ISOdates.append('"eventDate" : "' + str(datetime.strptime(date, df)) + '",\n"approxDate" : "month"')
+                    elif (df == "%B %Y") or (df == "%b %Y") or (df == "%m/%Y"):
+                        ISOdates.append(
+                            '"eventDate" : "'
+                            + str(datetime.strptime(date, df))
+                            + '",\n"approxDate" : "month"'
+                        )
                     else:
-                        ISOdates.append('"eventDate" : "' + str(datetime.strptime(date, df)) + '",\n"approxDate" : "exact"')
+                        ISOdates.append(
+                            '"eventDate" : "'
+                            + str(datetime.strptime(date, df))
+                            + '",\n"approxDate" : "exact"'
+                        )
                         break
-                except ValueError as e:
+                except ValueError:
                     j += 1
-                    pass
-            if j > len(dateFormat) -1:
+            if j > len(dateFormat) - 1:
                 # if we have looped through all of the known date formats and haven't found a match, we will end up here, and this will throw an error.
                 ISOdates.append('"eventDate" : null,\n"approxDate" : "exact"')
-                logfile.write("\n" + time.strftime("%Y-%m-%d") + " " + time.strftime("%H:%M:%S") + " :\n")
+                logfile.write(
+                    "\n"
+                    + time.strftime("%Y-%m-%d")
+                    + " "
+                    + time.strftime("%H:%M:%S")
+                    + " :\n"
+                )
                 exc_type, exc_obj, exc_tb = sys.exc_info()
                 fname = os.path.split(exc_tb.tb_frame.f_code.co_filename)[1]
-                exc = Exception("Error for eventDate: '" + date + "' line {}".format(sys.exc_info()[-1].tb_lineno))
+                exc = Exception(
+                    "Error for eventDate: '"
+                    + date
+                    + "' line {}".format(sys.exc_info()[-1].tb_lineno)
+                )
                 logfile.write(exc[0] + " in " + fname + "\n")
                 logfile.close()
-
 
     return ISOdates
